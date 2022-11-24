@@ -483,14 +483,20 @@
              <p>TOKIOインカラミのメカニズムを引き継ぎ、
                 <br>さらにグレードアップした特別な2ブランドをご紹介します。</p>
 
-             <article class="product-list" v-for="product in tokioProducts">
-                <h4>0{{product.id}}. <span>{{product.name}}</span></h4>
-                <p>{{product.description}}</p>
-                <a href="" class="and-more">AND MORE</a>
-                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-4">
-                    <img :src="product.img" alt="" class="img-fluid">
+             
+
+             <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                <div class="col-sm-6" v-for="product in tokioProducts">
+                    <article class="product-list">
+                        <h4>0{{product.id}}. <span>{{product.name}}</span></h4>
+                        <p>{{product.description}}</p>
+                        <a href="#" class="and-more">AND MORE</a>
+                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-4">
+                            <img :src="product.img" alt="" class="img-fluid">
+                        </div>
+                    </article>
                 </div>
-             </article>
+             </div>
         </div>
 
         <div class="container-fluid section-10">
