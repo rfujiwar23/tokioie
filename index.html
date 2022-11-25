@@ -40,22 +40,10 @@
         <div class="top-sub-nav" id="app">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 subnav">
-                        <a href="">
-                            <h3>オンラインストア</h3>
-                            <p><i class="fa-sharp fa-solid fa-bag-shopping"></i></p>
-                        </a>
-                    </div>
-                    <div class="col-4 subnav">
-                        <a href="">
-                            <h3>よくあるご質問</h3>
-                            <p><i class="fa-regular fa-comment"></i></p>
-                        </a>
-                    </div>
-                    <div class="col-4 subnav">
-                        <a href="">
-                            <h3>商品解説はこちら</h3>
-                            <p><i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                    <div class="col-4 subnav" v-for="link in links">
+                        <a v-bind:href="link.url">
+                            <h3>{{link.text}}</h3>
+                            <p v-html="link.fontAwesome"></p>
                         </a>
                     </div>
                 </div>
@@ -92,9 +80,9 @@
                     そんな本格的サロンメニューをご自宅で味わえるホームケアが<br><strong>TOKIO IE(トキオアイイー)</strong>です。</p>
                 </div>
      
-                <div class="video-link">
+                <!-- <div class="video-link">
                  <p><i class="lni lni-video"></i> 動画を見る</p>
-                </div>
+                </div> -->
              </section>
 
              <section class="section02">
@@ -477,6 +465,10 @@
             </div>
         </div>
 
+        <div class="container-fluid section-04">
+
+        </div>
+
         <div class="container-fluid section-09" id="product-list">
              <h3>特別なTOKIOブランド</h3>
 
@@ -531,10 +523,6 @@
             <div class="container">
                 <ul class="bottom" v-for="links in footerLinks">
                     <li><a v-bind:href="links.url">{{links.text}}</a></li>
-                    <!-- <li><a href="#">特定商取引法に基づく表示</a></li>
-                    <li><a href="#">プライバシーポリシー</a></li>
-                    <li><a href="#">利用規約</a></li>
-                    <li><a href="#">会社情報</a></li> -->
                 </ul>
                 
             </div>

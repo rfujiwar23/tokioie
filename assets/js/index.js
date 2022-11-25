@@ -1,4 +1,28 @@
 var vm = new Vue({
+  el: "#app",
+  data: {
+    links: [
+      {
+        text: 'オンラインストア', 
+        fontAwesome: '<i class="fa-sharp fa-solid fa-bag-shopping"></i>',
+        url: 'https://ifing-beauty.com/',
+      },
+      {
+        text: 'よくあるご質問', 
+        fontAwesome: '<i class="fa-regular fa-comment"></i>',
+        url: 'https://ifing-beauty.com/',
+      },
+      {
+        text: '商品解説はこちら', 
+        fontAwesome: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
+        url: 'https://ifing-beauty.com/',
+      },
+    ]
+  },
+});
+
+
+var vm = new Vue({
   el: "#purchase-products",
   data: {
     products: [
