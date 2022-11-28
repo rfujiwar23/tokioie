@@ -314,8 +314,7 @@
   padding: 20px;
   max-width: 800px;
   margin: 8vh auto;
-  background: #f7a9a9;
-  background: linear-gradient(100deg, #f7a9a9 0%, #ffbae9 100%);
+  background: linear-gradient(100deg, #dcdfa3 0%, #bed6cf 100%);
   border-radius: 10px;
 }
 .section-06 .about h3 {
