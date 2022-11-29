@@ -21,6 +21,26 @@ var vm = new Vue({
   },
 });
 
+var vm = new Vue({
+  el: "#promotions",
+  data: {
+    promotions: [
+      {
+        text: 'TOKIO STARS - カミカリスマ美容師の支持率No.1', 
+        image: 'assets/images/tokio-stars.png',
+      },
+      {
+        text: 'TOKIO インカラミが誇る所属・サポートアスリート', 
+        image: 'assets/images/promotions-img.jpg',
+      },
+      {
+        text: '東京・ 銀座 / GINZA SIXから世界へ発信・展開', 
+        image: 'assets/images/intense-building.jpg',
+      },
+    ]
+  },
+});
+
 
 var vm = new Vue({
   el: "#bannerImage",

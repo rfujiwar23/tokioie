@@ -63,12 +63,8 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
 
 .banner {
     aspect-ratio: 1.2;
-    // background:url("../images/premiumplatinum.png") no-repeat;
-    // background-position: center;
-    // background-size: cover;
     position: relative;
     .banner-logo {
-        // background:rgba(66,66,66,0.7);
         position:absolute;
         top:2%;
         left: 20%;
@@ -76,15 +72,17 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
         margin:0 auto;
         display: flex;
         align-items: center;
-        img {
-            width:100%;
-            max-width: 240px;
-            margin:0 auto;
-            
+        justify-content: center;
+        h1 {
+            text-align: center;
+            img.logo {
+                margin:0 auto;
+                height: 100px;
+                background: rgba(125, 110, 110, 0.8);
+                padding:10px 40px;
+            }
         }
-        
     }
-
     p {
         position: absolute;
         bottom: 4%;
@@ -95,10 +93,49 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
         font-size: 20px;
         background: rgba(66, 66, 66, 0.7);
     }
-    img {
+    img.main {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.intro {
+    padding:5vh 0;
+    .article {
+        padding:3vh 10px;
+        p {
+            font-size: 1.1em;
+            line-height: 2em;
+            padding:30px 0;
+        }
+        .maintext {
+            padding:3vh 20px;
+            h4 {
+                text-align: center;
+            }
+            width:98%;
+            max-width: 1024px;
+            margin:0 auto;
+            p {
+                em {
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 1.25em;
+                    color:rgb(148, 5, 5);
+                }
+            }
+        }
+        .moretext {
+            background:#bed6cf;
+            padding:3vh 20px;
+            h4 {
+                text-align: center;
+            }
+            width:98%;
+            max-width: 1024px;
+            margin:0 auto;
+        }
     }
 }
 
@@ -283,6 +320,25 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         }
     }
 }
+
+#promotions {
+    .type {
+        position:relative;
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.8);
+            p {
+                margin: 0;
+                font-style: italic;
+            }
+        }
+    }
+}
+
 
 .promotions {
     display: flex;
@@ -734,6 +790,32 @@ footer {
     background-position: center;
 }
 
+.section-12 {
+    .intro {
+        font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+        h4 {
+            line-height: 2em;
+        }
+    }
+    .product-text {
+        h3 {
+            text-align: center;
+            em {
+                font-style: normal;
+                text-decoration: underline;
+            }
+            span {
+                font-size: 0.7em;
+            }
+            
+        }
+        p {
+            margin:3vh auto;
+            padding:0 20px;
+            text-align: center;
+        }
+    }
+}
 
 
 @media screen and (max-width: 992px) {

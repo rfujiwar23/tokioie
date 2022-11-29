@@ -68,11 +68,16 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.banner .banner-logo img {
-  width: 100%;
-  max-width: 240px;
+.banner .banner-logo h1 {
+  text-align: center;
+}
+.banner .banner-logo h1 img.logo {
   margin: 0 auto;
+  height: 100px;
+  background: rgba(125, 110, 110, 0.8);
+  padding: 10px 40px;
 }
 .banner p {
   position: absolute;
@@ -84,10 +89,47 @@
   font-size: 20px;
   background: rgba(66, 66, 66, 0.7);
 }
-.banner img {
+.banner img.main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.intro {
+  padding: 5vh 0;
+}
+.intro .article {
+  padding: 3vh 10px;
+}
+.intro .article p {
+  font-size: 1.1em;
+  line-height: 2em;
+  padding: 30px 0;
+}
+.intro .article .maintext {
+  padding: 3vh 20px;
+  width: 98%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.intro .article .maintext h4 {
+  text-align: center;
+}
+.intro .article .maintext p em {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #940505;
+}
+.intro .article .moretext {
+  background: #bed6cf;
+  padding: 3vh 20px;
+  width: 98%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.intro .article .moretext h4 {
+  text-align: center;
 }
 
 .section01 {
@@ -252,6 +294,22 @@
   width: 100%;
   max-width: 256px;
   z-index: 99;
+}
+
+#promotions .type {
+  position: relative;
+}
+#promotions .type .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+}
+#promotions .type .text p {
+  margin: 0;
+  font-style: italic;
 }
 
 .promotions {
@@ -657,6 +715,28 @@ footer .bottom li a {
   background: url("../images/gradient2.png") no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.section-12 .intro {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.section-12 .intro h4 {
+  line-height: 2em;
+}
+.section-12 .product-text h3 {
+  text-align: center;
+}
+.section-12 .product-text h3 em {
+  font-style: normal;
+  text-decoration: underline;
+}
+.section-12 .product-text h3 span {
+  font-size: 0.7em;
+}
+.section-12 .product-text p {
+  margin: 3vh auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 @media screen and (max-width: 992px) {

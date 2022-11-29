@@ -52,7 +52,7 @@
         </div>
         <div class="banner">
             <div class="banner-logo">
-                <img src="assets/images/tokio-inkarami-logo.svg" alt="TOKIO IE INKARAMI logo">
+                <h1 class="text-center"><img src="assets/images/tokio-inkarami-logo-white.png" alt="TOKIO IE INKARAMI logo" class="logo"></h1>
             </div>
 
             <p>
@@ -60,20 +60,28 @@
                  抜群の補修力で傷んだ髪をケアする<br>
                  シャンプー・トリートメント
             </p>
-            <img src="assets/images/premiumplatinum.png" alt="">
+            <img src="assets/images/premiumplatinum.png" alt="TOKIO IE INKARAMI" class="main">
         </div>
 
         <div class="container">
-            <div id="section">
+            <div class="intro" id="top-intro">
                 <div class="article">
-                  <p>Bacon ipsum dolor amet sirloin jowl turducken pork loin pig pork belly, chuck cupim tongue beef doner tri-tip pancetta spare ribs porchetta. 
-                  </p>
-                  <p class="moretext">
-                    Brisket ball tip cow sirloin. Chuck porchetta kielbasa pork chop doner sirloin, bacon beef brisket ball tip short ribs. 
-                  </p>
+                  <div class="maintext">
+                    <h4>{{getTopTitle()}}</h4>
+                    <p v-html="getTopText()"></p>
+                      <a class="moreless-button">もっと読む</a>
+                  </div>       
+                  <div class="moretext">
+                    <h4>{{getHiddenTitle()}}</h4>
+                    <p v-html="getHiddenText()"></p> 
+                  </div>
+                  <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2">
+                    <div class="ratio ratio-16x9 text-center mt-4 mb-4 ">
+                    <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/G_6CIRy4b4Q" style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
+                  </div>
+                  </div>
                 </div>
-                <a class="moreless-button">Read more</a>
-              </div>
+            </div>
         </div>
 
         <div class="container">
@@ -96,10 +104,6 @@
                     髪の主成分であるケラチンを補給し、髪を徹底的に補修します。<br>
                     そんな本格的サロンメニューをご自宅で味わえるホームケアが<br><strong>TOKIO IE(トキオアイイー)</strong>です。</p>
                 </div>
-     
-                <!-- <div class="video-link">
-                 <p><i class="lni lni-video"></i> 動画を見る</p>
-                </div> -->
              </section>
 
              <section class="section02">
@@ -194,35 +198,37 @@
              </section>
         </div>
 
-        <div class="container-fluid px-0">
+        <div class="container-fluid px-0" id="promotions">
             <div class="row">
-                <div class="col-md-4 px-0">
-                    <img src="assets/images/tokio-stars.png" alt="" class="">
+                <div class="type col-lg-4 px-0" v-for="promotion in promotions">
+                    <img :src="promotion.image" alt="" class="img-fluid">
                     <div class="text">
-                        <p>
-                        TOKIO STARS - 
-                        カミカリスマ美容師の支持率No.1
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 px-0">
-                    <img src="assets/images/promotions-img.jpg" alt="" class="">
-                    <div class="text">
-                        <p>
-                        TOKIO インカラミが誇る所属・サポートアスリート
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 px-0">
-                    <img src="assets/images/intense-building.jpg" alt="" class="">
-                    <div class="text">
-                        <p>
-                            東京・ 銀座 / GINZA SIXから世界へ発信・展開
+                        <p style="padding-left: 20px;">
+                            {{promotion.text}}
                         </p>
                     </div>
                 </div>
             </div>
-            
+        </div>
+
+        <div class="container-fluid section-12" id="bannerImage">
+            <div class="intro">
+                <h4 class="text-center">カリスマ美容師たちの支持率No.1<br>
+                    TOKIOインカラミトリートメントから生まれた<br>
+                    本格的ホームケアシリーズ</h4>
+            </div>
+            <div class="product-text">
+                <h3><em>TOKIOインカラミホームケア</em><br>
+                    <span>ラインアップ紹介</span></h3>
+                <p>各シリーズのバナーをクリックすると、それぞれ の商品ページをご覧いただくことができます。</p>
+            </div>
+            <div class="row">
+                    <div class="col-lg-4 px-0" v-for="banner in banners">      
+                        <a v-bind:href="banner.url">
+                            <img :src="banner.image" :alt="banner.product" class="img-fluid">
+                        </a>
+                    </div>
+            </div>
         </div>
 
 
@@ -612,16 +618,7 @@
 
         </div>
 
-        <div class="container-fluid section-12" id="bannerImage">
-            <div class="row">
-                    <div class="col-lg-4 px-0" v-for="banner in banners">
-                        
-                        <a v-bind:href="banner.url">
-                            <img :src="banner.image" :alt="banner.product" class="img-fluid">
-                        </a>
-                    </div>
-            </div>
-        </div>
+       
 
         <div class="container-fluid section-09" id="product-list">
              <h3>特別なTOKIOブランド</h3>
@@ -695,6 +692,7 @@
 
 <script src="assets/js/index.js"></script>
 <script src="assets/js/06-productInfo.js"></script>
+<script src="assets/js/top-intro.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -731,10 +729,10 @@
 <script>
     $('.moreless-button').click(function() {
   $('.moretext').slideToggle();
-  if ($('.moreless-button').text() == "Read more") {
-    $(this).text("Read less")
+  if ($('.moreless-button').text() == "もっと読む") {
+    $(this).text("閉じる")
   } else {
-    $(this).text("Read more")
+    $(this).text("もっと読む")
   }
 });
 </script>
