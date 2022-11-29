@@ -8,14 +8,22 @@ $tokioinkaramiBrown: rgb(125, 110, 110);
 $jpText: "Noto Sans JP", sans-serif;
 $enText: "Roboto", sans-serif;
 
-
+#section {
+    /*   width: 500px;
+      height: 400px; */
+      word-wrap: break-word;
+    }
+    
+    .moretext {
+      display: none;
+    }
 
 .navbar {
-    background: rgb(247,169,169);
-background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 100%);
+    background: rgb(248, 238, 238);
+background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 100%);
 }
 
-.br_on576 {
+.br_on576 {                                                                                                                                                                                                                                                                                                                                                 
     display: none;
 }
 .br_on992 {
@@ -59,6 +67,23 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
     // background-position: center;
     // background-size: cover;
     position: relative;
+    .banner-logo {
+        // background:rgba(66,66,66,0.7);
+        position:absolute;
+        top:2%;
+        left: 20%;
+        right: 20%;        
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        img {
+            width:100%;
+            max-width: 240px;
+            margin:0 auto;
+            
+        }
+        
+    }
 
     p {
         position: absolute;
@@ -264,7 +289,7 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
     flex-direction: row;
     .columns {
         width: calc(100% / 3);
-        padding-top: 33%;
+        aspect-ratio: 16/9;
         position: relative;
         img {
             position: absolute;
@@ -409,7 +434,7 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                 }
             }
             .text {
-                background: rgba(255, 181, 181, 0.5);
+                // background: rgba(255, 181, 181, 0.5);
                 width: 100%;
                 transform: translate(4%, 0);
                 padding: 2% 10px;
@@ -436,7 +461,7 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                 }
             }
             .text {
-                background: rgba(255, 181, 181, 0.5);
+                // background: rgba(255, 181, 181, 0.5);
                 width: 100%;
                 transform: translate(-5%, 0);
                 padding: 2% 10px;
@@ -486,8 +511,6 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                 width: 96%;
                 max-width: 540px;
                 // min-width: 400px;
-                background: rgb(247,169,169);
-background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 100%);
                 padding: 4vh 2vw;
                 margin: 3vh auto;
                 position: relative;
@@ -781,6 +804,9 @@ footer {
     .banner {
         // height:100vh;
         aspect-ratio: 0.6;
+        p {
+            bottom:2%;
+        }
     }
 
     .br_on576 {
@@ -888,6 +914,12 @@ footer {
                     font-size: 0.8em;
                 }
             }
+        }
+    }
+
+    .banner {
+        p {
+            bottom:0.5%;
         }
     }
 }

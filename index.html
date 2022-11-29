@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>【公式】TOKIO IE インカラミ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/price.css">
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -25,8 +25,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"/>
 
-
 </head>
+
+
 
 <body>
     <div class="wrapper">
@@ -50,6 +51,9 @@
             </div>
         </div>
         <div class="banner">
+            <div class="banner-logo">
+                <img src="assets/images/tokio-inkarami-logo.svg" alt="TOKIO IE INKARAMI logo">
+            </div>
 
             <p>
                 特許技術インカラミだからこそ実現!<br>
@@ -57,6 +61,19 @@
                  シャンプー・トリートメント
             </p>
             <img src="assets/images/premiumplatinum.png" alt="">
+        </div>
+
+        <div class="container">
+            <div id="section">
+                <div class="article">
+                  <p>Bacon ipsum dolor amet sirloin jowl turducken pork loin pig pork belly, chuck cupim tongue beef doner tri-tip pancetta spare ribs porchetta. 
+                  </p>
+                  <p class="moretext">
+                    Brisket ball tip cow sirloin. Chuck porchetta kielbasa pork chop doner sirloin, bacon beef brisket ball tip short ribs. 
+                  </p>
+                </div>
+                <a class="moreless-button">Read more</a>
+              </div>
         </div>
 
         <div class="container">
@@ -178,8 +195,8 @@
         </div>
 
         <div class="container-fluid px-0">
-            <div class="promotions">
-                <div class="columns" data-aos="fade-right">
+            <div class="row">
+                <div class="col-md-4 px-0">
                     <img src="assets/images/tokio-stars.png" alt="" class="">
                     <div class="text">
                         <p>
@@ -188,7 +205,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="columns" data-aos="fade-right">
+                <div class="col-md-4 px-0">
                     <img src="assets/images/promotions-img.jpg" alt="" class="">
                     <div class="text">
                         <p>
@@ -196,8 +213,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="columns" data-aos="fade-right">
-                    <img src="assets/images/intense-building.jpeg" alt="" class="">
+                <div class="col-md-4 px-0">
+                    <img src="assets/images/intense-building.jpg" alt="" class="">
                     <div class="text">
                         <p>
                             東京・ 銀座 / GINZA SIXから世界へ発信・展開
@@ -205,6 +222,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
 
 
@@ -311,7 +329,7 @@
                 <h4>共通成分＆メカニズム</h4>
             </div>
 
-            <div class="section06-products">
+            <!-- <div class="section06-products">
                 <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation">
                     <div v-for="product in products">
                         <div class="product-row">
@@ -346,7 +364,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="about">
                 <h3 class="text-center">美容室のシャンプー/トリートメントはどこが優れているの?</h3>
@@ -404,15 +422,145 @@
         </div>
 
 
+        <div id="app2" class="container">
+            <tabs>
+              <tab name="インカラミって何？" :selected="true">
+                <p>インカラミについて</p>
+                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation">
+                    <div v-for="product in products">
+                        <div class="product-row">
+                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
+                                <img :src="product.img" :alt="product.name" class="img-fluid">
+                            </div>
+                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
+                                <div class="contents">
+                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
+                                <p>{{product.description}}</p>
+                                <ul>
+                                    <li v-if="product.point1 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point1}}</li>
+                                    <li v-if="product.point2 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point2}}</li>
+                                    <li v-if="product.point3 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point3}}</li>
+                                    <li v-if="product.point4 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point4}}</li>
+                                    <li v-if="product.point5 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point5}}</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-about">
+                            <h5><span v-html="product.info"></span></h5>
+                            <h4>{{product.about}}</h4>
+                            <div class="ing-details">
+                                <p>{{product.details}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </tab>
+              <tab name="インカラミの仕組み">
+                <p>インカラミのグラフを入れる</p>
+                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation2">
+                    <div v-for="product in products">
+                        <div class="product-row">
+                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
+                                <img :src="product.img" :alt="product.name" class="img-fluid">
+                            </div>
+                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
+                                <div class="contents">
+                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
+                                <p>{{product.description}}</p>
+                                <ul>
+                                    <li v-if="product.point1 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point1}}</li>
+                                    <li v-if="product.point2 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point2}}</li>
+                                    <li v-if="product.point3 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point3}}</li>
+                                    <li v-if="product.point4 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point4}}</li>
+                                    <li v-if="product.point5 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point5}}</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-about">
+                            <h5><span v-html="product.info"></span></h5>
+                            <h4>{{product.about}}</h4>
+                            <div class="ing-details">
+                                <p>{{product.details}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </tab>
+              <tab name="TOKIOインカラミの事例">
+                <p>インカラミに関する画像</p>
+                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation3">
+                    <div v-for="product in products">
+                        <div class="product-row">
+                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
+                                <img :src="product.img" :alt="product.name" class="img-fluid">
+                            </div>
+                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
+                                <div class="contents">
+                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
+                                <p>{{product.description}}</p>
+                                <ul>
+                                    <li v-if="product.point1 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point1}}</li>
+                                    <li v-if="product.point2 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point2}}</li>
+                                    <li v-if="product.point3 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point3}}</li>
+                                    <li v-if="product.point4 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point4}}</li>
+                                    <li v-if="product.point5 === null" style="display:none;"></li>
+                                    <li v-else>{{product.point5}}</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-about">
+                            <h5><span v-html="product.info"></span></h5>
+                            <h4>{{product.about}}</h4>
+                            <div class="ing-details">
+                                <p>{{product.details}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+              </tab>
+            </tabs>
+          </div>
+
+          
+
+
    
 
         <div class="container section-07" id="user-voices">
+            
             <div class="top">
                 <h4>USERS' VOICE</h4>
                 <p>TOKIO IEユーザー様からの声</p>
             </div>
 
             <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                <div class="user-voice-list">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="assets/images/user-voice001.png" alt=" TOKIO IE ユーザー" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                            <p>ドラッグストアなどで販売されているシャンプーとは段違いで髪の毛に天使の輪っかが誕生します。</p>
+                        </div>
+                    </div>
+                </div>
                 <p class="text-center">
                     <a href="https://tokio.tokyo/shampoo-treatment/#user-voice">ユーザー様からの声を見る</a>
                 </p>
@@ -462,6 +610,17 @@
 
         <div class="container-fluid section-04">
 
+        </div>
+
+        <div class="container-fluid section-12" id="bannerImage">
+            <div class="row">
+                    <div class="col-lg-4 px-0" v-for="banner in banners">
+                        
+                        <a v-bind:href="banner.url">
+                            <img :src="banner.image" :alt="banner.product" class="img-fluid">
+                        </a>
+                    </div>
+            </div>
         </div>
 
         <div class="container-fluid section-09" id="product-list">
@@ -535,6 +694,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
 <script src="assets/js/index.js"></script>
+<script src="assets/js/06-productInfo.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -566,6 +726,17 @@
             }
         }
     })
+</script>
+
+<script>
+    $('.moreless-button').click(function() {
+  $('.moretext').slideToggle();
+  if ($('.moreless-button').text() == "Read more") {
+    $(this).text("Read less")
+  } else {
+    $(this).text("Read more")
+  }
+});
 </script>
   
 </html>

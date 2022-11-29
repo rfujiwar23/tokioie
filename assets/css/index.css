@@ -4,9 +4,19 @@
   padding: 0;
 }
 
+#section {
+  /*   width: 500px;
+    height: 400px; */
+  word-wrap: break-word;
+}
+
+.moretext {
+  display: none;
+}
+
 .navbar {
-  background: #f7a9a9;
-  background: linear-gradient(100deg, #f7a9a9 0%, #ffbae9 100%);
+  background: #f8eeee;
+  background: linear-gradient(100deg, #f8eeee 0%, #dedede 100%);
 }
 
 .br_on576 {
@@ -49,6 +59,20 @@
 .banner {
   aspect-ratio: 1.2;
   position: relative;
+}
+.banner .banner-logo {
+  position: absolute;
+  top: 2%;
+  left: 20%;
+  right: 20%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.banner .banner-logo img {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
 }
 .banner p {
   position: absolute;
@@ -236,7 +260,7 @@
 }
 .promotions .columns {
   width: calc(100% / 3);
-  padding-top: 33%;
+  aspect-ratio: 16/9;
   position: relative;
 }
 .promotions .columns img {
@@ -373,7 +397,6 @@
   background: #f9b0fd;
 }
 .section-06 .list:nth-child(odd) .text {
-  background: rgba(255, 181, 181, 0.5);
   width: 100%;
   transform: translate(4%, 0);
   padding: 2% 10px;
@@ -397,7 +420,6 @@
   background: #f9b0fd;
 }
 .section-06 .list:nth-child(even) .text {
-  background: rgba(255, 181, 181, 0.5);
   width: 100%;
   transform: translate(-5%, 0);
   padding: 2% 10px;
@@ -438,8 +460,6 @@
 .section-06 .section06-products .item .item-about {
   width: 96%;
   max-width: 540px;
-  background: #f7a9a9;
-  background: linear-gradient(100deg, #f7a9a9 0%, #ffbae9 100%);
   padding: 4vh 2vw;
   margin: 3vh auto;
   position: relative;
@@ -699,6 +719,9 @@ footer .bottom li a {
   .banner {
     aspect-ratio: 0.6;
   }
+  .banner p {
+    bottom: 2%;
+  }
 
   .br_on576 {
     display: block;
@@ -766,6 +789,10 @@ footer .bottom li a {
 @media screen and (max-width: 430px) {
   .top-sub-nav .subnav a h3 {
     font-size: 0.8em;
+  }
+
+  .banner p {
+    bottom: 0.5%;
   }
 }
 @media screen and (max-width: 375px) {

@@ -23,6 +23,18 @@ var vm = new Vue({
 
 
 var vm = new Vue({
+  el: "#bannerImage",
+  data: {
+    banners: [
+      {product: 'TOKIO IE プラチナム', image: 'assets/images/tokio-ie-platinum.jpg', url: 'https://ifing-beauty.com/products/list?category_id=15'},
+      {product: 'TOKIO IE プレミアム', image: 'assets/images/tokio-ie-premium.jpg', url: 'https://ifing-beauty.com/products/list?category_id=16'},
+      {product: 'TOKIO IE ヘッドスパ', image: 'assets/images/tokio-ie-headspa.jpg', url: 'https://ifing-beauty.com/products/list?category_id=17'}
+    ]
+  },
+});
+
+
+var vm = new Vue({
   el: "#purchase-products",
   data: {
     products: [
@@ -145,20 +157,20 @@ var vm = new Vue({
       {
         id: 1,
         alias: "User A",
-        img: "assets/images/ai-model1.png",
-        voice: `ミディアムボブから少し思い切ってベリーショート風にしたのですが会う人皆に「似合ってる！いいね！」と言ってもらえてhappyです。`,
+        img: "assets/images/user-voice001.png",
+        voice: `ドラッグストアなどで販売されているシャンプーとは段違いで髪の毛に天使の輪っかが誕生します。`,
       },
       {
         id: 2,
         alias: "User B",
-        img: "assets/images/ai-model2.png",
-        voice: `ミディアムボブから少し思い切ってベリーショート風にしたのですが会う人皆に「似合ってる！いいね！」と言ってもらえてhappyです。`,
+        img: "assets/images/user-voice002.png",
+        voice: `サッラサラの手触りツヤツヤです。泡立ちも全く問題なしで、トリートメント時は数分置いてから流してます。`,
       },
       {
         id: 3,
         alias: "User C",
-        img: "assets/images/ai-model3.png",
-        voice: `ミディアムボブから少し思い切ってベリーショート風にしたのですが会う人皆に「似合ってる！いいね！」と言ってもらえてhappyです。`,
+        img: "assets/images/user-voice003.png",
+        voice: `サロン帰りのような髪の柔らかさに仕上がるので、重宝しています！!`,
       },
       {
         id: 4,
@@ -253,7 +265,15 @@ var vm = new Vue({
           タウリン系シャンプーは、適度な洗浄力とキメ細かな泡立ちが特徴のシャンプーです。
           サッパリした仕上がりで、頭皮のバリア機能を果たす皮脂を落とし過ぎません。
           また、人体を構成するアミノ酸に近い成分で作られているため、安全性も高く敏感肌の方でも安心して使えます。`,
-      },
+      }  
+    ],
+  },
+});
+
+var vm = new Vue({
+  el: "#productInformation2",
+  data: {
+    products: [
       {
         brand: "TOKIO IEインカラミ",
         name: "プラチナム トリートメント",
@@ -271,7 +291,15 @@ var vm = new Vue({
         details: `
         メドウフォームは、加熱するとケラチンと結合し、疎水化を促します。髪が疎水化すると、水をはじき、油をなじませることで常に一定の水分量を保たれます。メドウフォームが髪の内外部に吸着して水をはじき、健康な髪へと導いてくれます。  
         `,
-      },
+      }
+    ],
+  },
+});
+
+var vm = new Vue({
+  el: "#productInformation3",
+  data: {
+    products: [
       {
         brand: "TOKIO IEインカラミ",
         name: "プラチナム トリートメント",
