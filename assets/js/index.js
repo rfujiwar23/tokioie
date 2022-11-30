@@ -58,12 +58,12 @@ var vm = new Vue({
   el: "#purchase-products",
   data: {
     products: [
-      {name: 'プラチナム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/tokioinkarami.png', price: '8000', taxPrice: '8800'},
-      {name: 'プラチナム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pl.png', price: '8000', taxPrice: '8800'},
-      {name: 'プレミアム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-pr.png', price: '8000', taxPrice: '8800'},
-      {name: 'プレミアム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pr.png', price: '8000', taxPrice: '8800'},
-      {name: 'ヘッドスパ 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-shtr.png', price: '8000', taxPrice: '8800'},
-      {name: 'ヘッドスパ 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-shtr.png', price: '8000', taxPrice: '8800'},
+      {name: 'プラチナム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-pl.png', price: '7790'},
+      {name: 'プラチナム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pl.png', price: '11590'},
+      {name: 'プレミアム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-pr.png', price: '8930'},
+      {name: 'プレミアム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pr.png', price: '13110'},
+      {name: 'ヘッドスパ 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-hs.png', price: '8550'},
+      {name: 'ヘッドスパ 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-hs.png', price: '12540'},
     ]
   },
 });
