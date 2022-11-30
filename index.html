@@ -429,36 +429,38 @@
 
 
         <div class="container section" id="app5">
-            <div class="tabs" v-cloak>
-              <ul>
-                <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
-                    <a @click.prevent="show = index">{{tab.title}}</a>
-                </li>
-              </ul>
-            </div>
-            <div class="texts" v-cloak>
-              <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
-                <div v-for="(tab, index) in tabs" v-if="show == index" :key="index">
-                    <div class="col-lg-4 offset-lg-4 div col-md-6 offset-md-3 col-sm-6 offset-sm-3">
-                        <img src="assets/images/tokioinkarami.png" :alt="tab.title" class="img-fluid">
-                    </div>
-                    <div v-html="tab.content"></div>
+            <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <div class="tabs" v-cloak>
                     <ul>
-                        <li v-if="tab.list1 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list1}}</li>
-                        <li v-if="tab.list2 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list2}}</li>
-                        <li v-if="tab.list3 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list3}}</li>
-                        <li v-if="tab.list4 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list4}}</li>
-                        <li v-if="tab.list5 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list5}}</li>
+                      <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
+                          <a @click.prevent="show = index">{{tab.title}}</a>
+                      </li>
                     </ul>
-                    <h4>{{tab.ingredientTitle}}</h4>
-                    <div class="ingredient-description" v-html="tab.ingredientDesc"></div>
-                </div>
-              </transition-group>
+                  </div>
+                  <div class="texts" v-cloak>
+                    <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
+                      <div v-for="(tab, index) in tabs" v-if="show == index" :key="index">
+                          <div class="col-lg-4 offset-lg-4 div col-md-6 offset-md-3 col-sm-6 offset-sm-3">
+                              <img src="assets/images/tokioinkarami.png" :alt="tab.title" class="img-fluid">
+                          </div>
+                          <div v-html="tab.content"></div>
+                          <ul>
+                              <li v-if="tab.list1 === null" style="display:none;"></li>
+                              <li v-else>{{tab.list1}}</li>
+                              <li v-if="tab.list2 === null" style="display:none;"></li>
+                              <li v-else>{{tab.list2}}</li>
+                              <li v-if="tab.list3 === null" style="display:none;"></li>
+                              <li v-else>{{tab.list3}}</li>
+                              <li v-if="tab.list4 === null" style="display:none;"></li>
+                              <li v-else>{{tab.list4}}</li>
+                              <li v-if="tab.list5 === null" style="display:none;"></li>
+                              <li v-else>{{tab.list5}}</li>
+                          </ul>
+                          <h4>{{tab.ingredientTitle}}</h4>
+                          <div class="ingredient-description" v-html="tab.ingredientDesc"></div>
+                      </div>
+                    </transition-group>
+                  </div>
             </div>
         </div>
 
