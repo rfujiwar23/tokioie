@@ -4,6 +4,22 @@
   padding: 0;
 }
 
+.section {
+  padding: 2em 0;
+}
+
+.fade-up-enter-active,
+.fade-up-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.fade-up-enter,
+.fade-up-leave-to {
+  height: 0;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
 #section {
   /*   width: 500px;
     height: 400px; */

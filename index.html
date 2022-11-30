@@ -428,121 +428,43 @@
         </div>
 
 
-        <div id="app2" class="container">
-            <tabs>
-              <tab name="インカラミって何？" :selected="true">
-                <p>インカラミについて</p>
-                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation">
-                    <div v-for="product in products">
-                        <div class="product-row">
-                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
-                                <img :src="product.img" :alt="product.name" class="img-fluid">
-                            </div>
-                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
-                                <div class="contents">
-                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
-                                <p>{{product.description}}</p>
-                                <ul>
-                                    <li v-if="product.point1 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point1}}</li>
-                                    <li v-if="product.point2 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point2}}</li>
-                                    <li v-if="product.point3 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point3}}</li>
-                                    <li v-if="product.point4 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point4}}</li>
-                                    <li v-if="product.point5 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point5}}</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-about">
-                            <h5><span v-html="product.info"></span></h5>
-                            <h4>{{product.about}}</h4>
-                            <div class="ing-details">
-                                <p>{{product.details}}</p>
-                            </div>
-                        </div>
+        <div class="container section" id="app5">
+            <div class="tabs" v-cloak>
+              <ul>
+                <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
+                    <a @click.prevent="show = index">{{tab.title}}</a>
+                </li>
+              </ul>
+            </div>
+            <div class="texts" v-cloak>
+              <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
+                <div v-for="(tab, index) in tabs" v-if="show == index" :key="index">
+                    <div class="col-lg-4 offset-lg-4 div col-md-6 offset-md-3 col-sm-6 offset-sm-3">
+                        <img src="assets/images/tokioinkarami.png" :alt="tab.title" class="img-fluid">
                     </div>
+                    <div v-html="tab.content"></div>
+                    <ul>
+                        <li v-if="tab.list1 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list1}}</li>
+                        <li v-if="tab.list2 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list2}}</li>
+                        <li v-if="tab.list3 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list3}}</li>
+                        <li v-if="tab.list4 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list4}}</li>
+                        <li v-if="tab.list5 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list5}}</li>
+                    </ul>
+                    <h4>{{tab.ingredientTitle}}</h4>
+                    <div class="ingredient-description" v-html="tab.ingredientDesc"></div>
                 </div>
-              </tab>
-              <tab name="インカラミの仕組み">
-                <p>インカラミのグラフを入れる</p>
-                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation2">
-                    <div v-for="product in products">
-                        <div class="product-row">
-                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
-                                <img :src="product.img" :alt="product.name" class="img-fluid">
-                            </div>
-                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
-                                <div class="contents">
-                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
-                                <p>{{product.description}}</p>
-                                <ul>
-                                    <li v-if="product.point1 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point1}}</li>
-                                    <li v-if="product.point2 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point2}}</li>
-                                    <li v-if="product.point3 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point3}}</li>
-                                    <li v-if="product.point4 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point4}}</li>
-                                    <li v-if="product.point5 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point5}}</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-about">
-                            <h5><span v-html="product.info"></span></h5>
-                            <h4>{{product.about}}</h4>
-                            <div class="ing-details">
-                                <p>{{product.details}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </tab>
-              <tab name="TOKIOインカラミの事例">
-                <p>インカラミに関する画像</p>
-                <div class="item col-lg-10 offset-lg-1 col-md-10 offset-md-1" id="productInformation3">
-                    <div v-for="product in products">
-                        <div class="product-row">
-                            <div class="img col-lg-5 col-md-4 col-sm-4 d-flex align-items-center justify-content-center">
-                                <img :src="product.img" :alt="product.name" class="img-fluid">
-                            </div>
-                            <div class="details col-lg-7 col-md-8 col-sm-8 d-flex align-items-center justify-content-center">
-                                <div class="contents">
-                                    <h2>{{product.brand}}<br><span>{{product.name}}</span></h2>
-                                <p>{{product.description}}</p>
-                                <ul>
-                                    <li v-if="product.point1 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point1}}</li>
-                                    <li v-if="product.point2 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point2}}</li>
-                                    <li v-if="product.point3 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point3}}</li>
-                                    <li v-if="product.point4 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point4}}</li>
-                                    <li v-if="product.point5 === null" style="display:none;"></li>
-                                    <li v-else>{{product.point5}}</li>
-                                </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item-about">
-                            <h5><span v-html="product.info"></span></h5>
-                            <h4>{{product.about}}</h4>
-                            <div class="ing-details">
-                                <p>{{product.details}}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-              </tab>
-            </tabs>
-          </div>
+              </transition-group>
+            </div>
+        </div>
+
+
+
+          
 
           
 
@@ -668,6 +590,8 @@
            </div>
         </div>
 
+
+        
         
 
         <footer id="footer-links">
@@ -690,15 +614,15 @@
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
+
 <script src="assets/js/index.js"></script>
 <script src="assets/js/06-productInfo.js"></script>
 <script src="assets/js/top-intro.js"></script>
-
+<script src="assets/js/tab.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
   </script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <!-- Owl Carousel -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -736,5 +660,7 @@
   }
 });
 </script>
+
+
   
 </html>
