@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .section {
@@ -112,10 +113,11 @@
 }
 
 .intro {
-  padding: 5vh 0;
+  padding: 5vh 0 0;
 }
 .intro .article {
-  padding: 3vh 10px;
+  padding: 3vh 10px 1vh;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .intro .article p {
   font-size: 1.1em;
@@ -123,25 +125,34 @@
   padding: 30px 0;
 }
 .intro .article .maintext {
-  padding: 3vh 20px;
+  padding: 3vh 0;
   width: 98%;
   max-width: 1024px;
   margin: 0 auto;
 }
 .intro .article .maintext h4 {
   text-align: center;
+  margin-bottom: 3vh;
+  font-weight: bold;
 }
-.intro .article .maintext p em {
+.intro .article .maintext .contents {
+  border: 1px solid #282828;
+  padding: 2vh 2vw;
+  width: 98%;
+  max-width: 960px;
+  margin: 0 auto;
+  line-height: 2em;
+}
+.intro .article .maintext .contents em {
   font-style: normal;
   font-weight: bold;
   font-size: 1.25em;
-  color: #940505;
 }
 .intro .article .moretext {
-  background: #bed6cf;
-  padding: 3vh 20px;
-  width: 98%;
-  max-width: 1024px;
+  border: 1px solid #282828;
+  padding: 2vh 2vw;
+  width: 96%;
+  max-width: 960px;
   margin: 0 auto;
 }
 .intro .article .moretext h4 {
@@ -733,11 +744,13 @@ footer .bottom li a {
   background-position: center;
 }
 
-.section-12 .intro {
+.section-12 .section-12a {
+  padding: 5vh 0;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-12 .intro h4 {
+.section-12 .section-12a h4 {
   line-height: 2em;
+  color: #940505;
 }
 .section-12 .product-text h3 {
   text-align: center;

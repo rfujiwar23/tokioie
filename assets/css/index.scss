@@ -3,6 +3,7 @@ $tokioinkaramiBrown: rgb(125, 110, 110);
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 $jpText: "Noto Sans JP", sans-serif;
@@ -116,39 +117,49 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
 }
 
 .intro {
-    padding:5vh 0;
+    padding:5vh 0 0;
     .article {
-        padding:3vh 10px;
+        padding:3vh 10px 1vh;
         p {
             font-size: 1.1em;
             line-height: 2em;
             padding:30px 0;
         }
+        font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
         .maintext {
-            padding:3vh 20px;
+            padding:3vh 0;
             h4 {
                 text-align: center;
+                margin-bottom: 3vh;
+                font-weight: bold;
             }
             width:98%;
             max-width: 1024px;
             margin:0 auto;
-            p {
-                em {
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 1.25em;
-                    color:rgb(148, 5, 5);
-                }
+            
+            .contents {
+                border:1px solid #282828;
+                padding:2vh 2vw;
+                width:98%;
+                max-width: 960px;
+                margin:0 auto;
+                line-height: 2em;
+                    em {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 1.25em;
+                    }
+                
             }
         }
         .moretext {
-            background:#bed6cf;
-            padding:3vh 20px;
+            border:1px solid #282828;
+            padding:2vh 2vw;
+            width:96%;
+            max-width: 960px;
             h4 {
                 text-align: center;
             }
-            width:98%;
-            max-width: 1024px;
             margin:0 auto;
         }
     }
@@ -806,10 +817,13 @@ footer {
 }
 
 .section-12 {
-    .intro {
+    
+    .section-12a {
+        padding:5vh 0;
         font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
         h4 {
             line-height: 2em;
+            color:rgb(148, 5, 5);
         }
     }
     .product-text {
