@@ -336,3 +336,32 @@ var vm = new Vue({
     ],
   },
 });
+
+var vm = new Vue({
+  el: "#ingredients",
+  data: {
+    products: [
+      {
+        tokioNumber: "1",
+        keratinType: "羽毛ケラチン",
+        description: `水鳥の羽毛が原料のケラチン。<br>
+        髪を軽くて柔らかい仕上がりに導きます。`,
+      },
+      {
+        tokioNumber: "2",
+        keratinType: "ケラチンアミノ酸",
+        description: `水鳥の羽毛が原料のケラチン。<br>
+        髪を軽くて柔らかい仕上がりに導きます。`,
+      },
+      {
+        tokioNumber: "3",
+        keratinType: "羊毛ケラチン",
+        description: `内部補修、ハリ、強さをもたらします。<br>
+        TOKIO IEの補修効果を完結させます。`,
+      },
+      
+    ],
+  },
+});
+
+

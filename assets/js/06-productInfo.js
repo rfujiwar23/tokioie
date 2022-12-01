@@ -1,55 +1,49 @@
+var tabs = [
+  {
+    title: "ダウン&フェザーケラチン",
+    subtitle1: "ダウンケラチン",
+    content1: "タ水鳥の胸から取れるケラチン。<br>柔らかく水に強い髪に導きます。 ",
+    subtitle2: "フェザーケラチン",
+    content2: "水鳥の羽根から取れるケラチン。<br>軽くて強い髪に導きます。",
+    img: "assets/images/tokio1.png"
+  },
+  {
+    title: "ケラチンアミノ酸",
+    content1: "最も補修力が高くサイズの小さ いケラチンです。毛髪内部に入り込み、特許技術インカラミ反応を起こします。 ",
+    img: "assets/images/tokio2.png"
+  },
+  {
+    title: "羊毛ケラチン",
+    content1: "毛髪にハリコシをもたらします。特許技術インカラミ反応が完結し、強くて軽くて柔らかい髪質に導きます。",
+    img: "assets/images/tokio3.png"
 
-Vue.component('tabs', {
-    template: `
-      <div>
-        <div class="tabs is-centered">
-          <ul>
-            <li v-for="tab in tabs" :class="{ 'is-active': tab.isActive }">
-              <a :href="tab.href" @click="selectTab(tab)">{{ tab.name }}</a>
-            </li>
-          </ul>
-        </div>
+  },
+  {
+    title: "セラミド/18MEA",
+    content1: "保湿力をサポートし、紫外線や細菌、誇りなどの外部刺激から皮膚を守ります。",
+    img: "assets/images/tokio4.png"
+  },
   
-        <div class="tabs-details">
-          <slot></slot>
-        </div>
-      </div>
-    `,
-    data() {
-      return { tabs: [] }
-    },
-    created() {
-      this.tabs = this.$children;
-    },
-    methods: {
-      selectTab: function(selectedTab) {
-        this.tabs.forEach(tab => {
-          tab.isActive = (tab.name == selectedTab.name);
-        });
-      }
-    }
-  });
-  
-  Vue.component('tab', {
-    props: {
-      name: { required: true },
-      selected: { default: false }
-    },
-    template: `<div v-show="isActive"><slot></slot></div>`,
-    data() {
-      return { isActive: false }
-    },
-    computed: {
-      href() {
-        return '#' + this.name.toLowerCase().replace(/ /g , '-');
+];
+
+var vue = new Vue({
+  el: "#tokio1-4",
+  data: {
+    show: 0,
+    tabs
+  },
+  methods:{
+    navigate: function(e){
+      if (e.target.dataset.show) {
+        e.preventDefault();
+        this.show = e.target.dataset.show;
       }
     },
-    mounted() {
-      this.isActive = this.selected;
+    alerts: function(e){
+      if (e.target.dataset.alert) {
+        e.preventDefault();
+        alert(e.target.dataset.alert);
+      }
     }
-  });
-  
-  new Vue({
-    el: '#app2',
-  });
-  
+  }
+});

@@ -76,6 +76,9 @@
 
         <div class="container">
             <div class="intro" id="top-intro">
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-center"><a href="https://ifing-beauty.com" class="btn btn-success" width="100%">購入ページへ</a></p>
+                </div>
                 <div class="article">
                     <div class="maintext">
                         <h4 data-aos="fade-up">{{getTopTitle()}}</h4>
@@ -233,6 +236,7 @@
                 </div>
             </div>
         </div>
+        
 
         <div class="container-fluid section-12 px-0" id="bannerImage">
             <div class="section-12a">
@@ -240,6 +244,10 @@
                     TOKIOインカラミトリートメントから生まれた<br>
                     本格的ホームケアシリーズ</h4>
             </div>
+
+            
+
+
             <div class="product-text">
                 <h3><img src="assets/images/tokio-inkarami-landscape.svg" alt="TOKIO インカラミ"><em>ホームケア</em><br>
                     <span>ラインアップ紹介</span>
@@ -258,54 +266,53 @@
 
         <hr>
 
+
+        <div class="container-fluid section-14" id="tokio1-4">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <p class="scrollable">右ににスクロールできます <i class="fa-solid fa-arrow-right"></i></p>
+                <div class="tabs is-centered" style="margin-bottom:0;" v-cloak>
+                    <ul style="padding:0;">
+                        <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
+                            <a @click.prevent="show = index">{{tab.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="texts" v-cloak>
+                    <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
+                        <div v-for="(tab, index) in tabs" v-if="show == index" :key="index" class="row col-lg-10 offset-lg-1">
+                            <div class="col-sm-6 col-4 img pb-3 px-3 d-flex align-items-center">
+                                <img :src="tab.img" :alt="tab.title" class="img-fluid">
+                            </div>
+                            <div class="col-sm-6 col-8 d-flex align-items-center justify-content-center">
+                                <div class="ingredient-details">
+                                    <h2>{{tab.title}}</h2>
+                                <h4 v-if="tab.subtitle1 === null" style="display:none;"></h4>
+                                <h4 v-else>{{tab.subtitle1}}</h4>
+                                <div class="dp">
+                                <p v-html="tab.content1"></p>
+                                </div>
+                                <h4 v-if="tab.subtitle2 === null" style="display:none;"></h4>
+                                <h4 v-else>{{tab.subtitle2}}</h4>
+                                <div class="dp">
+                                <p v-html="tab.content2"></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </transition-group>
+                </div>
+            </div>
+        </div>
+
         <div class="container section-06">
             <div class="title-contents">
                 <p>TOKIO IE インカラミ</p>
                 <h4>共通成分＆メカニズム</h4>
             </div>
 
-            <div class="list">
-                <div class="img">
-                    <img src="assets/images/img001.PNG" alt="cat">
-                    <!-- あなたは絶対いくらわが発展屋というのの限りに思わただ。 -->
-                </div>
-                <div class="text">
-                    <div class="contents">
-                        <h3>羽毛ケラチン</h3>
-                        <p>水鳥の羽毛が原料のケラチン。<br>
-                            髪を軽くて柔らかい仕上がりに導きます。</p>
-                    </div>
-                </div>
-            </div>
+            
 
-            <div class="list">
-
-                <div class="text">
-                    <div class="contents">
-                        <h3>羽毛ケラチン</h3>
-                        <p>水鳥の羽毛が原料のケラチン。<br>
-                            髪を軽くて柔らかい仕上がりに導きます。</p>
-                    </div>
-                </div>
-                <div class="img">
-                    <img src="assets/images/img002.PNG" alt="cat">
-                    <!-- あなたは絶対いくらわが発展屋というのの限りに思わただ。 -->
-                </div>
-            </div>
-
-            <div class="list">
-                <div class="img">
-                    <img src="assets/images/img003.PNG" alt="cat">
-                    <!-- あなたは絶対いくらわが発展屋というのの限りに思わただ。 -->
-                </div>
-                <div class="text">
-                    <div class="contents">
-                        <h3>羽毛ケラチン</h3>
-                        <p>水鳥の羽毛が原料のケラチン。<br>
-                            髪を軽くて柔らかい仕上がりに導きます。</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <div class="about">
                 <h3><span>Q.</span>ケラチンとは何？</h3>
@@ -445,15 +452,11 @@
             </div>
         </div>
 
-
-
         <div class="container section-07" id="user-voices">
-
             <div class="top">
                 <h4>USERS' VOICE</h4>
                 <p>TOKIO IEユーザー様からの声</p>
             </div>
-
             <div class="col-lg-12">
                 <div class="user-voice-list row my-5">
                     <div class="col-md-6 my-2" v-for="user in userVoices">
@@ -473,6 +476,7 @@
             </div>
         </div>
 
+        
         <div class="section-05">
             <h4 class="text-center">商品一覧</h4>
             <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
@@ -495,8 +499,6 @@
             </div>
         </div>
 
-
-
         <div class="container-fluid section-08">
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12 subscription-image">
                 <img src="assets/images/img-sub002.jpg" alt="定期について" class="img-fluid">
@@ -507,7 +509,6 @@
                     <div class="subscription-message" v-for="message in messages">
                         <h2>{{message.reasonNo}}</h2>
                         <h5>{{message.reasonHeader}}</h5>
-
                         <div class="message-text" v-html="message.reasonText"></div>
                     </div>
                 </div>

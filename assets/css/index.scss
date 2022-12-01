@@ -879,6 +879,50 @@ footer {
         }
     }
   }
+
+
+  .section-14 {
+    padding: 2em 0;
+    .scrollable {
+        text-align: right;
+        font-size: 0.8em;
+        margin-bottom: 0;
+        color:rgb(110, 110, 110);
+        i {
+            font-size: 0.8em;
+        }
+        display: none;
+    }
+    .texts {
+        // background:rgb(236, 236, 161);
+        padding:0 10px;
+        .img {
+            // background:#fff;
+            padding:2vh 3vw;
+        }
+        .ingredient-details {
+            padding:2vh 0;
+            h2 {
+                font-size: 1.2em;
+                text-decoration: underline;
+            }
+            h4 {
+                font-size:1.15em;
+                font-style: italic;
+                margin-bottom: 5px;
+                margin-top: 10px;
+                color:rgb(151, 137, 137);
+            }
+            .dp {
+                
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+  }
   
   .fade-up-enter-active,
   .fade-up-leave-active {
@@ -954,6 +998,12 @@ footer {
             }
         }
     }
+
+    .section-14 {
+        .scrollable {
+            display: block;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -962,6 +1012,20 @@ footer {
         aspect-ratio: 0.6;
         p {
             bottom:2%;
+        }
+    }
+
+    .intro {
+        .article {
+            padding:3vh 0 1vh;
+            p {
+                font-size: 1em;
+            }
+            .moretext {
+                h4 {
+                    font-size: 1.5em;
+                }
+            }
         }
     }
 
@@ -1012,9 +1076,36 @@ footer {
             }
         }
     }
+
+    
 }
 
 @media screen and (max-width: 500px) {
+
+    .intro {
+        .article {
+            padding:3vh 0 1vh;
+            p {
+                font-size: 0.9em;
+            }
+            .moretext {
+                h4 {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+    .banner {
+        .banner-logo {
+            h1 {
+                img.logo {
+                    height: 80px;
+                    padding:10px 40px;
+                }
+            }
+        }
+    }
     .section01 {
         padding:8vh 0;
     }
@@ -1059,6 +1150,45 @@ footer {
             }
         }
     }
+
+    .section-12 {
+        .section-12a {
+            h4 {
+                font-size: 1.25em;
+            }
+        }
+    }
+    .section-14 {
+        padding: 2em 0;
+        .texts {
+            padding:0 10px;
+            .img {
+                padding:2vh 3vw;
+            }
+            .ingredient-details {
+                padding:2vh 0;
+                h2 {
+                    font-size: 1.2em;
+                    text-decoration: underline;
+                }
+                h4 {
+                    font-size:1em;
+                    font-style: italic;
+                    margin-bottom: 5px;
+                    margin-top: 10px;
+                    
+                }
+                .dp {
+                    
+                    p {
+                        margin-bottom: 0;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+        }
+    
+      }
 }
 
 
@@ -1076,6 +1206,24 @@ footer {
     .banner {
         p {
             bottom:0.5%;
+        }
+    }
+
+    .section-12 {
+        .section-12a {
+            h4 {
+                font-size: 1.15em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .section-12 {
+        .section-12a {
+            h4 {
+                font-size: 1.1em;
+            }
         }
     }
 }

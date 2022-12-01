@@ -789,6 +789,43 @@ footer .bottom li a {
   margin: 0 5px 0 10px;
 }
 
+.section-14 {
+  padding: 2em 0;
+}
+.section-14 .scrollable {
+  text-align: right;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: #6e6e6e;
+  display: none;
+}
+.section-14 .scrollable i {
+  font-size: 0.8em;
+}
+.section-14 .texts {
+  padding: 0 10px;
+}
+.section-14 .texts .img {
+  padding: 2vh 3vw;
+}
+.section-14 .texts .ingredient-details {
+  padding: 2vh 0;
+}
+.section-14 .texts .ingredient-details h2 {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+.section-14 .texts .ingredient-details h4 {
+  font-size: 1.15em;
+  font-style: italic;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #978989;
+}
+.section-14 .texts .ingredient-details .dp p {
+  margin-bottom: 0;
+}
+
 .fade-up-enter-active,
 .fade-up-leave-active {
   transition: all 0.3s ease-in-out;
@@ -856,6 +893,10 @@ footer .bottom li a {
     background: #940505;
     color: #fff;
   }
+
+  .section-14 .scrollable {
+    display: block;
+  }
 }
 @media screen and (max-width: 576px) {
   .banner {
@@ -863,6 +904,16 @@ footer .bottom li a {
   }
   .banner p {
     bottom: 2%;
+  }
+
+  .intro .article {
+    padding: 3vh 0 1vh;
+  }
+  .intro .article p {
+    font-size: 1em;
+  }
+  .intro .article .moretext h4 {
+    font-size: 1.5em;
   }
 
   .br_on576 {
@@ -899,6 +950,21 @@ footer .bottom li a {
   }
 }
 @media screen and (max-width: 500px) {
+  .intro .article {
+    padding: 3vh 0 1vh;
+  }
+  .intro .article p {
+    font-size: 0.9em;
+  }
+  .intro .article .moretext h4 {
+    font-size: 1.25em;
+  }
+
+  .banner .banner-logo h1 img.logo {
+    height: 80px;
+    padding: 10px 40px;
+  }
+
   .section01 {
     padding: 8vh 0;
   }
@@ -927,6 +993,37 @@ footer .bottom li a {
   .section-06 .list:nth-child(odd) .text {
     transform: translate(4%, 0);
   }
+
+  .section-12 .section-12a h4 {
+    font-size: 1.25em;
+  }
+
+  .section-14 {
+    padding: 2em 0;
+  }
+  .section-14 .texts {
+    padding: 0 10px;
+  }
+  .section-14 .texts .img {
+    padding: 2vh 3vw;
+  }
+  .section-14 .texts .ingredient-details {
+    padding: 2vh 0;
+  }
+  .section-14 .texts .ingredient-details h2 {
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
+  .section-14 .texts .ingredient-details h4 {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .section-14 .texts .ingredient-details .dp p {
+    margin-bottom: 0;
+    font-size: 0.9em;
+  }
 }
 @media screen and (max-width: 430px) {
   .top-sub-nav .subnav a h3 {
@@ -935,6 +1032,15 @@ footer .bottom li a {
 
   .banner p {
     bottom: 0.5%;
+  }
+
+  .section-12 .section-12a h4 {
+    font-size: 1.15em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .section-12 .section-12a h4 {
+    font-size: 1.1em;
   }
 }
 @media screen and (max-width: 375px) {
