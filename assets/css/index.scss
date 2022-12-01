@@ -21,10 +21,7 @@ $enText: "Roboto", sans-serif;
       display: none;
     }
 
-.navbar {
-    background: rgb(248, 238, 238);
-background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 100%);
-}
+
 
 .br_on576 {                                                                                                                                                                                                                                                                                                                                                 
     display: none;
@@ -32,37 +29,50 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
 .br_on992 {
     display: none;
 }
-.top-sub-nav {
-    .subnav {
-        margin: 2vh 0;
-        border-right: 1px solid #7d6e6e;
-        &:nth-last-child(1) {
-            border-right: none;
-        }
-        a {
-            text-decoration: none;
 
-            h3 {
-                font-size: 1em;
-                text-align: center;
-                margin-bottom: 0;
-                color: rgb(66, 66, 66);
-            }
-            p {
-                margin-top: 5px;
-                text-align: center;
-                margin-bottom: 0;
-                i {
-                    font-size: 20px;
-                    color: rgb(149, 113, 113);
-                }
-            }
+.top-nav-bar {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    .navbar {
+        background: rgb(248, 238, 238);
+    background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 100%);
+    }
+    .top-sub-nav {
+        .subnav {
+            margin: 2vh 0;
+            border-right: 1px solid #7d6e6e;
             &:nth-last-child(1) {
                 border-right: none;
+            }
+            a {
+                text-decoration: none;
+    
+                h3 {
+                    font-size: 1em;
+                    text-align: center;
+                    margin-bottom: 0;
+                    color: rgb(66, 66, 66);
+                }
+                p {
+                    margin-top: 5px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    i {
+                        font-size: 20px;
+                        color: rgb(149, 113, 113);
+                    }
+                }
+                &:nth-last-child(1) {
+                    border-right: none;
+                }
             }
         }
     }
 }
+
 
 .banner {
     aspect-ratio: 1.2;
