@@ -176,28 +176,22 @@ var vm = new Vue({
     userVoices: [
       {
         id: 1,
-        alias: "User A",
+        alias: "A様",
         img: "assets/images/user-voice001.png",
-        voice: `ドラッグストアなどで販売されているシャンプーとは段違いで髪の毛に天使の輪っかが誕生します。`,
+        voice: `硬い・多い・ごわつき、うねりが気になる髪質が、段々と改善されていきます。`,
       },
       {
         id: 2,
-        alias: "User B",
+        alias: "B様",
         img: "assets/images/user-voice002.png",
-        voice: `サッラサラの手触りツヤツヤです。泡立ちも全く問題なしで、トリートメント時は数分置いてから流してます。`,
+        voice: `妊娠中に愛用していたシャンプーが合わなくなり、優しい成分のこちらにのりかえました。`,
       },
-      {
-        id: 3,
-        alias: "User C",
-        img: "assets/images/user-voice003.png",
-        voice: `サロン帰りのような髪の柔らかさに仕上がるので、重宝しています！!`,
-      },
-      {
-        id: 4,
-        alias: "User D",
-        img: "assets/images/ai-model4.png",
-        voice: `ミディアムボブから少し思い切ってベリーショート風にしたのですが会う人皆に「似合ってる！いいね！」と言ってもらえてhappyです。`,
-      },
+      // {
+      //   id: 3,
+      //   alias: "C様",
+      //   img: "assets/images/user-voice003.png",
+      //   voice: `ドライヤーで乾かす時から毛先がパサつかず収まり髪も柔らかくサラサラで感動です！`,
+      // }
     ],
   },
 });

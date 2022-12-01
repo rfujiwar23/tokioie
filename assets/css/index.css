@@ -133,10 +133,7 @@
   font-size: 1.25em;
 }
 .intro .article .moretext {
-  border: 1px solid #282828;
-  padding: 2vh 2vw;
-  width: 96%;
-  max-width: 960px;
+  padding: 4vh 0;
   margin: 0 auto;
 }
 .intro .article .moretext h4 {
@@ -564,6 +561,12 @@
   text-align: center;
   color: red;
 }
+.section-07 .user-voice-list .voice-text p {
+  border: 1px solid #9a9a9a;
+  padding: 2vh 10px;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
 .section-07 .user-voice {
   width: 100%;
   padding: 20px;
@@ -742,19 +745,26 @@ footer .bottom li a {
   padding: 4vh 0;
 }
 .section-12 .product-text h3 {
+  width: 90%;
+  max-width: 360px;
+  margin: 0 auto;
   text-align: center;
+  line-height: 2em;
 }
 .section-12 .product-text h3 em {
   font-style: normal;
   text-decoration: underline;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .section-12 .product-text h3 span {
   font-size: 0.7em;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .section-12 .product-text p {
   margin: 3vh auto;
   padding: 0 20px;
   text-align: center;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 
 .section-13 {
@@ -773,6 +783,9 @@ footer .bottom li a {
 }
 .section-13 .texts ul li::before {
   content: "※";
+  font-weight: bold;
+  font-size: 0.8em;
+  color: #940505;
   margin: 0 5px 0 10px;
 }
 

@@ -141,10 +141,10 @@ background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 1
             }
         }
         .moretext {
-            border:1px solid #282828;
-            padding:2vh 2vw;
-            width:96%;
-            max-width: 960px;
+            // border:1px solid #282828;
+            padding:4vh 0;
+            // width:96%;
+            // max-width: 960px;
             h4 {
                 text-align: center;
             }
@@ -619,6 +619,20 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         // font-size: 40px;
         color: red;
     }
+    .user-voice-list {
+        
+        .voice-text {
+           
+            p {
+                border: 1px solid #9a9a9a;
+                padding:2vh 10px;
+                margin-bottom: 0;
+                border-radius: 10px;
+                
+                
+            }
+        }
+    }
     .user-voice {
         width: 100%;
         padding: 20px;
@@ -819,13 +833,19 @@ footer {
     .product-text {
         padding:4vh 0;
         h3 {
+            width: 90%;
+            max-width: 360px;
+            margin:0 auto;
             text-align: center;
+            line-height: 2em;
             em {
                 font-style: normal;
                 text-decoration: underline;
+                font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
             }
             span {
                 font-size: 0.7em;
+                font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
             }
             
         }
@@ -833,6 +853,7 @@ footer {
             margin:3vh auto;
             padding:0 20px;
             text-align: center;
+            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
         }
     }
 }
@@ -850,6 +871,9 @@ footer {
             padding:0;
             li::before {
                 content: '※';
+                font-weight: bold;
+                font-size: 0.8em;
+                color:rgb(148, 5, 5);
                 margin:0 5px 0 10px;
             }
         }
