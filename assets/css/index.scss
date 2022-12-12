@@ -1,4 +1,5 @@
 $tokioinkaramiBrown: rgb(125, 110, 110);
+$JPMincho: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 
 * {
     margin: 0;
@@ -9,21 +10,17 @@ $tokioinkaramiBrown: rgb(125, 110, 110);
 $jpText: "Noto Sans JP", sans-serif;
 $enText: "Roboto", sans-serif;
 
-
-
 #section {
     /*   width: 500px;
       height: 400px; */
-      word-wrap: break-word;
-    }
-    
-    .moretext {
-      display: none;
-    }
+    word-wrap: break-word;
+}
 
+.moretext {
+    display: none;
+}
 
-
-.br_on576 {                                                                                                                                                                                                                                                                                                                                                 
+.br_on576 {
     display: none;
 }
 .br_on992 {
@@ -38,9 +35,11 @@ $enText: "Roboto", sans-serif;
     right: 0;
     .navbar {
         background: rgb(248, 238, 238);
-    background: linear-gradient(100deg, rgba(248,238,238,1) 0%, rgb(222, 222, 222) 100%);
+        background: linear-gradient(100deg, rgba(248, 238, 238, 1) 0%, rgb(222, 222, 222) 100%);
     }
     .top-sub-nav {
+        background: rgb(255,244,240);
+background: linear-gradient(180deg, rgba(255,244,240,1) 0%, rgba(255,255,255,1) 88%);
         .subnav {
             margin: 2vh 0;
             border-right: 1px solid #7d6e6e;
@@ -49,7 +48,7 @@ $enText: "Roboto", sans-serif;
             }
             a {
                 text-decoration: none;
-    
+
                 h3 {
                     font-size: 1em;
                     text-align: center;
@@ -73,26 +72,28 @@ $enText: "Roboto", sans-serif;
     }
 }
 
-
 .banner {
+    margin-top: 16vh;
     aspect-ratio: 1.2;
     position: relative;
     .banner-logo {
-        position:absolute;
-        top:2%;
-        left: 20%;
-        right: 20%;        
-        margin:0 auto;
+        position: absolute;
+        top: 2%;
+        left: 25%;
+        right: 25%;
+        margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
         h1 {
             text-align: center;
             img.logo {
-                margin:0 auto;
-                height: 100px;
-                background: rgba(125, 110, 110, 0.8);
-                padding:10px 40px;
+                margin: 0 auto;
+                // height: 100px;
+                background: rgba(66,66,66,0.7);
+                padding: 10px 40px;
+                width:100%;
+                max-width: 360px;
             }
         }
     }
@@ -105,6 +106,7 @@ $enText: "Roboto", sans-serif;
         color: #fff;
         font-size: 20px;
         background: rgba(66, 66, 66, 0.7);
+        font-family: $JPMincho;
     }
     img.main {
         width: 100%;
@@ -114,51 +116,50 @@ $enText: "Roboto", sans-serif;
 }
 
 .intro {
-    padding:5vh 0 0;
+    padding: 5vh 0 0;
     .article {
-        padding:3vh 10px 1vh;
+        padding: 3vh 10px 1vh;
         p {
             font-size: 1.1em;
             line-height: 2em;
-            padding:30px 0;
+            padding: 30px 0;
         }
-        font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+        font-family: $JPMincho;
         .maintext {
-            padding:3vh 0;
+            padding: 3vh 0;
             h4 {
                 text-align: center;
                 font-size: 2.25em;
                 margin-bottom: 3vh;
                 font-weight: bold;
             }
-            width:98%;
+            width: 98%;
             max-width: 1024px;
-            margin:0 auto;
-            
+            margin: 0 auto;
+
             .contents {
-                border:1px solid #282828;
-                padding:2vh 2vw;
-                width:98%;
+                border: 1px solid #282828;
+                padding: 2vh 2vw;
+                width: 98%;
                 max-width: 960px;
-                margin:0 auto;
+                margin: 0 auto;
                 line-height: 2em;
-                    em {
-                        font-style: normal;
-                        // font-weight: bold;
-                        font-size: 1.25em;
-                    }
-                
+                em {
+                    font-style: normal;
+                    // font-weight: bold;
+                    font-size: 1.25em;
+                }
             }
         }
         .moretext {
             // border:1px solid #282828;
-            padding:4vh 0;
+            padding: 4vh 0;
             // width:96%;
             // max-width: 960px;
             h4 {
                 text-align: center;
             }
-            margin:0 auto;
+            margin: 0 auto;
         }
     }
 }
@@ -213,21 +214,27 @@ $enText: "Roboto", sans-serif;
 }
 
 .section02 {
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.6) 0%, rgba(226, 226, 226, 0.7) 100%),
+        url(../images/inkarami-stripe.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 8vh 0;
     .top {
-        background: rgb(247,169,169);
-background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 100%);
+        //         background: rgb(247,169,169);
+        // background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 100%);
         padding: 3vh 0;
+
         h3 {
             text-align: center;
             margin-bottom: 3vh;
             line-height: 2em;
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+            font-family: $JPMincho;
         }
         h4 {
             text-align: center;
             margin-bottom: 4vh;
             line-height: 2em;
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+            font-family: $JPMincho;
         }
         .list {
             width: 96%;
@@ -265,12 +272,54 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                 strong {
                     font-size: 2em;
                     margin: 0 5px;
+                    color: rgb(148, 5, 5);
                 }
             }
             a {
                 width: 100%;
                 margin: 2vh auto 4vh;
                 font-size: 1.25em;
+            }
+        }
+    }
+    .subscription-notice {
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid #282828;
+        padding: 2vh 0;
+
+        .img {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+    .bottom {
+        h4 {
+            font-family: $JPMincho;
+            text-align: center;
+        }
+        .list-and-image {
+            padding: 6vh 0;
+
+            .list {
+                margin-top: 3vh;
+                display: flex;
+                justify-content: center;
+                // background:rgba(255,255,255,0.4);
+                ul {
+                    padding: 2vh 2vw;
+                    background: rgba(255, 255, 255, 0.4);
+                    li {
+                        line-height: 2em;
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .img {
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -282,7 +331,7 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         h4 {
             font-size: 2em;
             margin: 5vh auto 0;
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+            font-family: $JPMincho;
             text-align: center;
         }
         padding: 3vh 0;
@@ -297,13 +346,13 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         h4 {
             font-size: 2em;
             margin: 5vh auto 0;
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+            font-family: $JPMincho;
         }
         .section03-a1 {
             padding: 10vh 0;
-            width:100%;
+            width: 100%;
             max-width: 900px;
-            margin:4vh auto;
+            margin: 4vh auto;
         }
 
         .section03-a2 {
@@ -347,14 +396,14 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
 
 #promotions {
     .type {
-        position:relative;
+        position: relative;
         .text {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             width: 100%;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.8);
             p {
                 margin: 0;
                 font-style: italic;
@@ -362,7 +411,6 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         }
     }
 }
-
 
 .promotions {
     display: flex;
@@ -451,11 +499,11 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         max-width: 800px;
         // min-width: 420px;
         margin: 8vh auto;
-        background:linear-gradient(100deg, #dcdfa3 0%, #bed6cf 100%);
+        background: linear-gradient(100deg, #dcdfa3 0%, #bed6cf 100%);
         border-radius: 10px;
         h3 {
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-            color:rgb(177, 37, 107);
+            font-family: $JPMincho;
+            color: rgb(177, 37, 107);
         }
         p {
             margin: 0;
@@ -466,12 +514,12 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
             text-align: center;
             justify-content: stretch;
             .main-point {
-                background:#fcfcfc;
+                background: #fcfcfc;
             }
         }
         .inner {
             background: rgb(255, 255, 255);
-            margin:2vh auto;
+            margin: 2vh auto;
             border-radius: 10px;
             padding: 10px;
             .pie-chart {
@@ -598,7 +646,7 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                 h4 {
                     margin-left: 2vw;
                     text-decoration: underline;
-                    font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+                    font-family: $JPMincho;
                 }
                 h5 {
                     position: absolute;
@@ -614,8 +662,8 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
                     border-radius: 5px;
                 }
                 .ing-details {
-                    background:rgb(255, 255, 255);
-                    padding:2vh 10px;
+                    background: rgb(255, 255, 255);
+                    padding: 2vh 10px;
                 }
             }
         }
@@ -630,16 +678,12 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
         color: red;
     }
     .user-voice-list {
-        
         .voice-text {
-           
             p {
                 border: 1px solid #9a9a9a;
-                padding:2vh 10px;
+                padding: 2vh 10px;
                 margin-bottom: 0;
                 border-radius: 10px;
-                
-                
             }
         }
     }
@@ -762,8 +806,11 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
 
 .section-10 {
     padding: 4vh 10px;
-    background: rgb(125, 110, 110);
-    color: #fff;
+    background: linear-gradient(100deg, rgba(204, 205, 206, 0.6) 0%, rgba(138, 138, 138, 0.7) 100%),
+        url(../images/inkarami-stripe.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    // color: #fff;
     p {
         font-size: 1em;
     }
@@ -792,11 +839,12 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
             margin: 0;
             padding: 10px 20px;
             text-align: center;
+            color: #fff;
         }
     }
     .section-10-text {
         a {
-            color: rgb(195, 189, 123);
+            color: rgb(148, 5, 5);
         }
         .add-red-mark::before {
             content: "※";
@@ -807,16 +855,22 @@ background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 
 }
 
 footer {
-    background: $tokioinkaramiBrown;
+    // background: $tokioinkaramiBrown;
     padding: 3vh;
+    // background: rgb(204,205,206);
+    // background: linear-gradient(100deg, rgba(204,205,206,0.6) 0%, rgba(138,138,138,0.7) 100%), url(../images/inkarami-stripe.jpg) no-repeat;
+    // background-position: center;
+    // background-size: cover;
     .bottom {
         li {
             display: inline-block;
+            line-height: 1em;
+            margin: 0;
             // margin-right: 20px;
             a {
                 font-size: 0.8em;
                 text-decoration: none;
-                color: rgb(195, 189, 123);
+                color: rgb(159, 64, 51);
             }
         }
     }
@@ -829,41 +883,46 @@ footer {
 }
 
 .section-12 {
-    
     .section-12a {
-        padding:5vh 0;
-        font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-        background: rgb(240,225,204);
-        background: linear-gradient(100deg, rgba(240,225,204,1) 0%, rgba(246,241,234,1) 25%, rgba(255,227,188,1) 50%, rgba(238,215,181,1) 77%, rgba(246,241,234,1) 100%);
+        padding: 5vh 0;
+        font-family: $JPMincho;
+        background: rgb(240, 225, 204);
+        background: linear-gradient(
+            100deg,
+            rgba(240, 225, 204, 1) 0%,
+            rgba(246, 241, 234, 1) 25%,
+            rgba(255, 227, 188, 1) 50%,
+            rgba(238, 215, 181, 1) 77%,
+            rgba(246, 241, 234, 1) 100%
+        );
         h4 {
             line-height: 2em;
-            color:rgb(148, 5, 5);
+            color: rgb(148, 5, 5);
         }
     }
     .product-text {
-        padding:4vh 0;
+        padding: 4vh 0;
         h3 {
             width: 90%;
             max-width: 360px;
-            margin:0 auto;
+            margin: 0 auto;
             text-align: center;
             line-height: 2em;
             em {
                 font-style: normal;
                 text-decoration: underline;
-                font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+                font-family: $JPMincho;
             }
             span {
                 font-size: 0.7em;
-                font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+                font-family: $JPMincho;
             }
-            
         }
         p {
-            margin:3vh auto;
-            padding:0 20px;
+            margin: 3vh auto;
+            padding: 0 10px;
             text-align: center;
-            font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+            font-family: $JPMincho;
         }
     }
 }
@@ -871,33 +930,32 @@ footer {
 .section-13 {
     padding: 2em 0;
     .texts {
-        background:#dae0cc;
-        padding:0 10px;
+        background: #dae0cc;
+        padding: 0 10px;
         p {
             line-height: 2em;
         }
         ul {
-            margin:2vh auto;
-            padding:0;
+            margin: 2vh auto;
+            padding: 0;
             li::before {
-                content: '※';
+                content: "※";
                 font-weight: bold;
                 font-size: 0.8em;
-                color:rgb(148, 5, 5);
-                margin:0 5px 0 10px;
+                color: rgb(148, 5, 5);
+                margin: 0 5px 0 10px;
             }
         }
     }
-  }
+}
 
-
-  .section-14 {
+.section-14 {
     padding: 2em 0;
     .scrollable {
         text-align: right;
         font-size: 0.8em;
         margin-bottom: 0;
-        color:rgb(110, 110, 110);
+        color: rgb(110, 110, 110);
         i {
             font-size: 0.8em;
         }
@@ -905,45 +963,110 @@ footer {
     }
     .texts {
         // background:rgb(236, 236, 161);
-        padding:0 10px;
+        padding: 0 10px;
         .img {
             // background:#fff;
-            padding:2vh 3vw;
+            padding: 2vh 3vw;
         }
         .ingredient-details {
-            padding:2vh 0;
+            padding: 2vh 0;
             h2 {
                 font-size: 1.2em;
                 text-decoration: underline;
             }
             h4 {
-                font-size:1.15em;
+                font-size: 1.15em;
                 font-style: italic;
                 margin-bottom: 5px;
                 margin-top: 10px;
-                color:rgb(151, 137, 137);
+                color: rgb(151, 137, 137);
             }
             .dp {
-                
                 p {
                     margin-bottom: 0;
                 }
             }
         }
     }
+}
 
-  }
-  
-  .fade-up-enter-active,
-  .fade-up-leave-active {
+.section-15 {
+    padding-top: 30%;
+    background: url("../images/section14-bnr-img.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .top {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.section-16 {
+    margin: 4vh auto;
+    h4 {
+        font-family: $JPMincho;
+        margin: 2vh auto;
+        span {
+            font-size: 1.25em;
+            margin-left: 5px;
+            em {
+                // font-size: 1.15em;
+                font-style: normal;
+                padding: 2px 10px;
+                box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
+                background: rgb(161, 141, 131);
+                background: linear-gradient(150deg, rgba(161, 141, 131, 1) 0%, rgba(251, 237, 237, 1) 100%);
+                margin: 2px 5px;
+                color: #fff;
+                text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
+                border-radius: 50%;
+            }
+        }
+    }
+    .ingredient-details {
+        width: 96%;
+        max-width: 720px;
+        margin: 4vh auto;
+        background: #fbeded;
+        .text {
+            margin: 2vh auto;
+            text-align: center;
+        }
+    }
+}
+
+.section-17 {
+    background:url(../images/inkarami-stripe.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    .top {
+        text-align: center;
+        font-size: 1.5em;
+        padding:3vh 0 4vh;
+        strong {
+            font-size: 1.25em;
+        }
+    }
+}
+
+.fade-up-enter-active,
+.fade-up-leave-active {
     transition: all 0.3s ease-in-out;
-  }
-  .fade-up-enter,
-  .fade-up-leave-to {
+}
+.fade-up-enter,
+.fade-up-leave-to {
     height: 0;
     transform: translateY(30px);
     opacity: 0;
-  }
+}
+
 
 
 @media screen and (max-width: 992px) {
@@ -973,6 +1096,9 @@ footer {
                 object-position: center;
             }
         }
+    }
+    .section-15 {
+        padding-top: 50%;
     }
 }
 
@@ -1021,13 +1147,13 @@ footer {
         // height:100vh;
         aspect-ratio: 0.6;
         p {
-            bottom:2%;
+            bottom: 2%;
         }
     }
 
     .intro {
         .article {
-            padding:3vh 0 1vh;
+            padding: 3vh 0 1vh;
             p {
                 font-size: 1em;
             }
@@ -1087,14 +1213,41 @@ footer {
         }
     }
 
-    
+    .section02 {
+        .bottom {
+            .list-and-image {
+                padding: 6vh 0;
+                .img {
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .list {
+                    ul {
+                        width: 90%;
+                        max-width: 350px;
+                        margin: 4vh auto 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-15 {
+        aspect-ratio: 1;
+        .top {
+            width: 100%;
+            // max-width: 560px;
+            margin: 0 auto;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
-
     .intro {
         .article {
-            padding:3vh 0 1vh;
+            padding: 3vh 0 1vh;
             p {
                 font-size: 0.9em;
             }
@@ -1111,13 +1264,27 @@ footer {
             h1 {
                 img.logo {
                     height: 80px;
-                    padding:10px 40px;
+                    padding: 10px 40px;
                 }
             }
         }
     }
     .section01 {
-        padding:8vh 0;
+        padding: 8vh 0;
+    }
+
+    .section02 {
+        .bottom {
+            .list-and-image {
+                .list {
+                    ul {
+                        li {
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
     }
     .section03 {
         .section03-a {
@@ -1138,7 +1305,6 @@ footer {
             h3 {
                 font-size: 1.3em;
             }
-            
         }
         .list {
             &:nth-child(even) {
@@ -1171,25 +1337,23 @@ footer {
     .section-14 {
         padding: 2em 0;
         .texts {
-            padding:0 10px;
+            padding: 0 10px;
             .img {
-                padding:2vh 3vw;
+                padding: 2vh 3vw;
             }
             .ingredient-details {
-                padding:2vh 0;
+                padding: 2vh 0;
                 h2 {
                     font-size: 1.2em;
                     text-decoration: underline;
                 }
                 h4 {
-                    font-size:1em;
+                    font-size: 1em;
                     font-style: italic;
                     margin-bottom: 5px;
                     margin-top: 10px;
-                    
                 }
                 .dp {
-                    
                     p {
                         margin-bottom: 0;
                         font-size: 0.9em;
@@ -1197,17 +1361,37 @@ footer {
                 }
             }
         }
-    
-      }
+    }
+    .section-16 {
+
+        h4 {
+            span {
+                font-size: 1em;
+                margin-left:5px;
+                em {
+                    // font-size: 1.15em;
+                    font-style: normal;
+                    padding:2px 8px;
+                }
+            }
+        }
+        
+    }
+    .section-17 {
+        .top {
+            font-size: 1.25em;
+        }
+    }
 }
 
-
 @media screen and (max-width: 430px) {
-    .top-sub-nav {
-        .subnav {
-            a {
-                h3 {
-                    font-size: 0.8em;
+    .top-nav-bar {
+        .top-sub-nav {
+            .subnav {
+                a {
+                    h3 {
+                        font-size: 0.8em;
+                    }
                 }
             }
         }
@@ -1215,7 +1399,7 @@ footer {
 
     .banner {
         p {
-            bottom:0.5%;
+            bottom: 0.5%;
         }
     }
 
@@ -1236,17 +1420,77 @@ footer {
             }
         }
     }
-}
 
-@media screen and (max-width: 375px) {
-    .top-sub-nav {
-        .subnav {
-            a {
-                h3 {
-                    font-size: 0.7em;
+    .section02 {
+        .subscription-notice {
+            p {
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .section-16 {
+        h4 {
+            font-size: 0.9em;
+            span {
+                font-size: 1.25em;
+                em {
+                    font-style: normal;
+                    padding: 2px 7px;
+                    box-shadow: 1px 1px 1px rgb(50 50 50 / 60%);
+                    background: #a18d83;
+                    background: linear-gradient(150deg, #a18d83 0%, #fbeded 100%);
+                    margin: 2px 5px;
+                    color: #fff;
+                    text-shadow: 1px 1px 1px rgb(50 50 50 / 60%);
+                    border-radius: 50%;
                 }
             }
         }
     }
-    
+}
+
+@media screen and (max-width: 375px) {
+    .top-nav-bar {
+        .top-sub-nav {
+            .subnav {
+                a {
+                    h3 {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+    }
+    .intro {
+        .article {
+            p {
+                font-size: 0.8em;
+            }
+            .maintext {
+                .contents {
+                    em {
+                        font-size: 1.15em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .section-14 {
+        .texts {
+            .ingredient-details {
+                h2 {
+                    font-size: 1em;
+                }
+                .dp {
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
 }

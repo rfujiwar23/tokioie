@@ -3,72 +3,164 @@ var vm = new Vue({
   data: {
     links: [
       {
-        text: 'オンラインストア', 
+        text: "オンラインストア",
         fontAwesome: '<i class="fa-sharp fa-solid fa-bag-shopping"></i>',
-        url: 'https://ifing-beauty.com/',
+        url: "https://ifing-beauty.com/",
       },
       {
-        text: 'よくあるご質問', 
+        text: "よくあるご質問",
         fontAwesome: '<i class="fa-regular fa-comment"></i>',
-        url: 'https://ifing-beauty.com/',
+        url: "https://ifing-beauty.com/",
       },
       {
-        text: '商品解説はこちら', 
+        text: "商品解説はこちら",
         fontAwesome: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
-        url: 'https://ifing-beauty.com/',
+        url: "https://ifing-beauty.com/",
       },
-    ]
+    ],
   },
 });
+
+var vm = new Vue({
+  el: "#subItem",
+  data: {
+    items: [
+      {
+        itemName: "シャンプー・トリートメント",
+        itemNameType: "プラチナム",
+        size: "定期400サイズセット",
+        regularPrice: 9020,
+        withTaxPrice: 8569,
+        link: "https://ifing-beauty.com/products/detail/60",
+        img: "assets/images/tokioinkarami400.png",
+      },
+      {
+        itemName: "シャンプー・トリートメント",
+        itemNameType: "プラチナム",
+        size: "定期700サイズセット",
+        regularPrice: 13420,
+        withTaxPrice: 12749,
+        link: "https://ifing-beauty.com/products/detail/61",
+        img: "assets/images/tokioinkarami700.png",
+      },
+    ],
+  },
+});
+
+var vm = new Vue({
+  el: "#tokioIngredients1", 
+  data: {
+    Ingredients1: [
+      {
+        tokioNum: 1,
+        ingredient: '羽毛ケラチン',
+        details: '水鳥の羽毛が原料のケラチン。<br class="br_on576">髪を軽くて柔らかい仕上がりみ導きます。' 
+      },
+      {
+        tokioNum: 2,
+        ingredient: 'ケラチンアミノ酸',
+        details: '超低分子のケラチン。<br class="br_on576">最も高い補修効果を保持しています。' 
+      },
+      {
+        tokioNum: 3,
+        ingredient: '羊毛ケラチン',
+        details: '内部補修、針、強さをもたらします。<br class="br_on576">TOKIO IEの補修効果を完結させます。' 
+      },
+      {
+        tokioNum: 4,
+        ingredient: 'セラミド',
+        details: '保湿力をサポートし、紫外線や細菌、<br class="br_on576">埃などの外部刺激から皮膚を守ります。' 
+      },
+    ]
+  }
+})
 
 var vm = new Vue({
   el: "#promotions",
   data: {
     promotions: [
       {
-        text: 'TOKIO STARS - カミカリスマ美容師の支持率No.1', 
-        image: 'assets/images/tokio-stars.png',
+        text: "TOKIO STARS - カミカリスマ美容師の支持率No.1",
+        image: "assets/images/tokio-stars.png",
       },
       {
-        text: 'TOKIO インカラミが誇る所属・サポートアスリート', 
-        image: 'assets/images/promotions-img.jpg',
+        text: "TOKIO インカラミが誇る所属・サポートアスリート",
+        image: "assets/images/promotions-img.jpg",
       },
       {
-        text: '東京・ 銀座 / GINZA SIXから世界へ発信・展開', 
-        image: 'assets/images/intense-building.jpg',
+        text: "東京・ 銀座 / GINZA SIXから世界へ発信・展開",
+        image: "assets/images/intense-building.jpg",
       },
-    ]
+    ],
   },
 });
-
 
 var vm = new Vue({
   el: "#bannerImage",
   data: {
     banners: [
-      {product: 'TOKIO IE プラチナム', image: 'assets/images/tokio-ie-platinum.jpg', url: 'https://ifing-beauty.com/products/list?category_id=15'},
-      {product: 'TOKIO IE プレミアム', image: 'assets/images/tokio-ie-premium.jpg', url: 'https://ifing-beauty.com/products/list?category_id=16'},
-      {product: 'TOKIO IE ヘッドスパ', image: 'assets/images/tokio-ie-headspa.jpg', url: 'https://ifing-beauty.com/products/list?category_id=17'}
-    ]
+      {
+        product: "TOKIO IE プラチナム",
+        image: "assets/images/tokio-ie-platinum.jpg",
+        url: "https://ifing-beauty.com/products/list?category_id=15",
+      },
+      {
+        product: "TOKIO IE プレミアム",
+        image: "assets/images/tokio-ie-premium.jpg",
+        url: "https://ifing-beauty.com/products/list?category_id=16",
+      },
+      {
+        product: "TOKIO IE ヘッドスパ",
+        image: "assets/images/tokio-ie-headspa.jpg",
+        url: "https://ifing-beauty.com/products/list?category_id=17",
+      },
+    ],
   },
 });
-
 
 var vm = new Vue({
   el: "#purchase-products",
   data: {
     products: [
-      {name: 'プラチナム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-pl.png', price: '7790'},
-      {name: 'プラチナム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pl.png', price: '11590'},
-      {name: 'プレミアム 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-pr.png', price: '8930'},
-      {name: 'プレミアム 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-pr.png', price: '13110'},
-      {name: 'ヘッドスパ 400セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/400-hs.png', price: '8550'},
-      {name: 'ヘッドスパ 700セット', url: 'https://ifing-beauty.com/products/detail/137', img: 'assets/images/700-hs.png', price: '12540'},
-    ]
+      {
+        name: "プラチナム 400セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/400-pl.png",
+        price: "7790",
+      },
+      {
+        name: "プラチナム 700セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/700-pl.png",
+        price: "11590",
+      },
+      {
+        name: "プレミアム 400セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/400-pr.png",
+        price: "8930",
+      },
+      {
+        name: "プレミアム 700セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/700-pr.png",
+        price: "13110",
+      },
+      {
+        name: "ヘッドスパ 400セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/400-hs.png",
+        price: "8550",
+      },
+      {
+        name: "ヘッドスパ 700セット",
+        url: "https://ifing-beauty.com/products/detail/137",
+        img: "assets/images/700-hs.png",
+        price: "12540",
+      },
+    ],
   },
 });
-
-
 
 var vm = new Vue({
   el: "#subnavbar",
@@ -92,8 +184,6 @@ var vm = new Vue({
     ],
   },
 });
-
-
 
 var vm = new Vue({
   el: "#concern",
@@ -279,7 +369,7 @@ var vm = new Vue({
           タウリン系シャンプーは、適度な洗浄力とキメ細かな泡立ちが特徴のシャンプーです。
           サッパリした仕上がりで、頭皮のバリア機能を果たす皮脂を落とし過ぎません。
           また、人体を構成するアミノ酸に近い成分で作られているため、安全性も高く敏感肌の方でも安心して使えます。`,
-      }  
+      },
     ],
   },
 });
@@ -305,7 +395,7 @@ var vm = new Vue({
         details: `
         メドウフォームは、加熱するとケラチンと結合し、疎水化を促します。髪が疎水化すると、水をはじき、油をなじませることで常に一定の水分量を保たれます。メドウフォームが髪の内外部に吸着して水をはじき、健康な髪へと導いてくれます。  
         `,
-      }
+      },
     ],
   },
 });
@@ -332,7 +422,6 @@ var vm = new Vue({
         優れた保湿力と浸透力をもたらします。人間の皮脂に近い成分なので非常に肌なじみが良く、髪の毛のパサつき、切れ毛の防止に繋がります。 
         `,
       },
-      
     ],
   },
 });
@@ -359,9 +448,6 @@ var vm = new Vue({
         description: `内部補修、ハリ、強さをもたらします。<br>
         TOKIO IEの補修効果を完結させます。`,
       },
-      
     ],
   },
 });
-
-
