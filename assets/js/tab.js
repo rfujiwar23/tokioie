@@ -1,6 +1,7 @@
 var tabs = [
     {
       title: "プラチナム シャンプー",
+      img: 'assets/images/tokio-ie-platinum-400-700-shampoo.png',
       content: "タウリン（洗浄成分）を用いた低刺激アミノ酸系シャンプー。優れた泡立ちときしみのない質感で、髪と頭皮を優しく洗い上げます。",
       list1: "洗浄成分：タウリン",
       list2: "補修成分：反応型水鳥由来加水分解ケラチン",
@@ -12,6 +13,7 @@ var tabs = [
     },
     {
       title: "プラチナム トリートメント",
+      img: 'assets/images/tokio-ie-platinum-400-700-treatment.png',
       content: "3種類のケラチン（補修剤）によって髪にコシと補修効果を与え、健康な髪が持つ脂質成分によって保湿しながら柔らかくサラサラな髪へと導きます。",
       list1: "補修成分：ケラチンアミノ酸・加水分解ケラチン",
       list2: "保湿成分：メドウフォーム-ラクトン/フラーレン/セラミドNG",
@@ -23,6 +25,7 @@ var tabs = [
     },
     {
       title: "プラチナム トリートメント",
+      img: 'assets/images/tokio-ie-platinum-oiltreatment.png',
       content: "3種類のケラチン（補修剤）によって髪にコシと補修効果を与え、健康な髪が持つ脂質成分によって保湿しながら柔らかくサラサラな髪へと導きます。",
       list1: "加水分解シルク",
       list2: "スクワラン",

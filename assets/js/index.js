@@ -81,15 +81,15 @@ var vm = new Vue({
     promotions: [
       {
         text: "TOKIO STARS - カミカリスマ美容師の支持率No.1",
-        image: "assets/images/tokio-stars.png",
+        image: "assets/images/promotions-tokiostars.png",
       },
       {
         text: "TOKIO インカラミが誇る所属・サポートアスリート",
-        image: "assets/images/promotions-img.jpg",
+        image: "assets/images/promotions-athletes.jpg",
       },
       {
         text: "東京・ 銀座 / GINZA SIXから世界へ発信・展開",
-        image: "assets/images/intense-building.jpg",
+        image: "assets/images/promotions-ginzasix.jpg",
       },
     ],
   },
@@ -101,17 +101,17 @@ var vm = new Vue({
     banners: [
       {
         product: "TOKIO IE プラチナム",
-        image: "assets/images/tokio-ie-platinum.jpg",
+        image: "assets/images/banner-image-tokio-ie-platinum.jpg",
         url: "https://ifing-beauty.com/products/list?category_id=15",
       },
       {
         product: "TOKIO IE プレミアム",
-        image: "assets/images/tokio-ie-premium.jpg",
+        image: "assets/images/banner-image-tokio-ie-premium.jpg",
         url: "https://ifing-beauty.com/products/list?category_id=16",
       },
       {
         product: "TOKIO IE ヘッドスパ",
-        image: "assets/images/tokio-ie-headspa.jpg",
+        image: "assets/images/banner-image-tokio-ie-headspa.jpg",
         url: "https://ifing-beauty.com/products/list?category_id=17",
       },
     ],
@@ -125,37 +125,37 @@ var vm = new Vue({
       {
         name: "プラチナム 400セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/400-pl.png",
+        img: "assets/images/products-400-pl.png",
         price: "7790",
       },
       {
         name: "プラチナム 700セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/700-pl.png",
+        img: "assets/images/products-700-pl.png",
         price: "11590",
       },
       {
         name: "プレミアム 400セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/400-pr.png",
+        img: "assets/images/products-400-pr.png",
         price: "8930",
       },
       {
         name: "プレミアム 700セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/700-pr.png",
+        img: "assets/images/products-700-pr.png",
         price: "13110",
       },
       {
         name: "ヘッドスパ 400セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/400-hs.png",
+        img: "assets/images/products-400-hs.png",
         price: "8550",
       },
       {
         name: "ヘッドスパ 700セット",
         url: "https://ifing-beauty.com/products/detail/137",
-        img: "assets/images/700-hs.png",
+        img: "assets/images/products-700-hs.png",
         price: "12540",
       },
     ],
@@ -291,17 +291,12 @@ var vm = new Vue({
   data: {
     tokioProducts: [
       {
-        id: 1,
         name: "TOKIO INKARAMI LIMITED",
-        description:
-          "毛髪強度140%回復とキューティクルのケア効果を両立した限定ブランド",
-        img: "assets/images/tokio-inkarami-limited.png",
+        img: "assets/images/tokio-limited.jpg",
       },
       {
-        id: 2,
         name: "TOKIO HYPER INKARAMI",
-        description: "インカラミ効果を増大させた特別限定ブランド",
-        img: "assets/images/tokio-hyper-inkarami.png",
+        img: "assets/images/hyper-limited.jpg",
       },
     ],
   },
