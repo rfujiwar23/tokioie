@@ -1,28 +1,28 @@
 @charset "UTF-8";
-.section-05 {
+.section-005 {
   padding: 8vh 0;
 }
-.section-05 .item {
+.section-005 .item {
   padding: 10px;
 }
-.section-05 .item .product-info {
+.section-005 .item .product-info {
   padding: 20px 10px;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-05 .item .product-info h4 {
+.section-005 .item .product-info h4 {
   font-size: 1.25em;
 }
-.section-05 .item .product-info h4 span {
+.section-005 .item .product-info h4 span {
   font-size: 1.25em;
 }
-.section-05 .item .product-info h3 {
+.section-005 .item .product-info h3 {
   font-size: 1.5em;
 }
-.section-05 .item .product-info h3 span {
+.section-005 .item .product-info h3 span {
   font-size: 1.5em;
   color: #a50101;
 }
-.section-05 .item .product-info h3 em {
+.section-005 .item .product-info h3 em {
   font-style: normal;
 }
 

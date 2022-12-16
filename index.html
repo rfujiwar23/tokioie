@@ -63,29 +63,18 @@
             </div>
         </div>
         <div class="banner">
-            <!-- <h1 class="text-center"><img src="assets/images/tokio-inkarami-logo-white.png"
-                alt="TOKIO IE INKARAMI logo" class="logo"></h1> -->
             <div class="banner-logo">
-                <!-- <h1 class="text-center"></h1> -->
                 <h1 class="text-center"><img src="assets/images/tokio-inkarami-logo-white.png"
                     alt="TOKIO IE INKARAMI logo" class="logo"></h1>
             </div>
-
             <p>
                 特許技術インカラミだからこそ実現!<br>
                 抜群の補修力で傷んだ髪をケアする<br>
                 シャンプー・トリートメント
             </p>
-
-            <!-- <h1>
-                <img src="assets/images/tokio-inkarami-logo-white.png"
-                        alt="TOKIO IE INKARAMI logo" class="logo">
-            </h1> -->
             <img src="assets/images/premiumplatinum.png" alt="TOKIO IE INKARAMI" class="main">
         </div>
-        <div class="banner-bottom">
-           
-        </div>
+
         <div class="container">
             <div class="intro" id="top-intro">
                 <div class="d-flex align-items-center justify-content-center">
@@ -111,6 +100,7 @@
             </div>
         </div>
 
+        <!-- youTube Video -->
         <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0" data-aos="fade-right">
             <div class="ratio ratio-16x9 text-center mt-4 mb-4">
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G_6CIRy4b4Q"
@@ -128,9 +118,9 @@
                 </div>
 
                 <div class="item">
-                    <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
-                        <div class="item-image col-sm-8 offset-sm-2 col-10 offset-1 mb-5">
-                            <img src="assets/images/3-points-2.svg" alt="TOKIO IE INKARAMI" style="width: 100%;">
+                    <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
+                        <div class="item-image col-sm-8 offset-sm-2 mb-5 d-flex align-items-center justify-content-center">
+                            <img src="assets/images/3-points-2.svg" alt="TOKIO IE INKARAMI" style="width: 90%;">
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="subscription-notice col-md-10 col-sm-10 col-11 justify-content-center">
@@ -181,7 +171,7 @@
             </section>
         </div>
 
-        <div class="container-fluid px-0" id="promotions">
+        <div class="container-fluid px-0 section-03" id="promotions">
             <div class="row px-0">
                 <div class="type col-lg-4 px-0" v-for="promotion in promotions">
                     <img :src="promotion.image" alt="" class="img-fluid">
@@ -220,24 +210,9 @@
         </div>
 
 
-        <div class="section-18">
+        <div class="section-05">
             <div class="container py-5">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="row voices">
-                        <div class="col-9 d-flex align-items-center justify-content-center">
-                            サロンでトリートメントを<br>したような髪になりたい
-                        </div>
-                        <div class="col-3"><img src="assets/images/right.png" alt="mouth open"></div>
-                        
-                    </div>
-                    <div class="row voices">
-                        <div class="col-3"><img src="assets/images/left.png" alt="mouth open"></div>
-                        <div class="col-9 d-flex align-items-center justify-content-center">
-                            毎日理想なツヤ髪で過ごしたい
-                        </div>
-                        
-                    </div>
-                </div>
+               
                 <div class="col-lg-8 offset-lg-2">
                     <img src="assets/images/img-reason001.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
                 </div>
@@ -564,7 +539,7 @@
         </div>
 
         
-        <div class="section-05">
+        <div class="section-005">
             <h4 class="text-center">商品一覧</h4>
             <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                 <div class="owl-carousel owl-theme" id="purchase-products">
@@ -577,8 +552,8 @@
                             <div class="product-info text-center">
                                 <h4>TOKIO IE INKARAMI<br><span>{{product.name}}</span></h4>
 
-                                <h5><span>{{product.price}}</span>円</h5>
-                                <h3><span>{{Math.round(product.price * 1.1)}}</span>円 <em>税込</em></h3>
+                                <h5><span>{{Math.round(product.price * 1).toLocaleString()}}</span>円</h5>
+                                <h3><span>{{Math.round(product.price * 1.1).toLocaleString()}}</span>円 <em>税込</em></h3>
                             </div>
                         </div>
                     </div>
@@ -588,7 +563,6 @@
 
         <div class="container-fluid section-08">
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12 subscription-image">
-                <!-- <img src="assets/images/img-sub002.jpg" alt="定期について" class="img-fluid"> -->
                 <img src="assets/images/img-sub001.jpg" alt="定期について" class="img-fluid">
             </div>
             <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
@@ -602,28 +576,18 @@
             </div>
         </div>
 
-
-
-
-
         <div class="container-fluid section-09" id="product-list">
-            <h3>特別なTOKIOブランド</h3>
+            <h3><span>特別なTOKIOブランド</span></h3>
             <p>TOKIOインカラミのメカニズムを引き継ぎ、
                 <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
             </p>
             <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
                 <div class="col-sm-6" v-for="product in tokioProducts">
                     <div class="tokio-brands">
-                        <img :src="product.img" :alt="product.name" class="img-fluidå">
+                        <a v-bind:href="product.url">
+                            <img :src="product.img" :alt="product.name" class="img-fluidå">
+                        </a>
                     </div>
-                    <!-- <article class="product-list">
-                        <h4>0{{product.id}}. <span>{{product.name}}</span></h4>
-                        <p>{{product.description}}</p>
-                        <a href="#" class="and-more">AND MORE</a>
-                        <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 my-4">
-                            <img :src="product.img" alt="" class="img-fluid">
-                        </div>
-                    </article> -->
                 </div>
             </div>
         </div>

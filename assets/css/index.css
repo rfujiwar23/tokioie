@@ -206,18 +206,19 @@
   padding: 8vh 0;
 }
 .section02 .top {
-  padding: 3vh 0;
+  padding: 3vh 0 0;
 }
 .section02 .top h3 {
   text-align: center;
   margin-bottom: 3vh;
   line-height: 2em;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  color: #940505;
+  font-size: 1.25em;
 }
 .section02 .top h4 {
   text-align: center;
-  margin-bottom: 4vh;
-  line-height: 2em;
+  line-height: 1.5em;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .section02 .top .list {
@@ -673,7 +674,7 @@
 }
 .section-08 .subscription-message h2 {
   text-align: center;
-  background: rgba(125, 110, 110, 0.8);
+  background: #b6a87d;
   font-size: 1.25em;
   padding: 10px;
   color: #fff;
@@ -684,18 +685,20 @@
 .section-08 .subscription-message .message-text {
   width: 90%;
   max-width: 520px;
-  text-align: center;
   margin: 2vh auto;
   padding-top: 10px;
   border-top: 1px solid #9a9a9a;
 }
 
 .section-09 {
-  padding: 8vh 10px;
+  padding: 4vh 10px;
 }
 .section-09 h3 {
   text-align: center;
   margin-bottom: 4vh;
+}
+.section-09 h3 span {
+  border-bottom: 2px solid #af9e81;
 }
 .section-09 p {
   text-align: center;
@@ -923,7 +926,7 @@ footer .bottom li a {
   width: 96%;
   max-width: 720px;
   margin: 4vh auto;
-  background: #fbeded;
+  background: linear-gradient(180deg, #deccab 0%, #fffcde 88%);
 }
 .section-16 .ingredient-details .text {
   margin: 2vh auto;
@@ -944,7 +947,7 @@ footer .bottom li a {
   font-size: 1.25em;
 }
 
-.section-18 .voices {
+.section-05 .voices {
   font-size: 1.5em;
 }
 
@@ -1124,7 +1127,7 @@ footer .bottom li a {
   }
 
   .section02 .top h3 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .section02 .top h4 {
     font-size: 1.25em;
@@ -1204,6 +1207,10 @@ footer .bottom li a {
   .section-17 .top {
     font-size: 1.15em;
   }
+
+  .section-05 .voices {
+    font-size: 1.25em;
+  }
 }
 @media screen and (max-width: 430px) {
   .top-nav-bar .top-sub-nav .subnav a h3 {
@@ -1219,6 +1226,10 @@ footer .bottom li a {
 
   .section-12 .section-12a h4 {
     font-size: 1.15em;
+  }
+
+  .section-05 .voices {
+    font-size: 1.1em;
   }
 }
 @media screen and (max-width: 414px) {
@@ -1246,6 +1257,11 @@ footer .bottom li a {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
     border-radius: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-05 .voices {
+    font-size: 1em;
   }
 }
 @media screen and (max-width: 375px) {

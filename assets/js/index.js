@@ -275,13 +275,7 @@ var vm = new Vue({
         alias: "B様",
         img: "assets/images/user-voice002.png",
         voice: `妊娠中に愛用していたシャンプーが合わなくなり、優しい成分のこちらにのりかえました。`,
-      },
-      // {
-      //   id: 3,
-      //   alias: "C様",
-      //   img: "assets/images/user-voice003.png",
-      //   voice: `ドライヤーで乾かす時から毛先がパサつかず収まり髪も柔らかくサラサラで感動です！`,
-      // }
+      }
     ],
   },
 });
@@ -293,10 +287,12 @@ var vm = new Vue({
       {
         name: "TOKIO INKARAMI LIMITED",
         img: "assets/images/tokio-limited.jpg",
+        url: "https://ifing-beauty.com"
       },
       {
         name: "TOKIO HYPER INKARAMI",
         img: "assets/images/hyper-limited.jpg",
+        url: "https://ifing-beauty.com"
       },
     ],
   },

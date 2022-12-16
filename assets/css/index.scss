@@ -224,18 +224,20 @@ $enText: "Roboto", sans-serif;
     .top {
         //         background: rgb(247,169,169);
         // background: linear-gradient(100deg, rgba(247,169,169,1) 0%, rgba(255,186,233,1) 100%);
-        padding: 3vh 0;
+        padding: 3vh 0 0;
 
         h3 {
             text-align: center;
             margin-bottom: 3vh;
             line-height: 2em;
             font-family: $JPMincho;
+            color:rgb(148, 5, 5);
+            font-size: 1.25em;
         }
         h4 {
             text-align: center;
-            margin-bottom: 4vh;
-            line-height: 2em;
+            // margin-bottom: 4vh;
+            line-height: 1.5em;
             font-family: $JPMincho;
         }
         .list {
@@ -746,7 +748,7 @@ $enText: "Roboto", sans-serif;
         margin-bottom: 2vh;
         h2 {
             text-align: center;
-            background: rgba(125, 110, 110, 0.8);
+            background: rgba(182, 168, 125, 1);
             font-size: 1.25em;
             padding: 10px;
             color: #fff;
@@ -757,7 +759,7 @@ $enText: "Roboto", sans-serif;
         .message-text {
             width: 90%;
             max-width: 520px;
-            text-align: center;
+            // text-align: center;
             margin: 2vh auto;
             padding-top: 10px;
             border-top: 1px solid #9a9a9a;
@@ -766,10 +768,14 @@ $enText: "Roboto", sans-serif;
 }
 
 .section-09 {
-    padding: 8vh 10px;
+    padding: 4vh 10px;
     h3 {
         text-align: center;
         margin-bottom: 4vh;
+        
+        span {
+            border-bottom:2px solid #af9e81;
+        }
     }
     p {
         text-align: center;
@@ -1037,7 +1043,7 @@ footer {
         width: 96%;
         max-width: 720px;
         margin: 4vh auto;
-        background: #fbeded;
+        background: linear-gradient(180deg, rgb(222,204,171,1) 0%, rgba(255,252,222,1) 88%);
         .text {
             margin: 2vh auto;
             text-align: center;
@@ -1059,7 +1065,7 @@ footer {
     }
 }
 
-.section-18 {
+.section-05 {
     .voices {
         font-size: 1.5em;
     }
@@ -1288,7 +1294,7 @@ footer {
     .section02 {
         .top {
             h3 {
-                font-size: 1.25em;
+                font-size: 1em;
             }
             h4 {
                 font-size: 1.25em;
@@ -1405,6 +1411,11 @@ footer {
             font-size: 1.15em;
         }
     }
+    .section-05 {
+        .voices {
+            font-size: 1.25em;
+        }
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1436,6 +1447,12 @@ footer {
             h4 {
                 font-size: 1.15em;
             }
+        }
+    }
+
+    .section-05 {
+        .voices {
+            font-size: 1.1em;
         }
     }
 }
@@ -1477,6 +1494,14 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .section-05 {
+        .voices {
+            font-size: 1em;
+        }
+    }
+} 
 
 @media screen and (max-width: 375px) {
     .top-nav-bar {
