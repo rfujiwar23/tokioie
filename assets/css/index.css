@@ -1245,17 +1245,6 @@ footer .bottom li a {
   .section-16 h4 span {
     font-size: 1.25em;
   }
-  .section-16 h4 span em {
-    font-style: normal;
-    padding: 2px 7px;
-    box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-    background: #a18d83;
-    background: linear-gradient(150deg, #a18d83 0%, #fbeded 100%);
-    margin: 2px 5px;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-    border-radius: 50%;
-  }
 }
 @media screen and (max-width: 400px) {
   .section-05 .voices {
