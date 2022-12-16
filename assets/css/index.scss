@@ -735,9 +735,9 @@ $enText: "Roboto", sans-serif;
 
 .section-08 {
     padding: 8vh 10px;
-    background: rgb(204, 203, 203);
+    // background: rgb(204, 203, 203);
     .subscription-image {
-        background: rgb(206, 206, 206);
+        // background: rgb(206, 206, 206);
         img {
             margin: 2vh auto;
         }
@@ -1028,14 +1028,6 @@ footer {
             em {
                 // font-size: 1.15em;
                 font-style: normal;
-                padding: 2px 10px;
-                box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-                background: rgb(161, 141, 131);
-                background: linear-gradient(150deg, rgba(161, 141, 131, 1) 0%, rgba(251, 237, 237, 1) 100%);
-                margin: 2px 5px;
-                color: #fff;
-                text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-                border-radius: 50%;
             }
         }
     }
@@ -1243,6 +1235,19 @@ footer {
                     }
                 }
             }
+        }
+    }
+
+    .section08 {
+        padding:0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .section-09 {
+        .col-sm-6 {
+            padding-right: 0;
+            padding-left: 0;
         }
     }
 

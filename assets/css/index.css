@@ -659,10 +659,6 @@
 
 .section-08 {
   padding: 8vh 10px;
-  background: #cccbcb;
-}
-.section-08 .subscription-image {
-  background: #cecece;
 }
 .section-08 .subscription-image img {
   margin: 2vh auto;
@@ -913,14 +909,6 @@ footer .bottom li a {
 }
 .section-16 h4 span em {
   font-style: normal;
-  padding: 2px 10px;
-  box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-  background: #a18d83;
-  background: linear-gradient(150deg, #a18d83 0%, #fbeded 100%);
-  margin: 2px 5px;
-  color: #fff;
-  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.6);
-  border-radius: 50%;
 }
 .section-16 .ingredient-details {
   width: 96%;
@@ -1090,6 +1078,17 @@ footer .bottom li a {
     width: 90%;
     max-width: 350px;
     margin: 4vh auto 0;
+  }
+
+  .section08 {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .section-09 .col-sm-6 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .section-15 {
