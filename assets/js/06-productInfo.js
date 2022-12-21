@@ -1,8 +1,8 @@
 var tabs = [
   {
-    title: "ダウン&フェザーケラチン",
-    subtitle1: "ダウンケラチン",
-    content1: "タ水鳥の胸から取れるケラチン。<br>柔らかく水に強い髪に導きます。 ",
+    title: "羽毛ケラチン",
+    subtitle1: "羽毛ケラチン",
+    content1: "水鳥の胸から取れるケラチン。<br>柔らかく水に強い髪に導きます。 ",
     subtitle2: "フェザーケラチン",
     content2: "水鳥の羽根から取れるケラチン。<br>軽くて強い髪に導きます。",
     img: "assets/images/tokio1.png"

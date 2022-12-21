@@ -45,7 +45,7 @@
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand" style="width:100%; max-width: 200px;" >
-                        <img src="assets/images/logo.svg" alt="IFING BEAUTY ONLINE">
+                        <img src="assets/images/logo2.png" alt="IFING BEAUTY ONLINE">
                     </a>
                 </div>
             </nav>
@@ -79,7 +79,7 @@
             <div class="intro" id="top-intro">
                 <div class="d-flex align-items-center justify-content-center">
                 <div class="col-8">
-                    <a href="https://ifing-beauty.com" class="btn btn-success" style="width:100%">購入ページへ</a>
+                    <a href="https://ifing-beauty.com" class="btn-success btn" style="width:100%">購入ページへ</a>
                 </div>
                 </div>
                 <div class="article">
@@ -147,7 +147,7 @@
                                     <p>{{item.size}}</p>
                                     <h6><span>通常価格:</span><strong>￥{{item.regularPrice.toLocaleString()}}</strong>税込</h6>
                                     <h5><strong>￥{{item.withTaxPrice.toLocaleString()}}</strong>税込</h5>
-                                    <a v-bind:href="item.link" class="btn btn-success">購入はこちら</a>
+                                    <a v-bind:href="item.link" class="btn-success btn">購入はこちら</a>
                                 </div> 
                             </div>
                         </div>
@@ -264,7 +264,7 @@
             </div>
         </div>
 
-        <div class="section-15" data-aos="fade-down">
+        <div class="section-15">
             <div class="top">
                 <img src="assets/images/section-15-img.png" alt="TOKIO INKARAMI" class="img-fluid">
             </div>
@@ -405,7 +405,7 @@
                         シャンプーに羽毛ケラチン、トリートメントにケラチンアミノ酸と羊毛ケラチンを配合。これらの成分が毛髪内部で絡み合うことで、高い補修効果と持続力をもたらします。
                     </p>
                     <div class="additional-info d-flex justify-content-center align-items-center">
-                        <a href="" class="btn btn-success">詳しくはこちら <i class="fa-sharp fa-solid fa-caret-right"></i></a>
+                        <a href="" class="btn-success btn">詳しくはこちら <i class="fa-sharp fa-solid fa-caret-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -495,7 +495,9 @@
                             <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
                                 <img :src="tab.img" :alt="tab.title" class="img-fluid">
                             </div>
+                            
                             <div v-html="tab.content"></div>
+                            <p class="size"><strong>サイズ：</strong>{{tab.size}}</p>
                             <ul>
                                 <li v-if="tab.list1 === null" style="display:none;"></li>
                                 <li v-else>{{tab.list1}}</li>
@@ -554,7 +556,7 @@
                             <div class="product-info text-center">
                                 <h4>TOKIO IE INKARAMI<br><span>{{product.name}}</span></h4>
 
-                                <h5><span>{{Math.round(product.price * 1).toLocaleString()}}</span>円</h5>
+                                <!-- <h5><span>{{Math.round(product.price * 1).toLocaleString()}}</span>円</h5> -->
                                 <h3><span>{{Math.round(product.price * 1.1).toLocaleString()}}</span>円 <em>税込</em></h3>
                             </div>
                         </div>
@@ -610,7 +612,7 @@
                             </div>
                         </div>
                         <!-- <img src="assets/images/all-products.png" alt="TOKIO INKARAMI商品" class="img-fluid"> -->
-                        <a href="#" class="btn btn-success my-3" style="width:100%;">購入はこちら</a>
+                        <a href="#" class="btn-success btn my-3" style="width:100%;">購入はこちら</a>
                     </div>
                     <p>【ご注文に関しての注意事項】</p>
     

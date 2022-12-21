@@ -274,7 +274,13 @@ var vm = new Vue({
         id: 2,
         alias: "B様",
         img: "assets/images/user-voice002.png",
-        voice: `妊娠中に愛用していたシャンプーが合わなくなり、優しい成分のこちらにのりかえました。`,
+        voice: `サロン帰りのような髪の柔らかさに仕上がるので、重宝しています！!`,
+      },
+      {
+        id: 3,
+        alias: "C様",
+        img: "assets/images/user-voice003.png",
+        voice: `ドラッグストアなどで販売されているシャンプーとは段違いで髪の毛に天使の輪っかが誕生します。`,
       }
     ],
   },

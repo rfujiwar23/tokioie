@@ -3,6 +3,21 @@ $JPMincho: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 $jpText: "Noto Sans JP", sans-serif;
 $enText: "Roboto", sans-serif;
 
+
+.btn-success {
+    background: rgb(10,139,10) !important;
+    background: linear-gradient(180deg, rgba(10,139,10,1) 0%, rgba(9,226,9,1) 100%) !important;
+    color:#fff;
+    text-align: center;
+    width: 100%;
+    font-weight: bold !important;
+}
+
+.btn-success:hover {
+    background: rgb(255, 255, 255) !important;
+    border:1px solid rgb(10,139,10);
+    color:rgb(10,139,10) !important;
+}
 * {
     margin: 0;
     padding: 0;
@@ -139,7 +154,7 @@ $enText: "Roboto", sans-serif;
             margin: 0 auto;
 
             .contents {
-                // border: 1px solid #282828;
+                border: 1px solid #282828;
                 padding: 2vh 2vw;
                 width: 98%;
                 max-width: 960px;
@@ -233,6 +248,7 @@ $enText: "Roboto", sans-serif;
             font-family: $JPMincho;
             color:rgb(148, 5, 5);
             font-size: 1.25em;
+            font-weight: bold;
         }
         h4 {
             text-align: center;
@@ -904,6 +920,7 @@ footer {
         h4 {
             line-height: 2em;
             color: rgb(148, 5, 5);
+            font-weight: bold;
         }
     }
     .product-text {
@@ -943,6 +960,10 @@ footer {
         margin: 0 auto;
         p {
             line-height: 2em;
+        }
+        p.size {
+            margin: 5px auto 0;
+            font-size: 0.9em;
         }
         ul {
             margin: 2vh auto;
