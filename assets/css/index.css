@@ -1,10 +1,12 @@
 @charset "UTF-8";
 .btn-success {
-  background: #0a8b0a !important;
-  background: linear-gradient(180deg, #0a8b0a 0%, #09e209 100%) !important;
+  background: #46b758 !important;
+  background: linear-gradient(180deg, #46b758 0%, #208528 100%) !important;
   color: #fff;
   text-align: center;
   width: 100%;
+  font-size: 1.5em !important;
+  padding: 20px 30px !important;
   font-weight: bold !important;
 }
 
@@ -378,7 +380,7 @@
 }
 #promotions .type .text {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;

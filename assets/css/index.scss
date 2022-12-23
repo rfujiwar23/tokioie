@@ -5,11 +5,13 @@ $enText: "Roboto", sans-serif;
 
 
 .btn-success {
-    background: rgb(10,139,10) !important;
-    background: linear-gradient(180deg, rgba(10,139,10,1) 0%, rgba(9,226,9,1) 100%) !important;
+    background: rgb(70,183,88) !important;
+    background: linear-gradient(180deg, rgba(70,183,88,1) 0%, rgba(32,133,40,1) 100%) !important;
     color:#fff;
     text-align: center;
     width: 100%;
+    font-size: 1.5em !important;
+    padding:20px 30px !important;
     font-weight: bold !important;
 }
 
@@ -420,7 +422,7 @@ $enText: "Roboto", sans-serif;
         position: relative;
         .text {
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
             right: 0;
             width: 100%;
