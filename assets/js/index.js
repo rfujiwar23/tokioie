@@ -124,25 +124,25 @@ var vm = new Vue({
     products: [
       {
         name: "プラチナム 400セット",
-        url: "https://ifing-beauty.com/products/detail/137",
+        url: "https://ifing-beauty.com/products/detail/60",
         img: "assets/images/products-400-pl.png",
         price: "7790",
       },
       {
         name: "プラチナム 700セット",
-        url: "https://ifing-beauty.com/products/detail/137",
+        url: "https://ifing-beauty.com/products/detail/61",
         img: "assets/images/products-700-pl.png",
         price: "11590",
       },
       {
         name: "プレミアム 400セット",
-        url: "https://ifing-beauty.com/products/detail/137",
+        url: "https://ifing-beauty.com/products/detail/77",
         img: "assets/images/products-400-pr.png",
         price: "8930",
       },
       {
         name: "プレミアム 700セット",
-        url: "https://ifing-beauty.com/products/detail/137",
+        url: "https://ifing-beauty.com/products/detail/78",
         img: "assets/images/products-700-pr.png",
         price: "13110",
       },
@@ -154,7 +154,7 @@ var vm = new Vue({
       },
       {
         name: "ヘッドスパ 700セット",
-        url: "https://ifing-beauty.com/products/detail/137",
+        url: "https://ifing-beauty.com/products/detail/136",
         img: "assets/images/products-700-hs.png",
         price: "12540",
       },
@@ -308,10 +308,10 @@ var vm = new Vue({
   el: "#footer-links",
   data: {
     footerLinks: [
-      { id: 1, text: "特定商取引法に基づく表示", url: "" },
-      { id: 2, text: "プライバシーポリシー", url: "" },
-      { id: 3, text: "利用規約", url: "" },
-      { id: 4, text: "会社概要", url: "" },
+      { id: 1, text: "特定商取引法に基づく表示", url: "https://ifing-beauty.com/help/tradelaw" },
+      { id: 2, text: "プライバシーポリシー", url: "https://ifing-beauty.com/help/privacy" },
+      { id: 3, text: "利用規約", url: "https://ifing-beauty.com/help/agreement" },
+      { id: 4, text: "会社概要", url: "https://www.ifing.com/" },
     ],
   },
 });

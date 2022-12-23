@@ -296,7 +296,8 @@ $enText: "Roboto", sans-serif;
                 }
             }
             a {
-                width: 100%;
+                width: 90%;
+                max-width: 480px;
                 margin: 2vh auto 4vh;
                 font-size: 1.25em;
             }
