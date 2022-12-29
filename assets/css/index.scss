@@ -34,6 +34,10 @@ $enText: "Roboto", sans-serif;
     overflow-x: hidden;
 }
 
+
+.banner-bottom {
+  font-family: $JPMincho;
+}
 #section {
     /*   width: 500px;
       height: 400px; */
@@ -308,7 +312,7 @@ $enText: "Roboto", sans-serif;
             a {
                 width: 90%;
                 max-width: 480px;
-                margin: 2vh auto 4vh;
+                margin: 2vh auto 8vh;
                 font-size: 1.25em;
             }
         }
@@ -474,6 +478,17 @@ $enText: "Roboto", sans-serif;
             }
         }
     }
+}
+
+.section-05 {
+  font-family: $JPMincho;
+  h4 {
+    line-height: 1.5em;
+    span {
+      text-decoration: underline;
+      font-size: 0.8em;
+    }
+  }
 }
 
 .section-06 {
@@ -704,7 +719,7 @@ $enText: "Roboto", sans-serif;
     .top {
         text-align: center;
         // font-size: 40px;
-    
+
     }
     .user-voice-list {
         .voice-text {
@@ -799,7 +814,7 @@ $enText: "Roboto", sans-serif;
     h3 {
         text-align: center;
         margin-bottom: 4vh;
-        
+
         span {
             border-bottom:2px solid #af9e81;
         }
@@ -1089,11 +1104,7 @@ footer {
     }
 }
 
-.section-05 {
-    .voices {
-        font-size: 1.5em;
-    }
-}
+
 
 .fade-up-enter-active,
 .fade-up-leave-active {
@@ -1448,11 +1459,7 @@ footer {
             font-size: 1.15em;
         }
     }
-    .section-05 {
-        .voices {
-            font-size: 1.25em;
-        }
-    }
+
 }
 
 @media screen and (max-width: 430px) {
@@ -1487,18 +1494,14 @@ footer {
         }
     }
 
-    .section-05 {
-        .voices {
-            font-size: 1.1em;
-        }
-    }
+
 }
 
 @media screen and (max-width: 414px) {
     .section-12 {
         .section-12a {
             h4 {
-                font-size: 1.1em;
+                font-size: 1.25em;
             }
         }
     }
@@ -1521,13 +1524,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .section-05 {
-        .voices {
-            font-size: 1em;
-        }
-    }
-} 
+
 
 @media screen and (max-width: 375px) {
     .top-nav-bar {

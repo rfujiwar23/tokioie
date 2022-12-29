@@ -75,6 +75,10 @@
             </p>
             <img src="assets/images/premiumplatinum.png" alt="TOKIO IE INKARAMI" class="main">
         </div>
+        <div class="banner-bottom text-center">
+            <h3>特許技術が叶える美髪</h3>
+            <h3>サロンケアをご自宅で！</h3>
+        </div>
 
         <div class="container">
             <div class="intro" id="top-intro">
@@ -109,7 +113,7 @@
             </div>
         </div>
 
-       
+
 
         <div class="container-fluid px-0">
             <section class="section02">
@@ -131,28 +135,27 @@
                                 </div>
                                 <p class="text-center">いつも5％オフ（初回は更に+5％オフ）<br>
                                 送料無料<br>
-                                リピートリピート回数毎に得点をご用意<br>
+                                リピートリピート回数毎に特典をご用意<br>
                                 選べるサイズ展開<br>
                                 </p>
                             </div>
                         </div>
                         <div id="subItem">
                             <div v-for="item in items">
-                                
+
                                 <div class="item-details">
                                     <div class="col-8 offset-2">
                                         <img :src="item.img" alt="TOKIO INKARAMI" class="img-fluid">
                                     </div>
-                                    <h3>TOKIO IE インカラミ<br>{{item.itemName}}</h3>
-                                    <h4>{{item.itemNameType}}</h4>
+                                    <h3>TOKIO IE インカラミ<br>{{item.itemNameType}}<br>{{item.itemName}}</h3>
                                     <p>{{item.size}}</p>
                                     <h6><span>通常価格:</span><strong>￥{{item.regularPrice.toLocaleString()}}</strong>税込</h6>
                                     <h5><strong>￥{{item.withTaxPrice.toLocaleString()}}</strong>税込</h5>
                                     <a v-bind:href="item.link" class="btn-success btn">購入はこちら</a>
-                                </div> 
+                                </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <div class="bottom col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12" id="concern">
@@ -166,6 +169,9 @@
                             <ul>
                                 <li v-for="concern in concerns" data-aos="fade-right"><i class="fa-solid fa-square-check"></i>{{concern.text}}</li>
                             </ul>
+                        </div>
+                        <div class="mt-5 text-center">
+                          <h5 style="font-family: '游明朝', 'Yu Mincho', YuMincho, 'Hiragino Mincho Pro', serif">TOKIOインカラミブランドの強み</h5>
                         </div>
                     </div>
                 </div>
@@ -192,7 +198,7 @@
                 </a>
             </div>
         </div>
-        
+
 
         <div class="container-fluid section-12 px-0" id="bannerImage">
             <div class="section-12a">
@@ -220,8 +226,8 @@
 
 
         <div class="section-05">
-            <div class="container py-5">
-               
+            <div class="container pt-5">
+
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <img src="assets/images/img-reason001.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
                 </div>
@@ -229,7 +235,9 @@
         </div>
 
         <div class="container-fluid section-14" id="tokio1-4">
-            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+          <h3 class="text-center pb-4">インカラミ反応に<br class="br_on">用いられる主な成分をご紹介</h3>
+
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 pt-3">
                 <p class="scrollable">右ににスクロールできます <i class="fa-solid fa-arrow-right"></i></p>
                 <div class="tabs is-centered" style="margin-bottom:0;" v-cloak>
                     <ul style="padding:0;">
@@ -275,7 +283,7 @@
 
         <div class="section-05">
             <div class="container">
-               
+
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <img src="assets/images/img-reason002.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
                 </div>
@@ -310,7 +318,7 @@
         </div>
 
         <div class="section-17">
-            
+
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="col-md-10">
                     <div class="top">プロ中のプロ、<strong>カミカリスマ</strong>が<br><strong>TOKIOインカラミ トリートメント</strong>を<br>愛用する理由とは？</div>
@@ -373,7 +381,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <div class="sect-012 py-5">
               <h3 class="text-center">OCEAN TOKYO 髙木琢也 様</h3>
@@ -382,120 +390,52 @@
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BmMgkKZ5dNM"
                         style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
                 </div>
-            </div>    
+            </div>
+        </div>
+
+        <div class="section-05">
+          <div class="container">
+
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+              <img src="assets/images/img-reason005.png" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
+              <h4>成分へのこだわり</h4>
+            </div>
+          </div>
         </div>
 
         <div class="container section-06">
-            <div class="title-contents">
-                <p>TOKIO IE インカラミ</p>
-                <h4>共通成分＆メカニズム</h4>
-            </div>
+
+
+             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                    <img src="assets/images/img-reason001.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
+                </div>
 
             <div class="about">
                 <div>
-                    <img src="assets/images/img-tokio001.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/img-tokio001.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
                 </div>
             </div>
 
-            
 
-            <!-- <div class="about">
-                <h3><span>Q.</span>ケラチンとは何？</h3>
-                <div class="inner">
-                    <h4>A. ケラチン = ケラチンタンパク質</h4>
-                    <p>タンパク質の一種で、髪の毛以外では、爪や皮膚の角質層にも含まれます。</p>
-                    <div class="row pie-chart">
-                        <div class="col-sm-4">
-                            <img src="assets/images/pie-chart.png" alt="" class="img-fluid">
-                        </div>
-                        <div class="col-sm-8 d-flex align-items-center">
-                            <p>髪の毛はほとんどがタンパク質でできており、髪の毛のダメージは、タンパク質の流出が主な要因です。
-                                特にヘアカラー剤やパーマ剤に含まれる成分によって髪の中のタンパク質が流出し、空洞が生まれることで、切れ毛やパサつきが生じます。
-                                これらのダメージをケアするためには、タンパク質で補うのが最も有効な方法です。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+
 
             <div class="about">
-                <h3>シャンプーとトリートメントでインカラミ</h3>
-                <div class="inner">
-                    <p>
-                        シャンプーに羽毛ケラチン、トリートメントにケラチンアミノ酸と羊毛ケラチンを配合。これらの成分が毛髪内部で絡み合うことで、高い補修効果と持続力をもたらします。
-                    </p>
-                    <div class="additional-info d-flex justify-content-center align-items-center">
-                        <a href="" class="btn-success btn">詳しくはこちら <i class="fa-sharp fa-solid fa-caret-right"></i></a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="about">
-                <h3>フラーレンとは?</h3>
-                <div class="inner">
-                    <p>
-                        活性酸素によって、髪の毛に十分な栄養分が行き渡らないと、ツヤ、ハリコシが失われてしまいます。
-                        フラーレンには強い抗酸化作用があり、髪の毛の状態を活性化させ、健康髪を維持することができます。
-                    </p>
-                    <div class="additional-info">
-                        <h6>1996年、ノーベル化学賞を受賞している成分です。抗酸化力は、ビタミンCの100倍以上、しかも長時間続きます。</h6>
-                    </div>
-                </div>
-            </div> -->
-
-
-            <!-- <div class="title-contents">
-                <p>TOKIO IE インカラミ</p>
-                <h4>共通成分＆メカニズム</h4>
-            </div> -->
-
-            
-            <div class="about">
                 <h3 class="text-center">美容室のシャンプー/トリートメントはどこが優れているの?</h3>
-                
+
                 <div>
-                    <img src="assets/images/img-tokio002.jpg" alt="" class="img-fluid">
+                    <img src="assets/images/img-tokio002.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
                 </div>
-                
-                <!-- <div class="row my-5">
-                    <div class="comparison col-sm-6">
 
-                        <div class="title">
-                            <h4>一般的なシャンプー</h4>
-                        </div>
-                        <div class="col-6 offset-3">
-                            <img src="assets/images/pie-chart002.png" alt="円グラフ" class="img-fluid">
-                        </div>
-                        <div class="sub-title">
-                            <p>「洗うこと」に特化
-                                <br>&nbsp;
-                            </p>
-                        </div>
-                        <div class="main-point text-center">
-                            洗浄力は優れているが<br>刺激が強い
-                        </div>
-                    </div>
-                    <div class="comparison col-sm-6">
-                        <div class="title">
-                            <h4>美容室のシャンプー
-                            </h4>
-                        </div>
-                        <div class="col-6 offset-3">
-                            <img src="assets/images/pie-chart001.png" alt="円グラフ" class="img-fluid">
-                        </div>
-
-                        <div class="sub-title">
-                            <p>「洗うこと」「ケアすること」<br>
-                                どちらにも特化</p>
-                        </div>
-                        <div class="main-point text-center">
-                            洗浄力はマイルド<br>ケア効果もプラス
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <h3 class="text-center">TOKIO IEは、洗う&ケアを高いレベルで実現するために成分にこだわり抜きました。</h3> -->
             </div>
 
-            
+
+        </div>
+
+        <div class="section-05">
+          <h4 class="text-center">人気ライン<br><span>TOKIO IE インカラミシリーズをご紹介</span></h4>
         </div>
 
 
@@ -514,7 +454,7 @@
                             <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
                                 <img :src="tab.img" :alt="tab.title" class="img-fluid">
                             </div>
-                            
+
                             <div v-html="tab.content"></div>
                             <p class="size"><strong>サイズ：</strong>{{tab.size}}</p>
                             <ul>
@@ -553,7 +493,7 @@
                                 <p>{{user.voice}}</p>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
                 <p class="text-center">
                     <a href="https://tokio.tokyo/shampoo-treatment/#user-voice">ユーザー様からの声を見る</a>
@@ -561,7 +501,7 @@
             </div>
         </div>
 
-        
+
         <div class="section-005">
             <h4 class="text-center">商品一覧</h4>
             <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
@@ -593,7 +533,7 @@
                     <div class="subscription-message" v-for="message in messages">
                         <h2>{{message.reasonNo}}</h2>
                         <h5>{{message.reasonHeader}}</h5>
-                        <div class="message-text" v-html="message.reasonText"></div>
+                        <div class="message-text text-center" v-html="message.reasonText"></div>
                     </div>
                 </div>
             </div>
@@ -605,7 +545,7 @@
                 <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
             </p>
             <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
-                <div class="col-sm-6" v-for="product in tokioProducts">
+                <div class="col-sm-6 mb-3" v-for="product in tokioProducts">
                     <div class="tokio-brands">
                         <a v-bind:href="product.url">
                             <img :src="product.img" :alt="product.name" class="img-fluidå">
@@ -636,17 +576,17 @@
                         </div>
                     </div>
                     <p>【ご注文に関しての注意事項】</p>
-    
+
                     <ul class="top">
                         <li>200ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約1ヶ月</li>
                         <li>400ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約2ヶ月</li>
                         <li>700ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで3ヶ月から4ヶ月</li>
                     </ul>
-    
+
                     <div class="section-10-text">
                         <p>それぞれ上記期間を目安として、ご使用いいただけるサイズとなっております（髪の長さによって変わります）。<br>
                             ご購入前にご確認ください。なお、転売目的での商品購入はお断りしております。</p>
-    
+
                         <p class="add-red-mark">詳しくは<a href="https://ifing-beauty.com/contents/notice">こちら</a>をご覧ください。</p>
                     </div>
                 </div>

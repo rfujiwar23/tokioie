@@ -48,28 +48,28 @@ var vm = new Vue({
 });
 
 var vm = new Vue({
-  el: "#tokioIngredients1", 
+  el: "#tokioIngredients1",
   data: {
     Ingredients1: [
       {
         tokioNum: 1,
         ingredient: '羽毛ケラチン',
-        details: '水鳥の羽毛が原料のケラチン。<br class="br_on576">髪を軽くて柔らかい仕上がりみ導きます。' 
+        details: '水鳥の羽毛が原料のケラチン。<br class="br_on576">髪を軽くて柔らかい仕上がりみ導きます。'
       },
       {
         tokioNum: 2,
         ingredient: 'ケラチンアミノ酸',
-        details: '超低分子のケラチン。<br class="br_on576">最も高い補修効果を保持しています。' 
+        details: '超低分子のケラチン。<br class="br_on576">最も高い補修効果を保持しています。'
       },
       {
         tokioNum: 3,
         ingredient: '羊毛ケラチン',
-        details: '内部補修、針、強さをもたらします。<br class="br_on576">TOKIO IEの補修効果を完結させます。' 
+        details: '内部補修、針、強さをもたらします。<br class="br_on576">TOKIO IEの補修効果を完結させます。'
       },
       {
         tokioNum: 4,
         ingredient: 'セラミド',
-        details: '保湿力をサポートし、紫外線や細菌、<br class="br_on576">埃などの外部刺激から皮膚を守ります。' 
+        details: '保湿力をサポートし、紫外線や細菌、<br class="br_on576">埃などの外部刺激から皮膚を守ります。'
       },
     ]
   }
@@ -209,20 +209,20 @@ var vm = new Vue({
     messages: [
       {
         reasonNo: "選ばれる理由１",
-        reasonHeader: "全国の美容室からの支持率No1",
-        reasonText: "東京を中心に国内で多くの美容室から高い価値を得ています",
+        reasonHeader: "サロンでインカラミ",
+        reasonText: "カリスマ美容師支持率NO.1の<br class='br_on576'>サロントリートメント<br class=“br_on”>TOKIOインカラミトリートメント",
       },
       {
         reasonNo: "選ばれる理由２",
-        reasonHeader: "カリスマ美容師支持率No1",
+        reasonHeader: "イエでインカラミ",
         reasonText:
-          "東京を中心に、国内外で多くのトップスタイリストの方々から高い評価を得ています",
+          "ご自宅でTOKIOインカラミを再現<br class='br_on576'>TOKIO IE インカラミシャンプー・トリートメント",
       },
       {
         reasonNo: "選ばれる理由３",
-        reasonHeader: "圧倒的なケア力No1",
+        reasonHeader: "成分へのこだわり",
         reasonText:
-          "TOKIOインカラミが持つ「特許技術インカラミ」によって、毛髪強度回復・ダメージ補修に高い評価を得ています",
+          "こだわり抜いた洗浄成分とケア成分<br>今までにない仕上がりを体感",
       },
     ],
   },
@@ -390,7 +390,7 @@ var vm = new Vue({
         info: "トリートメント<br>POINT成分",
         about: "メドウフォームとは?",
         details: `
-        メドウフォームは、加熱するとケラチンと結合し、疎水化を促します。髪が疎水化すると、水をはじき、油をなじませることで常に一定の水分量を保たれます。メドウフォームが髪の内外部に吸着して水をはじき、健康な髪へと導いてくれます。  
+        メドウフォームは、加熱するとケラチンと結合し、疎水化を促します。髪が疎水化すると、水をはじき、油をなじませることで常に一定の水分量を保たれます。メドウフォームが髪の内外部に吸着して水をはじき、健康な髪へと導いてくれます。
         `,
       },
     ],
@@ -416,7 +416,7 @@ var vm = new Vue({
         info: "オイル<br>POINT成分",
         about: "スクワランとは?",
         details: `
-        優れた保湿力と浸透力をもたらします。人間の皮脂に近い成分なので非常に肌なじみが良く、髪の毛のパサつき、切れ毛の防止に繋がります。 
+        優れた保湿力と浸透力をもたらします。人間の皮脂に近い成分なので非常に肌なじみが良く、髪の毛のパサつき、切れ毛の防止に繋がります。
         `,
       },
     ],

@@ -29,6 +29,10 @@
   overflow-x: hidden;
 }
 
+.banner-bottom {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+
 #section {
   /*   width: 500px;
     height: 400px; */
@@ -192,7 +196,7 @@
 }
 .section01 .image-area {
   margin-top: 4vh;
-  padding-top: calc(100% / 3);
+  padding-top: 33.3333333333%;
   position: relative;
 }
 .section01 .image-area img {
@@ -253,7 +257,7 @@
   flex-direction: row;
 }
 .section02 .top .list .list-item {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
   text-align: center;
 }
 .section02 .top .list .list-item .text {
@@ -285,7 +289,7 @@
 .section02 .item .item-details a {
   width: 90%;
   max-width: 480px;
-  margin: 2vh auto 4vh;
+  margin: 2vh auto 8vh;
   font-size: 1.25em;
 }
 .section02 .subscription-notice {
@@ -403,7 +407,7 @@
   flex-direction: row;
 }
 .promotions .columns {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
   aspect-ratio: 16/9;
   position: relative;
 }
@@ -429,6 +433,17 @@
 .promotions .columns .text p {
   margin: 0;
   text-align: center;
+}
+
+.section-05 {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.section-05 h4 {
+  line-height: 1.5em;
+}
+.section-05 h4 span {
+  text-decoration: underline;
+  font-size: 0.8em;
 }
 
 .section-06 {
@@ -966,10 +981,6 @@ footer .bottom li a {
   font-size: 1.25em;
 }
 
-.section-05 .voices {
-  font-size: 1.5em;
-}
-
 .fade-up-enter-active,
 .fade-up-leave-active {
   transition: all 0.3s ease-in-out;
@@ -1236,10 +1247,6 @@ footer .bottom li a {
   .section-17 .top {
     font-size: 1.15em;
   }
-
-  .section-05 .voices {
-    font-size: 1.25em;
-  }
 }
 @media screen and (max-width: 430px) {
   .top-nav-bar .top-sub-nav .subnav a h3 {
@@ -1256,14 +1263,10 @@ footer .bottom li a {
   .section-12 .section-12a h4 {
     font-size: 1.15em;
   }
-
-  .section-05 .voices {
-    font-size: 1.1em;
-  }
 }
 @media screen and (max-width: 414px) {
   .section-12 .section-12a h4 {
-    font-size: 1.1em;
+    font-size: 1.25em;
   }
 
   .section02 .subscription-notice p {
@@ -1275,11 +1278,6 @@ footer .bottom li a {
   }
   .section-16 h4 span {
     font-size: 1.25em;
-  }
-}
-@media screen and (max-width: 400px) {
-  .section-05 .voices {
-    font-size: 1em;
   }
 }
 @media screen and (max-width: 375px) {
