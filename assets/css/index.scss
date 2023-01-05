@@ -37,6 +37,9 @@ $enText: "Roboto", sans-serif;
 
 .banner-bottom {
   font-family: $JPMincho;
+  padding:4vh 0;
+  background:#282828;
+  color: #fff;
 }
 #section {
     /*   width: 500px;
@@ -492,7 +495,7 @@ $enText: "Roboto", sans-serif;
 }
 
 .section-06 {
-    padding: 4vh 20px;
+    padding: 0vh 20px 4vh;
     .title-contents {
         text-align: center;
         // font-size: 40px;

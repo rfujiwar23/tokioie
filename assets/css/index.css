@@ -31,6 +31,9 @@
 
 .banner-bottom {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  padding: 4vh 0;
+  background: #282828;
+  color: #fff;
 }
 
 #section {
@@ -447,7 +450,7 @@
 }
 
 .section-06 {
-  padding: 4vh 20px;
+  padding: 0vh 20px 4vh;
 }
 .section-06 .title-contents {
   text-align: center;
