@@ -230,16 +230,16 @@
   margin: 0;
 }
 
-.section02 {
+.section-01 {
   background: linear-gradient(100deg, rgba(255, 255, 255, 0.6) 0%, rgba(226, 226, 226, 0.7) 100%), url(../images/inkarami-stripe.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   padding: 8vh 0;
 }
-.section02 .top {
+.section-01 .top {
   padding: 3vh 0 0;
 }
-.section02 .top h3 {
+.section-01 .top h3 {
   text-align: center;
   margin-bottom: 3vh;
   line-height: 2em;
@@ -248,85 +248,85 @@
   font-size: 1.25em;
   font-weight: bold;
 }
-.section02 .top h4 {
+.section-01 .top h4 {
   text-align: center;
   line-height: 1.5em;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section02 .top .list {
+.section-01 .top .list {
   width: 96%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
-.section02 .top .list .list-item {
+.section-01 .top .list .list-item {
   width: 33.3333333333%;
   text-align: center;
 }
-.section02 .top .list .list-item .text {
+.section-01 .top .list .list-item .text {
   width: 96%;
   margin: 0 auto;
   padding: 10px;
   background: #940505;
   color: #fff;
 }
-.section02 .item .item-details {
+.section-01 .item .item-details {
   text-align: center;
 }
-.section02 .item .item-details h6 span {
+.section-01 .item .item-details h6 span {
   text-decoration: underline;
 }
-.section02 .item .item-details h6 strong {
+.section-01 .item .item-details h6 strong {
   font-size: 1.25em;
   color: #675532;
   margin: 0 5px;
 }
-.section02 .item .item-details h5 {
+.section-01 .item .item-details h5 {
   color: #940505;
 }
-.section02 .item .item-details h5 strong {
+.section-01 .item .item-details h5 strong {
   font-size: 2em;
   margin: 0 5px;
   color: #940505;
 }
-.section02 .item .item-details a {
+.section-01 .item .item-details a {
   width: 90%;
   max-width: 480px;
   margin: 2vh auto 8vh;
   font-size: 1.25em;
 }
-.section02 .subscription-notice {
+.section-01 .subscription-notice {
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid #282828;
   padding: 2vh 0;
 }
-.section02 .subscription-notice .img {
+.section-01 .subscription-notice .img {
   width: 45%;
   margin: 0 auto;
 }
-.section02 .bottom h4 {
+.section-01 .bottom h4 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   text-align: center;
 }
-.section02 .bottom .list-and-image {
+.section-01 .bottom .list-and-image {
   padding: 6vh 0;
 }
-.section02 .bottom .list-and-image .list {
+.section-01 .bottom .list-and-image .list {
   margin-top: 3vh;
   display: flex;
   justify-content: center;
 }
-.section02 .bottom .list-and-image .list ul {
+.section-01 .bottom .list-and-image .list ul {
   padding: 2vh 2vw;
   background: rgba(255, 255, 255, 0.4);
 }
-.section02 .bottom .list-and-image .list ul li {
+.section-01 .bottom .list-and-image .list ul li {
   line-height: 2em;
 }
-.section02 .bottom .list-and-image .list ul li i {
+.section-01 .bottom .list-and-image .list ul li i {
   margin-right: 10px;
 }
-.section02 .bottom .list-and-image .img img {
+.section-01 .bottom .list-and-image .img img {
   width: 100%;
 }
 
@@ -389,10 +389,10 @@
   z-index: 99;
 }
 
-#promotions .type {
+.section-02 .type {
   position: relative;
 }
-#promotions .type .text {
+.section-02 .type .text {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -400,72 +400,39 @@
   width: 100%;
   background: rgba(255, 255, 255, 0.8);
 }
-#promotions .type .text p {
+.section-02 .type .text p {
   margin: 0;
   font-style: italic;
 }
 
-.promotions {
-  display: flex;
-  flex-direction: row;
-}
-.promotions .columns {
-  width: 33.3333333333%;
-  aspect-ratio: 16/9;
-  position: relative;
-}
-.promotions .columns img {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.promotions .columns .text {
-  position: absolute;
-  z-index: 999;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(125, 110, 110, 0.8);
-  color: #fff;
-  padding: 10px;
-}
-.promotions .columns .text p {
-  margin: 0;
-  text-align: center;
-}
-
-.section-05 {
+.section-mid-title {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-05 h4 {
+.section-mid-title h4 {
   line-height: 1.5em;
 }
-.section-05 h4 span {
+.section-mid-title h4 span {
   text-decoration: underline;
   font-size: 0.8em;
 }
 
-.section-06 {
+.section-008 {
   padding: 0vh 20px 4vh;
 }
-.section-06 .title-contents {
+.section-008 .title-contents {
   text-align: center;
 }
-.section-06 .details {
+.section-008 .details {
   padding: 4vh 0;
 }
-.section-06 .details .list {
+.section-008 .details .list {
   padding: 2vh 0;
   width: 100%;
   max-width: 640px;
   margin: 3vh auto;
   position: relative;
 }
-.section-06 .details .list .img {
+.section-008 .details .list .img {
   position: absolute;
   left: 0;
   top: 0;
@@ -475,11 +442,11 @@
   height: 100%;
   background-color: #9a9a9a;
 }
-.section-06 .details .list .img img {
+.section-008 .details .list .img img {
   width: 100%;
   border-radius: 50%;
 }
-.section-06 .details .list .text {
+.section-008 .details .list .text {
   position: absolute;
   right: 0;
   top: 0;
@@ -490,10 +457,10 @@
   align-items: center;
   justify-content: center;
 }
-.section-06 .details .list .text .contents {
+.section-008 .details .list .text .contents {
   background: rgba(204, 203, 203, 0.8);
 }
-.section-06 .about {
+.section-008 .about {
   width: 100%;
   padding: 20px;
   max-width: 800px;
@@ -501,54 +468,54 @@
   background: linear-gradient(180deg, #deccab 0%, #fffcde 88%);
   border-radius: 10px;
 }
-.section-06 .about h3 {
+.section-008 .about h3 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   color: #b1256b;
 }
-.section-06 .about p {
+.section-008 .about p {
   margin: 0;
 }
-.section-06 .about .comparison {
+.section-008 .about .comparison {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: stretch;
 }
-.section-06 .about .comparison .main-point {
+.section-008 .about .comparison .main-point {
   background: #fcfcfc;
 }
-.section-06 .about .inner {
+.section-008 .about .inner {
   background: white;
   margin: 2vh auto;
   border-radius: 10px;
   padding: 10px;
 }
-.section-06 .about .inner .pie-chart {
+.section-008 .about .inner .pie-chart {
   margin: 3vh auto;
 }
-.section-06 .about .inner .additional-info {
+.section-008 .about .inner .additional-info {
   margin: 5vh auto 0;
 }
-.section-06 .about .inner .additional-info h6 {
+.section-008 .about .inner .additional-info h6 {
   background: #9b8d8d;
   color: white;
   padding: 10px 20px;
 }
-.section-06 .about h3 i {
+.section-008 .about h3 i {
   font-size: 0.7em;
 }
-.section-06 .list {
+.section-008 .list {
   margin: 8vh auto;
   width: 100%;
   max-width: 640px;
   position: relative;
   display: flex;
 }
-.section-06 .list:nth-child(odd) .img {
+.section-008 .list:nth-child(odd) .img {
   width: 30%;
   transform: translate(1%, 0);
 }
-.section-06 .list:nth-child(odd) .img img {
+.section-008 .list:nth-child(odd) .img img {
   border-radius: 50%;
   height: 100%;
   width: 100%;
@@ -556,7 +523,7 @@
   box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.6);
   background: #f9b0fd;
 }
-.section-06 .list:nth-child(odd) .text {
+.section-008 .list:nth-child(odd) .text {
   width: 100%;
   transform: translate(4%, 0);
   padding: 2% 10px;
@@ -564,14 +531,14 @@
   align-items: center;
   justify-content: center;
 }
-.section-06 .list:nth-child(odd) .text h3 {
+.section-008 .list:nth-child(odd) .text h3 {
   text-decoration: underline;
 }
-.section-06 .list:nth-child(even) .img {
+.section-008 .list:nth-child(even) .img {
   width: 30%;
   transform: translate(-10%, 0);
 }
-.section-06 .list:nth-child(even) .img img {
+.section-008 .list:nth-child(even) .img img {
   border-radius: 50%;
   height: 100%;
   width: 100%;
@@ -579,7 +546,7 @@
   box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.6);
   background: #f9b0fd;
 }
-.section-06 .list:nth-child(even) .text {
+.section-008 .list:nth-child(even) .text {
   width: 100%;
   transform: translate(-5%, 0);
   padding: 2% 10px;
@@ -587,37 +554,37 @@
   align-items: center;
   justify-content: center;
 }
-.section-06 .list:nth-child(even) .text h3 {
+.section-008 .list:nth-child(even) .text h3 {
   text-decoration: underline;
 }
-.section-06 .section06-products .item .product-row {
+.section-008 .section06-products .item .product-row {
   display: flex;
   flex-direction: row;
   padding: 20px;
   background: #f8f8ec;
   margin: 8vh auto;
 }
-.section-06 .section06-products .item .product-row:nth-child(even) {
+.section-008 .section06-products .item .product-row:nth-child(even) {
   background: rgba(238, 209, 170, 0.66);
 }
-.section-06 .section06-products .item .product-row:nth-child(even) .img {
+.section-008 .section06-products .item .product-row:nth-child(even) .img {
   order: 2;
 }
-.section-06 .section06-products .item .product-row:nth-child(even) .details {
+.section-008 .section06-products .item .product-row:nth-child(even) .details {
   order: 1;
 }
-.section-06 .section06-products .item .details .contents h2 {
+.section-008 .section06-products .item .details .contents h2 {
   font-size: 1.25em;
   padding-bottom: 4px;
   border-bottom: 1px solid #9a9a9a;
 }
-.section-06 .section06-products .item .details .contents h2 span {
+.section-008 .section06-products .item .details .contents h2 span {
   font-size: 0.8em;
 }
-.section-06 .section06-products .item .details .contents p {
+.section-008 .section06-products .item .details .contents p {
   padding: 5px 10px;
 }
-.section-06 .section06-products .item .item-about {
+.section-008 .section06-products .item .item-about {
   width: 96%;
   max-width: 540px;
   padding: 4vh 2vw;
@@ -625,12 +592,12 @@
   position: relative;
   border-radius: 5px;
 }
-.section-06 .section06-products .item .item-about h4 {
+.section-008 .section06-products .item .item-about h4 {
   margin-left: 2vw;
   text-decoration: underline;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-06 .section06-products .item .item-about h5 {
+.section-008 .section06-products .item .item-about h5 {
   position: absolute;
   top: -15%;
   left: -1%;
@@ -643,46 +610,46 @@
   text-align: center;
   border-radius: 5px;
 }
-.section-06 .section06-products .item .item-about .ing-details {
+.section-008 .section06-products .item .item-about .ing-details {
   background: white;
   padding: 2vh 10px;
 }
 
-.section-07 {
+.section-010 {
   padding: 4vh 20px;
 }
-.section-07 .top {
+.section-010 .top {
   text-align: center;
 }
-.section-07 .user-voice-list .voice-text p {
+.section-010 .user-voice-list .voice-text p {
   border: 1px solid #9a9a9a;
   padding: 2vh 10px;
   margin-bottom: 0;
   border-radius: 10px;
 }
-.section-07 .user-voice {
+.section-010 .user-voice {
   width: 100%;
   padding: 20px;
   margin: 2vh auto;
   border: 1px solid #b8b8b8;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.6);
 }
-.section-07 .user-voice .user-info {
+.section-010 .user-voice .user-info {
   width: 25%;
   text-align: center;
 }
-.section-07 .user-voice .user-info h4 {
+.section-010 .user-voice .user-info h4 {
   font-size: 1em;
   margin: 5px 0 0;
 }
-.section-07 .user-voice .user-info p {
+.section-010 .user-voice .user-info p {
   font-size: 0.8em;
 }
-.section-07 .user-voice .user-info .user-image {
+.section-010 .user-voice .user-info .user-image {
   aspect-ratio: 1;
   position: relative;
 }
-.section-07 .user-voice .user-info .user-image img {
+.section-010 .user-voice .user-info .user-image img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -693,7 +660,7 @@
   object-position: center;
   border-radius: 50%;
 }
-.section-07 .user-voice .user-voice-details {
+.section-010 .user-voice .user-voice-details {
   width: 75%;
   display: flex;
   justify-content: center;
@@ -701,28 +668,28 @@
   padding: 20px;
 }
 
-.section-08 {
+.section-012 {
   padding: 8vh 10px;
 }
-.section-08 .subscription-image img {
+.section-012 .subscription-image img {
   margin: 2vh auto;
 }
-.section-08 .subscription-message {
+.section-012 .subscription-message {
   background: #fff;
   padding-bottom: 1vh;
   margin-bottom: 2vh;
 }
-.section-08 .subscription-message h2 {
+.section-012 .subscription-message h2 {
   text-align: center;
   background: #b6a87d;
   font-size: 1.25em;
   padding: 10px;
   color: #fff;
 }
-.section-08 .subscription-message h5 {
+.section-012 .subscription-message h5 {
   text-align: center;
 }
-.section-08 .subscription-message .message-text {
+.section-012 .subscription-message .message-text {
   width: 90%;
   max-width: 520px;
   margin: 2vh auto;
@@ -730,21 +697,21 @@
   border-top: 1px solid #9a9a9a;
 }
 
-.section-09 {
+.section-013 {
   padding: 4vh 10px;
 }
-.section-09 h3 {
+.section-013 h3 {
   text-align: center;
   margin-bottom: 4vh;
 }
-.section-09 h3 span {
+.section-013 h3 span {
   border-bottom: 2px solid #af9e81;
 }
-.section-09 p {
+.section-013 p {
   text-align: center;
   line-height: 2em;
 }
-.section-09 .product-list {
+.section-013 .product-list {
   padding: 4vh 20px;
   border: 1px solid #9a9a9a;
   box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.6);
@@ -753,53 +720,53 @@
   margin: 2vh auto 4vh;
   text-align: center;
 }
-.section-09 .product-list h4 {
+.section-013 .product-list h4 {
   text-align: center;
   font-family: "Roboto", sans-serif;
   margin-bottom: 2vh;
 }
-.section-09 .product-list h4 span {
+.section-013 .product-list h4 span {
   padding-bottom: 3px;
   border-bottom: 1px solid #940505;
 }
-.section-09 .product-list p {
+.section-013 .product-list p {
   font-size: 0.9em;
 }
-.section-09 .product-list a {
+.section-013 .product-list a {
   font-size: 1.1em;
   margin-bottom: 2vh;
 }
 
-.section-10 {
+.section-014 {
   padding: 4vh 10px;
   background: linear-gradient(100deg, rgba(204, 205, 206, 0.6) 0%, rgba(138, 138, 138, 0.7) 100%), url(../images/inkarami-stripe.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
-.section-10 p {
+.section-014 p {
   font-size: 1em;
 }
-.section-10 ul {
+.section-014 ul {
   list-style: none;
   padding: 0;
   line-height: 2em;
 }
-.section-10 .top li:before {
+.section-014 .top li:before {
   content: "※";
   color: #940505;
   margin-right: 5px;
 }
-.section-10 .section-10-image h3 {
+.section-014 .section-014-image h3 {
   background: #555;
   margin: 0;
   padding: 10px 20px;
   text-align: center;
   color: #fff;
 }
-.section-10 .section-10-text a {
+.section-014 .section-014-text a {
   color: #940505;
 }
-.section-10 .section-10-text .add-red-mark::before {
+.section-014 .section-014-text .add-red-mark::before {
   content: "※";
   color: #940505;
   margin-right: 5px;
@@ -825,65 +792,65 @@ footer .bottom li a {
   background-position: center;
 }
 
-.section-12 .section-12a {
+.section-03 .section-03a {
   padding: 5vh 0;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   background: #f0e1cc;
   background: linear-gradient(100deg, #f0e1cc 0%, #f6f1ea 25%, #ffe3bc 50%, #eed7b5 77%, #f6f1ea 100%);
 }
-.section-12 .section-12a h4 {
+.section-03 .section-03a h4 {
   line-height: 2em;
   color: #940505;
   font-weight: bold;
 }
-.section-12 .product-text {
+.section-03 .product-text {
   padding: 4vh 0;
 }
-.section-12 .product-text h3 {
+.section-03 .product-text h3 {
   width: 90%;
   max-width: 360px;
   margin: 0 auto;
   text-align: center;
   line-height: 2em;
 }
-.section-12 .product-text h3 em {
+.section-03 .product-text h3 em {
   font-style: normal;
   text-decoration: underline;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-12 .product-text h3 span {
+.section-03 .product-text h3 span {
   font-size: 0.7em;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
-.section-12 .product-text p {
+.section-03 .product-text p {
   margin: 3vh auto;
   padding: 0 10px;
   text-align: center;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 
-.section-13 {
+.section-009 {
   padding: 2em 0;
 }
-.section-13 .texts {
+.section-009 .texts {
   background: linear-gradient(180deg, #deccab 0%, #fffcde 88%);
   padding: 0 10px;
   width: 96%;
   max-width: 640px;
   margin: 0 auto;
 }
-.section-13 .texts p {
+.section-009 .texts p {
   line-height: 2em;
 }
-.section-13 .texts p.size {
+.section-009 .texts p.size {
   margin: 5px auto 0;
   font-size: 0.9em;
 }
-.section-13 .texts ul {
+.section-009 .texts ul {
   margin: 2vh auto;
   padding: 0;
 }
-.section-13 .texts ul li::before {
+.section-009 .texts ul li::before {
   content: "※";
   font-weight: bold;
   font-size: 0.8em;
@@ -891,40 +858,40 @@ footer .bottom li a {
   margin: 0 5px 0 10px;
 }
 
-.section-14 {
+.section-04 {
   padding: 2em 0;
 }
-.section-14 .scrollable {
+.section-04 .scrollable {
   text-align: right;
   font-size: 0.8em;
   margin-bottom: 0;
   color: #6e6e6e;
   display: none;
 }
-.section-14 .scrollable i {
+.section-04 .scrollable i {
   font-size: 0.8em;
 }
-.section-14 .texts {
+.section-04 .texts {
   padding: 0 10px;
 }
-.section-14 .texts .img {
+.section-04 .texts .img {
   padding: 2vh 3vw;
 }
-.section-14 .texts .ingredient-details {
+.section-04 .texts .ingredient-details {
   padding: 2vh 0;
 }
-.section-14 .texts .ingredient-details h2 {
+.section-04 .texts .ingredient-details h2 {
   font-size: 1.2em;
   text-decoration: underline;
 }
-.section-14 .texts .ingredient-details h4 {
+.section-04 .texts .ingredient-details h4 {
   font-size: 1.15em;
   font-style: italic;
   margin-bottom: 5px;
   margin-top: 10px;
   color: #978989;
 }
-.section-14 .texts .ingredient-details .dp p {
+.section-04 .texts .ingredient-details .dp p {
   margin-bottom: 0;
 }
 
@@ -945,42 +912,42 @@ footer .bottom li a {
   right: 0;
 }
 
-.section-16 {
+.section-05 {
   margin: 4vh auto;
 }
-.section-16 h4 {
+.section-05 h4 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   margin: 2vh auto;
 }
-.section-16 h4 span {
+.section-05 h4 span {
   font-size: 1.25em;
   margin-left: 5px;
 }
-.section-16 h4 span em {
+.section-05 h4 span em {
   font-style: normal;
 }
-.section-16 .ingredient-details {
+.section-05 .ingredient-details {
   width: 96%;
   max-width: 720px;
   margin: 4vh auto;
   background: linear-gradient(180deg, #deccab 0%, #fffcde 88%);
 }
-.section-16 .ingredient-details .text {
+.section-05 .ingredient-details .text {
   margin: 2vh auto;
   text-align: center;
 }
 
-.section-17 {
+.section-006 {
   background: url(../images/inkarami-stripe.jpg) no-repeat;
   background-position: center;
   background-size: cover;
 }
-.section-17 .top {
+.section-006 .top {
   text-align: center;
   font-size: 1.5em;
   padding: 3vh 0 4vh;
 }
-.section-17 .top strong {
+.section-006 .top strong {
   font-size: 1.25em;
 }
 
@@ -1038,17 +1005,17 @@ footer .bottom li a {
     width: 100%;
   }
 
-  .section02 .top .list {
+  .section-01 .top .list {
     width: 96%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-  .section02 .top .list .list-item {
+  .section-01 .top .list .list-item {
     width: 100%;
     text-align: center;
   }
-  .section02 .top .list .list-item .text {
+  .section-01 .top .list .list-item .text {
     width: 96%;
     margin: 10px auto;
     padding: 10px;
@@ -1056,7 +1023,7 @@ footer .bottom li a {
     color: #fff;
   }
 
-  .section-14 .scrollable {
+  .section-04 .scrollable {
     display: block;
   }
 }
@@ -1082,27 +1049,27 @@ footer .bottom li a {
     display: block;
   }
 
-  .section-06 {
+  .section-008 {
     padding: 4vh 20px;
   }
-  .section-06 .title-contents {
+  .section-008 .title-contents {
     text-align: center;
   }
-  .section-06 .section06-products .item .product-row {
+  .section-008 .section06-products .item .product-row {
     flex-direction: column;
   }
-  .section-06 .section06-products .item .product-row:nth-child(even) .img {
+  .section-008 .section06-products .item .product-row:nth-child(even) .img {
     order: 1;
   }
-  .section-06 .section06-products .item .product-row:nth-child(even) .details {
+  .section-008 .section06-products .item .product-row:nth-child(even) .details {
     order: 2;
   }
-  .section-06 .section06-products .item .details .contents h2 {
+  .section-008 .section06-products .item .details .contents h2 {
     font-size: 1.25em;
     padding-bottom: 4px;
     border-bottom: 1px solid #9a9a9a;
   }
-  .section-06 .section06-products .item .details .contents h2 span {
+  .section-008 .section06-products .item .details .contents h2 span {
     font-size: 0.8em;
   }
 
@@ -1110,16 +1077,16 @@ footer .bottom li a {
     font-size: 1.5em;
   }
 
-  .section02 .bottom .list-and-image {
+  .section-01 .bottom .list-and-image {
     padding: 6vh 0;
   }
-  .section02 .bottom .list-and-image .img {
+  .section-01 .bottom .list-and-image .img {
     margin: 0 auto;
   }
-  .section02 .bottom .list-and-image .img img {
+  .section-01 .bottom .list-and-image .img img {
     width: 100%;
   }
-  .section02 .bottom .list-and-image .list ul {
+  .section-01 .bottom .list-and-image .list ul {
     width: 90%;
     max-width: 350px;
     margin: 4vh auto 0;
@@ -1131,7 +1098,7 @@ footer .bottom li a {
     margin-right: 0;
   }
 
-  .section-09 .col-sm-6 {
+  .section-013 .col-sm-6 {
     padding-right: 0;
     padding-left: 0;
   }
@@ -1169,13 +1136,13 @@ footer .bottom li a {
     padding: 8vh 0;
   }
 
-  .section02 .top h3 {
+  .section-01 .top h3 {
     font-size: 1em;
   }
-  .section02 .top h4 {
+  .section-01 .top h4 {
     font-size: 1.25em;
   }
-  .section02 .bottom .list-and-image .list ul li {
+  .section-01 .bottom .list-and-image .list ul li {
     font-size: 0.9em;
   }
 
@@ -1187,67 +1154,67 @@ footer .bottom li a {
     max-width: 160px;
   }
 
-  .section-06 .about h3 {
+  .section-008 .about h3 {
     font-size: 1.3em;
   }
-  .section-06 .list:nth-child(even) .img {
+  .section-008 .list:nth-child(even) .img {
     width: 65%;
     transform: translate(-1%, 0);
   }
-  .section-06 .list:nth-child(even) .text {
+  .section-008 .list:nth-child(even) .text {
     transform: translate(-5%, 0);
   }
-  .section-06 .list:nth-child(odd) .img {
+  .section-008 .list:nth-child(odd) .img {
     width: 65%;
   }
-  .section-06 .list:nth-child(odd) .text {
+  .section-008 .list:nth-child(odd) .text {
     transform: translate(4%, 0);
   }
 
-  .section-12 .section-12a h4 {
+  .section-03 .section-03a h4 {
     font-size: 1.25em;
   }
-  .section-12 .product-text p {
+  .section-03 .product-text p {
     font-size: 0.9em;
   }
 
-  .section-14 {
+  .section-04 {
     padding: 2em 0;
   }
-  .section-14 .texts {
+  .section-04 .texts {
     padding: 0 10px;
   }
-  .section-14 .texts .img {
+  .section-04 .texts .img {
     padding: 2vh 3vw;
   }
-  .section-14 .texts .ingredient-details {
+  .section-04 .texts .ingredient-details {
     padding: 2vh 0;
   }
-  .section-14 .texts .ingredient-details h2 {
+  .section-04 .texts .ingredient-details h2 {
     font-size: 1.2em;
     text-decoration: underline;
   }
-  .section-14 .texts .ingredient-details h4 {
+  .section-04 .texts .ingredient-details h4 {
     font-size: 1em;
     font-style: italic;
     margin-bottom: 5px;
     margin-top: 10px;
   }
-  .section-14 .texts .ingredient-details .dp p {
+  .section-04 .texts .ingredient-details .dp p {
     margin-bottom: 0;
     font-size: 0.9em;
   }
 
-  .section-16 h4 span {
+  .section-05 h4 span {
     font-size: 1em;
     margin-left: 5px;
   }
-  .section-16 h4 span em {
+  .section-05 h4 span em {
     font-style: normal;
     padding: 2px 8px;
   }
 
-  .section-17 .top {
+  .section-006 .top {
     font-size: 1.15em;
   }
 }
@@ -1263,23 +1230,23 @@ footer .bottom li a {
     bottom: 0.5%;
   }
 
-  .section-12 .section-12a h4 {
+  .section-03 .section-03a h4 {
     font-size: 1.15em;
   }
 }
 @media screen and (max-width: 414px) {
-  .section-12 .section-12a h4 {
+  .section-03 .section-03a h4 {
     font-size: 1.25em;
   }
 
-  .section02 .subscription-notice p {
+  .section-01 .subscription-notice p {
     font-size: 0.9em;
   }
 
-  .section-16 h4 {
+  .section-05 h4 {
     font-size: 0.9em;
   }
-  .section-16 h4 span {
+  .section-05 h4 span {
     font-size: 1.25em;
   }
 }
@@ -1296,10 +1263,10 @@ footer .bottom li a {
   }
 }
 @media screen and (max-width: 350px) {
-  .section-14 .texts .ingredient-details h2 {
+  .section-04 .texts .ingredient-details h2 {
     font-size: 1em;
   }
-  .section-14 .texts .ingredient-details .dp p {
+  .section-04 .texts .ingredient-details .dp p {
     font-size: 0.8em;
   }
 }

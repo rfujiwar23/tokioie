@@ -38,9 +38,9 @@ var tabs = [
       ingredientTitle: "スクワランとは?",
       ingredientDesc: "優れた保湿力と浸透力をもたらします。人間の皮脂に近い成分なので非常に肌なじみが良く、髪の毛のパサつき、切れ毛の防止に繋がります。"
     },
-    
+
   ];
-  
+
   var vue = new Vue({
     el: "#app5",
     data: {
