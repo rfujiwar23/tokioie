@@ -834,6 +834,42 @@ $enText: "Roboto", sans-serif;
             margin-bottom: 2vh;
         }
     }
+    .tokio-brands {
+        position:relative;
+            .addoverlay {
+            display: block;
+            width: 100%;
+            height: auto;
+            }
+          
+          .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(46, 45, 45, 0.715);
+            .text {
+                width:100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color:#fff;
+                }
+            }
+          }
+          
+          &:hover .overlay {
+            opacity: 1;
+          }
+    }
+    
 }
 
 .section-014 {
