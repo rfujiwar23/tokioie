@@ -56,7 +56,7 @@ var vm = new Vue({
       {
         tokioNum: 1,
         ingredient: '羽毛ケラチン',
-        details: '水鳥の羽毛が原料のケラチン。<br class="br_on576">髪を軽くて柔らかい仕上がりみ導きます。'
+        details: '水鳥の羽毛が原料のケラチン。<br class="br_on576">髪を軽くて柔らかい仕上がりに導きます。'
       },
       {
         tokioNum: 2,
@@ -66,7 +66,7 @@ var vm = new Vue({
       {
         tokioNum: 3,
         ingredient: '羊毛ケラチン',
-        details: '内部補修、針、強さをもたらします。<br class="br_on576">TOKIO IEの補修効果を完結させます。'
+        details: '内部補修、ハリ、強さをもたらします。<br class="br_on576">TOKIO IEの補修効果を完結させます。'
       },
       {
         tokioNum: 4,
