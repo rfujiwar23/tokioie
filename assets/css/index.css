@@ -150,6 +150,7 @@
   font-size: 1.1em;
   line-height: 2em;
   padding: 30px 0;
+  text-align: justify;
 }
 .intro .article .maintext {
   padding: 3vh 0;
@@ -303,6 +304,9 @@
 .section-01 .subscription-notice .img {
   width: 45%;
   margin: 0 auto;
+}
+.section-01 .bottom {
+  padding-top: 6vh;
 }
 .section-01 .bottom h4 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
@@ -852,11 +856,13 @@ footer .bottom li a {
   padding: 4vh 0;
 }
 .section-03 .product-text h3 {
-  width: 90%;
-  max-width: 360px;
   margin: 0 auto;
   text-align: center;
   line-height: 2em;
+}
+.section-03 .product-text h3 img {
+  width: 90%;
+  max-width: 240px;
 }
 .section-03 .product-text h3 em {
   font-style: normal;
@@ -999,8 +1005,12 @@ footer .bottom li a {
   right: 0;
 }
 
-.section-20 h4 {
+.section-20 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.section-20 h5 {
+  font-size: 1em;
+  line-height: 2em;
 }
 
 .fade-up-enter-active,
@@ -1174,7 +1184,7 @@ footer .bottom li a {
     font-size: 1.25em;
   }
   .intro .article .maintext h4 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 
   .banner {

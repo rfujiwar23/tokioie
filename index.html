@@ -110,7 +110,7 @@
                 <div class="article">
                     <div class="maintext">
                       <!-- getTopTitle()は世界が認めた「TOKIO」(assets/js/top-intro.js)に文面有り -->
-                        <h4 data-aos="fade-up">{{getTopTitle()}}</h4>
+                        <h4>{{getTopTitle()}}</h4>
                         <div class="contents">
                             <!-- 表示テキスト　(assets/js/top-intro.js)に文面有り -->
                             <p v-html="getTopText()"></p>
@@ -129,7 +129,7 @@
         </div>
 
         <!-- youTube Video 平野歩夢・高木美帆選手 -->
-        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0" data-aos="fade-right">
+        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0">
             <div class="ratio ratio-16x9 text-center mt-4 mb-4">
               <!-- 動画を変える時、srcにyoutube動画のembedのリンクを入れる -->
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/G_6CIRy4b4Q"
@@ -149,7 +149,7 @@
                 <div class="item">
                     <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
                         <div class="item-image col-sm-8 offset-sm-2 mb-5 d-flex align-items-center justify-content-center">
-                            <img src="assets/images/3-points-2.svg" alt="TOKIO IE INKARAMI" style="width: 90%;">
+                            <img src="assets/images/3-points-3.svg" alt="TOKIO IE INKARAMI" style="width: 90%;">
                         </div>
                         <div class="d-flex justify-content-center">
                             <div class="subscription-notice col-md-10 col-sm-10 col-11 justify-content-center">
@@ -213,12 +213,14 @@
             <section class="section-02">
               <div class="row px-0">
                 <div class="type col-lg-4" v-for="promotion in promotions">
-                  <img :src="promotion.image" alt="TOKIOインカラミ プロモーション" class="img-fluid">
+                  <a v-bind:href="promotion.linkUrl">
+                    <img :src="promotion.image" alt="TOKIOインカラミ プロモーション" class="img-fluid">
                   <div class="text">
-                    <p style="padding-left: 20px;">
+                    <p style="padding-left: 20px; color:#000">
                       {{promotion.text}}
                     </p>
                   </div>
+                  </a>
                 </div>
               </div>
             </section>
@@ -238,13 +240,13 @@
                 <h3><img src="assets/images/tokio-inkarami-landscape.svg" alt="TOKIO インカラミ">
                 </h3>
                 <h3>
-                  <em>ホームケア</em><br>
+                  <em>シャンプー・トリートメント</em><br>
                   <span>ラインアップ紹介</span>
                 </h3>
                 <p>各シリーズのバナーをクリックすると、<br class="br_on576">それぞれの商品ページをご覧いただくことができます。</p>
               </div>
               <div class="row mx-0">
-                <div class="col-lg-4 px-0" v-for="banner in banners" data-aos="fade-up-right">
+                <div class="col-lg-4 px-0" v-for="banner in banners" data-aos="fade-up-right" data-aos-duration="2000">
                   <a v-bind:href="banner.url">
                     <img :src="banner.image" :alt="banner.product" class="img-fluid">
                   </a>
@@ -440,6 +442,9 @@
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
               <img src="assets/images/img-reason005.png" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
               <h4 class="text-center mt-5">成分へのこだわり</h4>
+              <h5 class="text-center">
+                シャンプー・トリートメントともに厳選した<br>補修・保湿成分をたっぷり配合しています
+              </h5>
             </div>
           </div>
         </div>
@@ -447,17 +452,18 @@
         <!-- section-008 -->
         <div class="container section-008">
             <div class="about">
-                <h3 class="text-center">TOKIO インカラミのケア成分の特徴は？</h3>
-                <div class="img-06">
-                    <img src="assets/images/img-tokio001.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
-                </div>
-            </div>
-            <div class="about">
                 <h3 class="text-center">美容室のシャンプー/トリートメントはどこが優れているの?</h3>
                 <div class="img-06">
                     <img src="assets/images/img-tokio002.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
                 </div>
             </div>
+            <div class="about">
+                <h3 class="text-center">TOKIO インカラミのケア成分の特徴は？</h3>
+                <div class="img-06">
+                    <img src="assets/images/img-tokio001.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
+                </div>
+            </div>
+            
         </div>
 
         <!-- section-mid-title 選ばれる理由の画像 -->

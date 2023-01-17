@@ -84,14 +84,17 @@ var vm = new Vue({
       {
         text: "TOKIO STARS - カミカリスマ美容師の支持率No.1",
         image: "assets/images/promotions-tokiostars.png",
+        linkUrl: 'https://tokio.tokyo/tokio-stars/'
       },
       {
         text: "TOKIO インカラミが誇る所属・サポートアスリート",
         image: "assets/images/promotions-athletes.jpg",
+        linkUrl: 'https://www.ifing.com/promotion/'
       },
       {
         text: "東京・ 銀座 / GINZA SIXから世界へ発信・展開",
         image: "assets/images/promotions-ginzasix.jpg",
+        linkUrl: 'https://www.ifing.com/company/'
       },
     ],
   },
