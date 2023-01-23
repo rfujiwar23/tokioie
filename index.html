@@ -178,28 +178,59 @@
                             </div>
                         </div>
                         <div id="subItem">
-                            <div v-for="item in items">
+                            <!-- <div v-for="item in items">
+                                
+                                <div class="item-details">
+                                    <div class="col-8 offset-2">
+                                        <img :src="item.img" :alt="TOKIO IE インカラミ {{item.itemNameType}} {{item.itemName}}" class="img-fluid">
+                                    </div>
+                                    <h3>TOKIO IE インカラミ<br>{{item.itemNameType}}<br>{{item.itemName}}</h3>
+                                    <p>{{item.size}}</p>
+                                    <h6><span>通常価格:</span><strong>￥{{item.regularPrice.toLocaleString()}}</strong>税込</h6>
+                                    <h5><strong>￥{{item.withTaxPrice.toLocaleString()}}</strong>税込</h5>
+                                    
+                                    <a v-bind:href="item.link" class="btn-success btn">購入はこちら <i class="fi-rs-angle-circle-right"></i></a>
+                                </div>
+                            </div> -->
+                            <div>
                                 <!-- 商品情報 -->
                                 <div class="item-details">
                                     <div class="col-8 offset-2">
                                       <!-- 商品画像 -->
-                                        <img :src="item.img" :alt="TOKIO IE インカラミ {{item.itemNameType}} {{item.itemName}}" class="img-fluid">
+                                        <img src="assets/images/tokioinkarami400.png" alt="TOKIO IE インカラミ プラチナム シャンプー・トリートメント" class="img-fluid">
                                     </div>
-                                    <h3>TOKIO IE インカラミ<br>{{item.itemNameType}}<br>{{item.itemName}}</h3>
+                                    <h3>TOKIO IE インカラミ<br>プラチナム<br>シャンプー・トリートメント</h3>
                                     <!-- 商品サイズ -->
-                                    <p>{{item.size}}</p>
+                                    <p>定期400サイズセット</p>
                                     <!-- 通常価格 -->
-                                    <h6><span>通常価格:</span><strong>￥{{item.regularPrice.toLocaleString()}}</strong>税込</h6>
+                                    <h6><span>通常価格:</span><strong>￥9020</strong>税込</h6>
                                     <!-- 税込価格 -->
-                                    <h5><strong>￥{{item.withTaxPrice.toLocaleString()}}</strong>税込</h5>
+                                    <h5><strong>￥8569</strong>税込</h5>
                                     <!-- IFING BEAUTYの商品購入ページ -->
-                                    <a v-bind:href="item.link" class="btn-success btn">購入はこちら <i class="fi-rs-angle-circle-right"></i></a>
+                                    <a href="https://ifing-beauty.com/products/detail/60" class="btn-success btn">購入はこちら <i class="fi-rs-angle-circle-right"></i></a>
+                                </div>
+                                <!-- 商品情報 -->
+                                <div class="item-details">
+                                    <div class="col-8 offset-2">
+                                      <!-- 商品画像 -->
+                                        <img src="assets/images/tokioinkarami700.png" alt="TOKIO IE インカラミ プラチナム シャンプー・トリートメント" class="img-fluid">
+                                    </div>
+                                    <h3>TOKIO IE インカラミ<br>プラチナム<br>シャンプー・トリートメント</h3>
+                                    <!-- 商品サイズ -->
+                                    <p>定期700サイズセット</p>
+                                    <!-- 通常価格 -->
+                                    <h6><span>通常価格:</span><strong>￥13420</strong>税込</h6>
+                                    <!-- 税込価格 -->
+                                    <h5><strong>￥12749</strong>税込</h5>
+                                    <!-- IFING BEAUTYの商品購入ページ -->
+                                    <a href="https://ifing-beauty.com/products/detail/61" class="btn-success btn">購入はこちら <i class="fi-rs-angle-circle-right"></i></a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
+                
                 <div class="bottom col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12" id="concern">
                     <h4>髪に悩みを抱えるあなたにこそ<br class="br_on992">本当にオススメしたい…</h4>
                     <div class="list-and-image col-xl-8 offset-xl-2 row">
