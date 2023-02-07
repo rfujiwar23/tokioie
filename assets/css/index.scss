@@ -183,7 +183,7 @@ $enText: "Roboto", sans-serif;
 }
 
 .intro {
-    padding: 5vh 0 0;
+    padding: 5vh 0 5vh;
     .article {
         padding: 3vh 10px 1vh;
         p {
@@ -1169,6 +1169,7 @@ footer {
 }
 
 .section-20 {
+    padding:5vh 0;
     font-family: $JPMincho;
     h5 {
         font-size: 1em;

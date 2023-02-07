@@ -172,7 +172,7 @@
 }
 
 .intro {
-  padding: 5vh 0 0;
+  padding: 5vh 0 5vh;
 }
 .intro .article {
   padding: 3vh 10px 1vh;
@@ -1037,6 +1037,7 @@ footer .bottom li a {
 }
 
 .section-20 {
+  padding: 5vh 0;
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 }
 .section-20 h5 {

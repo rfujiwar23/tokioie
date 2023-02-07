@@ -111,59 +111,78 @@
         </div>
         
 
-        <!-- 隠しテキスト込みのエリア (assets/js/top-intro.jsのファイルで文面を編集)-->
+        <!-- トップ CTAボタン-->
         <div class="container">
-            <div class="intro" id="top-intro">
+            <div class="intro">
                 <div class="d-flex align-items-center justify-content-center">
                 <div class="col-8 d-flex align-items-center justify-content-center">
                     <a href="https://ifing-beauty.com" class="btn-success btn" style="width:90%; max-width: 480px;">購入ページへ <i class="fi-rs-angle-circle-right"></i></a>
                 </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="article">
-                    <div class="maintext">
-                      <!-- getTopTitle()は世界が認めた「TOKIO」(assets/js/top-intro.js)に文面有り -->
-                        <h4>{{getTopTitle()}}</h4>
-                        <div class="contents">
-                            <!-- 表示テキスト　(assets/js/top-intro.js)に文面有り -->
-                            <p v-html="getTopText()"></p>
-                            <div class="read-more d-flex justify-content-center">
-                                <a class="moreless-button">もっと読む</a>
+        <!-- section-01　悩み -->
+        <div class="container-fluid px-0">
+            <section class="section-01">
+                <!-- <div class="top col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-sm-12">
+                    <h3>理想のシャンプー・トリートメントを<br>お探しの方に是非オススメしたい!</h3>
+                    <h4>超・補修型ホームケアが<br>ご自宅・簡単サロントリートメントを<br class=" br_on576">叶えます。</h4>
+                </div> -->                
+                <div class="bottom col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12" id="concern">
+                    <h4>髪に悩みを抱えるあなたにこそ<br class="br_on992">本当にオススメしたい…</h4>
+                    <div class="list-and-image col-xl-8 offset-xl-2 row">
+                        <div class="col-md-5 col-sm-5 col-6 img d-flex justify-content-center align-items-center">
+                            <img src="assets/images/img004.png" alt="TOKIO IE INKARAMI"
+                                style="opacity: 0.7;">
+                        </div>
+                        <div class="col-md-7 col-sm-7 list my-auto">
+                            <!-- 悩みのリスト -->
+                            <ul>
+                                <li v-for="concern in concerns" data-aos="fade-right"><i class="fa-solid fa-square-check"></i>{{concern.text}}</li>
+                            </ul>
+                        </div>
+                        <div class="mt-5 text-center">
+                          <h5><span>TOKIOインカラミ<br>ブランドの強み</span></h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- section-010 USERS' VOICE -->
+        <div class="container section-010" id="user-voices">
+            <div class="top">
+                <h4>USERS' VOICE</h4>
+                <p>TOKIO IEユーザー様からの声</p>
+            </div>
+            <div class="col-lg-12">
+                <div class="user-voice-list row my-5 d-flex justify-content-center align-items-center">
+                    <div class="col-md-6 my-2" v-for="user in userVoices">
+                        <div class="row">
+                            <div class="col-sm-4 col-3 d-flex align-items-center justify-content-center">
+                                <img :src="user.img" alt=" TOKIO IE ユーザー" class="img-fluid">
                             </div>
-                            <!-- 隠しテキスト；クリックして表示　(assets/js/top-intro.js)に文面有り  -->
-                            <div class="moretext">
-                                <h4>{{getHiddenTitle()}}</h4>
-                                <p v-html="getHiddenText()"></p>
+                            <div class="col-sm-8 col-9 d-flex justify-content-center align-items-center voice-text">
+                                <p>{{user.voice}}</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                <p class="text-center">
+                    <a href="https://tokio.tokyo/shampoo-treatment/#user-voice">ユーザー様からの声を見る</a>
+                </p>
             </div>
         </div>
 
-        <!-- youTube Video 平野歩夢・高木美帆選手 -->
-        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0">
-            <div class="ratio ratio-16x9 text-center mt-4 mb-4">
-              <!-- 動画を変える時、srcにyoutube動画のembedのリンクを入れる -->
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FNlY3esFvuQ"
-                    style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
-            </div>
-        </div>
-
-
-        <!-- section-01 -->
+        <!-- section-01 商品 -->
         <div class="container-fluid px-0">
             <section class="section-01">
-                <div class="top col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 col-sm-12">
-                    <h3>理想のシャンプー・トリートメントを<br>お探しの方に是非オススメしたい!</h3>
-                    <h4>超・補修型ホームケアが<br>ご自宅・簡単サロントリートメントを<br class=" br_on576">叶えます。</h4>
-                </div>
-
                 <div class="item">
                     <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-                        <div class="item-image col-sm-8 offset-sm-2 mb-5 d-flex align-items-center justify-content-center">
+                        <!-- <div class="item-image col-sm-8 offset-sm-2 mb-5 d-flex align-items-center justify-content-center">
                             <img src="assets/images/3-points-3.svg" alt="TOKIO IE INKARAMI" style="width: 90%;">
-                        </div>
+                        </div> -->
                         <div class="d-flex justify-content-center">
                             <div class="subscription-notice col-md-10 col-sm-10 col-11 justify-content-center">
                                 <h4 class="text-center">お得な定期お届けコース</h4>
@@ -178,20 +197,6 @@
                             </div>
                         </div>
                         <div id="subItem">
-                            <!-- <div v-for="item in items">
-                                
-                                <div class="item-details">
-                                    <div class="col-8 offset-2">
-                                        <img :src="item.img" :alt="TOKIO IE インカラミ {{item.itemNameType}} {{item.itemName}}" class="img-fluid">
-                                    </div>
-                                    <h3>TOKIO IE インカラミ<br>{{item.itemNameType}}<br>{{item.itemName}}</h3>
-                                    <p>{{item.size}}</p>
-                                    <h6><span>通常価格:</span><strong>￥{{item.regularPrice.toLocaleString()}}</strong>税込</h6>
-                                    <h5><strong>￥{{item.withTaxPrice.toLocaleString()}}</strong>税込</h5>
-                                    
-                                    <a v-bind:href="item.link" class="btn-success btn">購入はこちら <i class="fi-rs-angle-circle-right"></i></a>
-                                </div>
-                            </div> -->
                             <div>
                                 <!-- 商品情報 -->
                                 <div class="item-details">
@@ -230,88 +235,21 @@
 
                     </div>
                 </div>
-                
-                <div class="bottom col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12" id="concern">
-                    <h4>髪に悩みを抱えるあなたにこそ<br class="br_on992">本当にオススメしたい…</h4>
-                    <div class="list-and-image col-xl-8 offset-xl-2 row">
-                        <div class="col-md-5 col-sm-5 col-6 img d-flex justify-content-center align-items-center">
-                            <img src="assets/images/img004.png" alt="TOKIO IE INKARAMI"
-                                style="opacity: 0.7;">
-                        </div>
-                        <div class="col-md-7 col-sm-7 list my-auto">
-                            <!-- 悩みのリスト -->
-                            <ul>
-                                <li v-for="concern in concerns" data-aos="fade-right"><i class="fa-solid fa-square-check"></i>{{concern.text}}</li>
-                            </ul>
-                        </div>
-                        <div class="mt-5 text-center">
-                          <h5><span>TOKIOインカラミ<br>ブランドの強み</span></h5>
-                        </div>
-                    </div>
-                </div>
             </section>
         </div>
 
-        <!-- section-02 プロモーション画像３つ-->
-        <div class="container-fluid px-0" id="promotions">
-            <section class="section-02">
-              <div class="row px-0">
-                <div class="type col-lg-4" v-for="promotion in promotions">
-                  <a v-bind:href="promotion.linkUrl">
-                    <img :src="promotion.image" alt="TOKIOインカラミ プロモーション" class="img-fluid">
-                  <div class="text">
-                    <p style="padding-left: 20px; color:#000">
-                      {{promotion.text}}
-                    </p>
-                  </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-        </div>
-
-        
-
-        <!-- section-03 -->
-        <div class="container-fluid px-0" id="bannerImage">
-            <section class="section-03">
-              <div class="section-03a">
-                <h4 class="text-center">カリスマ美容師たちの支持率No.1<br>
-                  TOKIOインカラミトリートメント<br class="br_on576">から生まれた<br>
-                  本格的ホームケアシリーズ</h4>
-              </div>
-              <div class="product-text">
-                <h3><img src="assets/images/tokio-inkarami-landscape.svg" alt="TOKIO インカラミ">
-                </h3>
-                <h3>
-                  <em>シャンプー・トリートメント</em><br>
-                  <span>ラインアップ紹介</span>
-                </h3>
-                <p>各シリーズのバナーをクリックすると、<br class="br_on576">それぞれの商品ページをご覧いただくことができます。</p>
-              </div>
-              <div class="row mx-0">
-                <div class="col-lg-4 px-0" v-for="banner in banners" data-aos="fade-up-right" data-aos-duration="2000">
-                  <a v-bind:href="banner.url">
-                    <img :src="banner.image" :alt="banner.product" class="img-fluid">
-                  </a>
-                </div>
-              </div>
-            </section>
-        </div>
-
-        <!-- クリスマスキャンペーン画像 -->
-        <div class="holiday-campaign container-fluid my-5">
-            <div class="col-lg-6 offset-lg-3 col-md-8 0ffset-md-2 col-sm-8 offset-sm-2">
-                <a href="https://ifing-beauty.com/contents/winter-holiday-gift">
-                    <img src="assets/images/christmas.png" alt="クリスマスキャンペーン" class="img-fluid">
-                </a>
+        <!-- youTube Video 平野歩夢・高木美帆選手 -->
+        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0">
+            <div class="ratio ratio-16x9 text-center mt-4 mb-4">
+              <!-- 動画を変える時、srcにyoutube動画のembedのリンクを入れる -->
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FNlY3esFvuQ"
+                    style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
             </div>
         </div>
 
         <!-- section-mid-title 選ばれる理由の画像 -->
         <div class="section-mid-title">
             <div class="container pt-5">
-
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <img src="assets/images/img-reason001.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
                 </div>
@@ -369,7 +307,6 @@
         <!-- section-mid-title 選ばれる理由２ -->
         <div class="section-mid-title">
             <div class="container">
-
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
                     <img src="assets/images/img-reason002.jpg" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
                 </div>
@@ -468,10 +405,9 @@
             </div>
         </div>
 
-
         <!-- section-007 OCEAN TOKYO 髙木琢也氏 動画 -->
         <div class="section-007 py-5">
-              <h3 class="text-center">OCEAN TOKYO 髙木琢也 様</h3>
+            <h3 class="text-center">OCEAN TOKYO 髙木琢也 様</h3>
             <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0" data-aos="fade-right">
                 <div class="ratio ratio-16x9 text-center mt-4 mb-4">
                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4h5qqfwca3g"
@@ -482,7 +418,6 @@
 
         <div class="section-20">
           <div class="container">
-
             <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
               <img src="assets/images/img-reason005.png" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
               <h4 class="text-center mt-5">成分へのこだわり</h4>
@@ -560,31 +495,106 @@
             </section>
         </div>
 
-        <!-- section-010 USERS' VOICE -->
-        <div class="container section-010" id="user-voices">
-            <div class="top">
-                <h4>USERS' VOICE</h4>
-                <p>TOKIO IEユーザー様からの声</p>
-            </div>
-            <div class="col-lg-12">
-                <div class="user-voice-list row my-5 d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 my-2" v-for="user in userVoices">
-                        <div class="row">
-                            <div class="col-sm-4 col-3 d-flex align-items-center justify-content-center">
-                                <img :src="user.img" alt=" TOKIO IE ユーザー" class="img-fluid">
+        <!-- 開閉テキストボックス -->
+        <div class="container">
+            <div class="intro">
+                <div class="article"  id="top-intro">
+                    <div class="maintext">
+                      <!-- getTopTitle()は世界が認めた「TOKIO」(assets/js/top-intro.js)に文面有り -->
+                        <h4>{{getTopTitle()}}</h4>
+                        <div class="contents">
+                            <!-- 表示テキスト　(assets/js/top-intro.js)に文面有り -->
+                            <p v-html="getTopText()"></p>
+                            <div class="read-more d-flex justify-content-center">
+                                <a class="moreless-button">もっと読む</a>
                             </div>
-                            <div class="col-sm-8 col-9 d-flex justify-content-center align-items-center voice-text">
-                                <p>{{user.voice}}</p>
+                            <!-- 隠しテキスト；クリックして表示　(assets/js/top-intro.js)に文面有り  -->
+                            <div class="moretext">
+                                <h4>{{getHiddenTitle()}}</h4>
+                                <p v-html="getHiddenText()"></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="text-center">
-                    <a href="https://tokio.tokyo/shampoo-treatment/#user-voice">ユーザー様からの声を見る</a>
-                </p>
             </div>
         </div>
 
+        <!-- section-013 インカラミ　リミテッド＆ハイパーインカラミ 紹介 -->
+        <div class="container-fluid" id="product-list">
+            <section class="section-013">
+              <h3><span>特別なTOKIOブランド</span></h3>
+              <p>TOKIOインカラミのメカニズムを引き継ぎ、
+                <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
+              </p>
+              <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                <div class="col-sm-6 mb-3" v-for="product in tokioProducts">
+                  <div class="tokio-brands">
+                    <!-- <a v-bind:href="product.url"> -->
+                      <img :src="product.img" :alt="product.name" class="img-fluid addoverlay" >
+                    <!-- </a> -->
+                    <div class="overlay">
+                        <div class="text"><a v-bind:href="product.url">近日販売予定</a></a></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <!-- section-02 プロモーション画像３つ-->
+        <div class="container-fluid px-0" id="promotions">
+            <section class="section-02">
+              <div class="row px-0">
+                <div class="type col-lg-4" v-for="promotion in promotions">
+                  <a v-bind:href="promotion.linkUrl">
+                    <img :src="promotion.image" alt="TOKIOインカラミ プロモーション" class="img-fluid">
+                  <div class="text">
+                    <p style="padding-left: 20px; color:#000">
+                      {{promotion.text}}
+                    </p>
+                  </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <!-- section-03 -->
+        <div class="container-fluid px-0" id="bannerImage">
+            <section class="section-03">
+              <div class="section-03a">
+                <h4 class="text-center">カリスマ美容師たちの支持率No.1<br>
+                  TOKIOインカラミトリートメント<br class="br_on576">から生まれた<br>
+                  本格的ホームケアシリーズ</h4>
+              </div>
+              <div class="product-text">
+                <h3><img src="assets/images/tokio-inkarami-landscape.svg" alt="TOKIO インカラミ">
+                </h3>
+                <h3>
+                  <em>シャンプー・トリートメント</em><br>
+                  <span>ラインアップ紹介</span>
+                </h3>
+                <p>各シリーズのバナーをクリックすると、<br class="br_on576">それぞれの商品ページをご覧いただくことができます。</p>
+              </div>
+              <div class="row mx-0">
+                <div class="col-lg-4 px-0" v-for="banner in banners" data-aos="fade-up-right" data-aos-duration="2000">
+                  <a v-bind:href="banner.url">
+                    <img :src="banner.image" :alt="banner.product" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <!-- クリスマスキャンペーン画像 -->
+        <div class="holiday-campaign container-fluid my-5">
+            <div class="col-lg-6 offset-lg-3 col-md-8 0ffset-md-2 col-sm-8 offset-sm-2">
+                <a href="https://ifing-beauty.com/contents/winter-holiday-gift">
+                    <img src="assets/images/christmas.png" alt="クリスマスキャンペーン" class="img-fluid">
+                </a>
+            </div>
+        </div>
+  
         <!-- section-011 商品一覧 -->
         <div class="section-011">
             <h4 class="text-center">商品一覧</h4>
@@ -627,72 +637,50 @@
             </section>
         </div>
 
-        <!-- section-013 インカラミ　リミテッド＆ハイパーインカラミ 紹介 -->
-        <div class="container-fluid" id="product-list">
-            <section class="section-013">
-              <h3><span>特別なTOKIOブランド</span></h3>
-              <p>TOKIOインカラミのメカニズムを引き継ぎ、
-                <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
-              </p>
-              <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
-                <div class="col-sm-6 mb-3" v-for="product in tokioProducts">
-                  <div class="tokio-brands">
-                    <!-- <a v-bind:href="product.url"> -->
-                      <img :src="product.img" :alt="product.name" class="img-fluid addoverlay" >
-                    <!-- </a> -->
-                    <div class="overlay">
-                        <div class="text"><a v-bind:href="product.url">近日販売予定</a></a></div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-        </div>
-
         <!-- section-014 フッター兼単品購入 -->
         <div class="section-014">
-                <div class="container">
-                    <div class="section-014-image top col-lg-10 offset-lg-1 col-md-12 col-sm-12 my-3">
-                        <h3>単品で購入したい方はこちら</h3>
-                        <div class="row bg-white">
-                            <div class="col-4 px-0">
-                                <img src="assets/images/individual-purchase-tokio-platinum.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
-                            </div>
-                            <div class="col-4 px-0">
-                                <img src="assets/images/individual-purchase-tokio-premium.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
-                            </div>
-                            <div class="col-4 px-0">
-                                <img src="assets/images/individual-purchase-tokio-headspa.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
-                            </div>
+            <div class="container">
+                <div class="section-014-image top col-lg-10 offset-lg-1 col-md-12 col-sm-12 my-3">
+                    <h3>単品で購入したい方はこちら</h3>
+                    <div class="row bg-white">
+                        <div class="col-4 px-0">
+                            <img src="assets/images/individual-purchase-tokio-platinum.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
                         </div>
-                        <!-- <img src="assets/images/all-products.png" alt="TOKIO INKARAMI商品" class="img-fluid"> -->
-                        <div class="d-flex justify-content-center align-items-center">
-                            <a href="https://ifing-beauty.com/products/list?category_id=7" class="btn-success btn my-3" style="width:90%; max-width: 480px;">購入はこちら</a>
+                        <div class="col-4 px-0">
+                            <img src="assets/images/individual-purchase-tokio-premium.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
+                        </div>
+                        <div class="col-4 px-0">
+                            <img src="assets/images/individual-purchase-tokio-headspa.png" alt="TOKIO IE INKARAMI PLATINUM プラチナム" class="img-fluid">
                         </div>
                     </div>
-                    <p>【ご注文に関しての注意事項】</p>
-
-                    <ul class="top">
-                        <li>200ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約1ヶ月</li>
-                        <li>400ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約2ヶ月</li>
-                        <li>700ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで3ヶ月から4ヶ月</li>
-                    </ul>
-
-                    <div class="section-014-text">
-                        <p>それぞれ上記期間を目安として、ご使用いいただけるサイズとなっております（髪の長さによって変わります）。<br>
-                            ご購入前にご確認ください。なお、転売目的での商品購入はお断りしております。</p>
-
-                        <p class="add-red-mark">詳しくは<a href="https://ifing-beauty.com/contents/notice">こちら</a>をご覧ください。</p>
+                    <!-- <img src="assets/images/all-products.png" alt="TOKIO INKARAMI商品" class="img-fluid"> -->
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="https://ifing-beauty.com/products/list?category_id=7" class="btn-success btn my-3" style="width:90%; max-width: 480px;">購入はこちら</a>
                     </div>
                 </div>
+                <p>【ご注文に関しての注意事項】</p>
 
-                <footer id="footer-links">
-                    <div class="container">
-                        <ul class="bottom" v-for="links in footerLinks">
-                            <li><a v-bind:href="links.url">{{links.text}}</a></li>
-                        </ul>
-                    </div>
-                </footer>
+                <ul class="top">
+                    <li>200ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約1ヶ月</li>
+                    <li>400ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで約2ヶ月</li>
+                    <li>700ml/gサイズのTOKIOインカラミ シャンプー・トリートメント1セットで3ヶ月から4ヶ月</li>
+                </ul>
+
+                <div class="section-014-text">
+                    <p>それぞれ上記期間を目安として、ご使用いいただけるサイズとなっております（髪の長さによって変わります）。<br>
+                        ご購入前にご確認ください。なお、転売目的での商品購入はお断りしております。</p>
+
+                    <p class="add-red-mark">詳しくは<a href="https://ifing-beauty.com/contents/notice">こちら</a>をご覧ください。</p>
+                </div>
+            </div>
+
+            <footer id="footer-links">
+                <div class="container">
+                    <ul class="bottom" v-for="links in footerLinks">
+                        <li><a v-bind:href="links.url">{{links.text}}</a></li>
+                    </ul>
+                </div>
+            </footer>
 
         </div>
 
