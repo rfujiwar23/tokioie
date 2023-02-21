@@ -36,6 +36,28 @@
   color: #fff;
 }
 
+.top-image {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  position: relative;
+}
+.top-image .text {
+  position: absolute;
+  top: 4%;
+  left: 25%;
+  right: 25%;
+  text-align: center;
+}
+.top-image .text h4 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  font-weight: bold;
+}
+.top-image .text h4 span {
+  font-size: 0.75em;
+}
+
 .top-strip {
   height: 50px;
   position: relative;
@@ -173,6 +195,20 @@
 
 .intro {
   padding: 5vh 0 5vh;
+}
+.intro .top {
+  padding: 5vh 0;
+}
+.intro .top h4 {
+  text-align: center;
+}
+.intro .top h4 span {
+  font-size: 0.75em;
+}
+.intro .top p {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 2vh 0;
 }
 .intro .article {
   padding: 3vh 10px 1vh;
@@ -450,6 +486,21 @@
 .section-02 .type .text p {
   margin: 0;
   font-style: italic;
+}
+
+.section-22 h4 {
+  text-align: center;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.section-22 .product-image {
+  background: rgba(209, 209, 209, 0.55);
+  padding: 2vh 3vw;
+  margin: 4vh 0;
+}
+.section-22 .truck {
+  width: 100%;
+  max-width: 240px;
+  margin: 0 auto;
 }
 
 .section-mid-title {
@@ -1129,6 +1180,15 @@ footer .bottom li a {
     bottom: 2%;
   }
 
+  .top-image {
+    aspect-ratio: 0.75;
+  }
+  .top-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .intro .article {
     padding: 3vh 0 1vh;
   }
@@ -1337,6 +1397,10 @@ footer .bottom li a {
     font-size: 1.25em;
   }
 
+  .intro .top p {
+    font-size: 0.9em;
+  }
+
   .section-01 .subscription-notice p {
     font-size: 0.9em;
   }
@@ -1346,6 +1410,11 @@ footer .bottom li a {
   }
   .section-05 h4 span {
     font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 414px) {
+  .intro .top p {
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 375px) {
