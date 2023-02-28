@@ -41,25 +41,20 @@
 }
 
 .top-image {
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  padding-top: 64.6875%;
+  background: url("../images/tokio-image-1.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
 }
 .top-image .text {
   position: absolute;
-  top: 4%;
+  /* top: 4%; */
   left: 25%;
   right: 25%;
-  text-align: center;
-}
-.top-image .text h4 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-  font-weight: bold;
-}
-.top-image .text h4 span {
-  font-size: 0.75em;
+  /* height: 100vh; */
+  top: 0%;
+  bottom: 0%;
 }
 
 .top-strip {
@@ -1156,6 +1151,10 @@ footer .bottom li a {
     width: 100%;
   }
 
+  .top-image {
+    padding-top: 99.6875%;
+  }
+
   .section-01 .top .list {
     width: 96%;
     margin: 0 auto;
@@ -1187,7 +1186,7 @@ footer .bottom li a {
   }
 
   .top-image {
-    aspect-ratio: 0.75;
+    aspect-ratio: 0.66;
   }
   .top-image img {
     height: 100%;

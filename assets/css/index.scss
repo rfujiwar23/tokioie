@@ -47,24 +47,21 @@ $enText: "Roboto", sans-serif;
 }
 
 .top-image {
-    aspect-ratio: 16/9;
-    object-fit: cover;
+    padding-top: 64.6875%;
+    background:url('../images/tokio-image-1.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
     position:relative;
     .text {
-        position:absolute;
-        top: 4%;
-        left: 25%;
-        right: 25%;
-        text-align: center;
-        h4 {
-            font-size: 1.5em;
-            line-height: 1.5em;
-            font-family: $JPMincho;
-            font-weight: bold;
-            span {
-                font-size: 0.75em;
-            }
-        }
+        position: absolute;
+    /* top: 4%; */
+    left: 25%;
+    right: 25%;
+    /* height: 100vh; */
+    top: 0%;
+    // text-align: center;
+    bottom: 0%;
+    // height: 100%;
     }
 }
 .top-strip {
@@ -1294,6 +1291,10 @@ footer {
         }
     }
 
+    .top-image {
+        padding-top: 99.6875%;
+    }
+
     .section-01 {
         .top {
             .list {
@@ -1334,7 +1335,7 @@ footer {
     }
 
     .top-image {
-        aspect-ratio: 0.75;
+        aspect-ratio: 0.66;
         img {
             height: 100%;
             width: 100%;
