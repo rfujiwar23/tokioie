@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.tabs a {
+  margin-bottom: 0px !important;
+}
+
 .btn-success {
   background: #46b758 !important;
   background: linear-gradient(180deg, #46b758 0%, #208528 100%) !important;
@@ -406,6 +410,8 @@
   min-width: 350px;
   max-width: 450px;
   margin: 0 auto;
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  line-height: 1.5em;
 }
 .section-01 .bottom .list-and-image h5 span {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;

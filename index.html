@@ -155,8 +155,9 @@
                     <h4>髪に悩みを抱えるあなたにこそ<br class="br_on992">本当にオススメしたい…</h4>
                     <div class="list-and-image col-xl-8 offset-xl-2 row">
                         <div class="col-md-5 col-sm-5 col-6 img d-flex justify-content-center align-items-center">
-                            <img src="assets/images/img004.png" alt="TOKIO IE INKARAMI"
-                                style="opacity: 0.7;">
+                            <!-- <img src="assets/images/img004.png" alt="TOKIO IE INKARAMI"
+                                style="opacity: 0.7;"> -->
+                                こんなお悩みを抱えていませんか？
                         </div>
                         <div class="col-md-7 col-sm-7 list my-auto">
                             <!-- 悩みのリスト -->
@@ -165,7 +166,7 @@
                             </ul>
                         </div>
                         <div class="mt-5 text-center">
-                          <h5><span>TOKIOインカラミ<br>ブランドの強み</span></h5>
+                          <h5>そんなあなたに絶対オススメ！<br>TOKIO IE インカラミ<br>シャンプー・トリートメント</h5>
                         </div>
                     </div>
                 </div>
@@ -192,7 +193,8 @@
                     <div class="product-image">
                         <p class="text-center"><a href="#single-unit" style="color:#9c7b18;">豊富なラインナップ</a>であらゆるダメージに対応</p>
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                            <img src="assets/images/line-up.png" alt="TOKIO PLATINUM" class="img-fluid">
+                            <img src="assets/images/tokio-pl-pr-hs.jpg" alt="TOKIO PLATINUM" class="img-fluid mb-2">
+                            <img src="assets/images/tokio-hyper-limited.jpg" alt="TOKIO PLATINUM" class="img-fluid">
                         </div>
                         
                     </div>
@@ -288,14 +290,7 @@
             </section>
         </div>
 
-        <!-- youTube Video 平野歩夢・高木美帆選手 -->
-        <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0">
-            <div class="ratio ratio-16x9 text-center mt-4 mb-4">
-              <!-- 動画を変える時、srcにyoutube動画のembedのリンクを入れる -->
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FNlY3esFvuQ"
-                    style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
-            </div>
-        </div>
+        
 
         <!-- section-mid-title 選ばれる理由の画像 -->
         <div class="section-mid-title">
@@ -386,10 +381,144 @@
                     <p v-html="item.details"></p>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                <!-- <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                     <img src="assets/images/img-3types.png" alt="TOKIO INKARAMI" class="img-fluid">
+                </div> -->
+            </div>
+        </div>
+
+        
+
+        <div class="section-20">
+          <div class="container">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+              <img src="assets/images/img-reason005.png" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
+              <h4 class="text-center mt-5">成分へのこだわり</h4>
+              <h5 class="text-center">
+                シャンプー・トリートメントともに厳選した<br>補修・保湿成分をたっぷり配合しています
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- section-008 -->
+        <div class="container section-008">
+            <div class="about">
+                <h3 class="text-center">美容室のシャンプー/トリートメントはどこが優れているの?</h3>
+                <div class="img-06">
+                    <img src="assets/images/img-tokio002.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
                 </div>
             </div>
+            <div class="about">
+                <h3 class="text-center">TOKIO インカラミのケア成分の特徴は？</h3>
+                <div class="img-06">
+                    <img src="assets/images/img-tokio001.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- section-mid-title 選ばれる理由の画像 -->
+        <div class="section-mid-title">
+          <h4 class="text-center">一番人気！<br>TOKIO IE インカラミ<br>プラチナムシリーズをご紹介</h4>
+        </div>
+
+        <!-- プラチナム　シャンプー／トリートメント／オイルトリートメント　タブ式切り替え assetsのフォルダー内のjsのフォルダーのtab.jsに情報あり -->
+        <div class="container-fluid" id="app5">
+            <!-- section-009 -->
+            <section class="section-009">
+              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2">
+                <div class="tabs is-centered" v-cloak>
+                  <ul>
+                    <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
+                      <a @click.prevent="show = index">{{tab.title}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="texts" v-cloak>
+                  <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
+                    <div v-for="(tab, index) in tabs" v-if="show == index" :key="index">
+                      <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
+                        <img :src="tab.img" :alt="tab.title" class="img-fluid">
+                      </div>
+
+                      <div v-html="tab.content"></div>
+                      <p class="size"><strong>サイズ：</strong>{{tab.size}}</p>
+                      <ul>
+                        <li v-if="tab.list1 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list1}}</li>
+                        <li v-if="tab.list2 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list2}}</li>
+                        <li v-if="tab.list3 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list3}}</li>
+                        <li v-if="tab.list4 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list4}}</li>
+                        <li v-if="tab.list5 === null" style="display:none;"></li>
+                        <li v-else>{{tab.list5}}</li>
+                        <!-- 増やすのであるなら下のを複製 listの右にある"◎"を数字に変えて、tab.jsにも加える -->
+                        <!-- <li v-if="tab.list◎ === null" style="display:none;"></li>
+                        <li v-else>{{tab.list◎}}</li> -->
+                      </ul>
+                      <h4>{{tab.ingredientTitle}}</h4>
+                      <div class="ingredient-description box mx-2 mb-4" v-html="tab.ingredientDesc"></div>
+                    </div>
+                  </transition-group>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <!-- section-mid-title 選ばれる理由の画像 -->
+        <div class="section-mid-title">
+            <h4 class="text-center">TOKIO インカラミ<br>Brand Philosophy</h4>
+          </div>
+
+        
+
+        <!-- 開閉テキストボックス -->
+        <div class="container">
+            <div class="intro">
+                <div class="article"  id="top-intro">
+                    <div class="maintext">
+                      <!-- getTopTitle()は世界が認めた「TOKIO」(assets/js/top-intro.js)に文面有り -->
+                        <h4>{{getTopTitle()}}</h4>
+                        <div class="contents">
+                            <!-- 表示テキスト　(assets/js/top-intro.js)に文面有り -->
+                            <p v-html="getTopText()"></p>
+                            <div class="read-more d-flex justify-content-center">
+                                <a class="moreless-button">もっと読む</a>
+                            </div>
+                            <!-- 隠しテキスト；クリックして表示　(assets/js/top-intro.js)に文面有り  -->
+                            <div class="moretext">
+                                <h4>{{getHiddenTitle()}}</h4>
+                                <p v-html="getHiddenText()"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section-013 インカラミ　リミテッド＆ハイパーインカラミ 紹介 -->
+        <div class="container-fluid" id="product-list">
+            <section class="section-013">
+              <h3><span>特別なTOKIOブランド</span></h3>
+              <p>TOKIOインカラミのメカニズムを引き継ぎ、
+                <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
+              </p>
+              <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                <div class="col-sm-6 mb-3" v-for="product in tokioProducts">
+                  <div class="tokio-brands">
+                    <!-- <a v-bind:href="product.url"> -->
+                      <img :src="product.img" :alt="product.name" class="img-fluid addoverlay" >
+                    <!-- </a> -->
+                    <div class="overlay">
+                        <div class="text"><a v-bind:href="product.url">近日販売予定</a></a></div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </section>
         </div>
 
         <!-- section-006 スライド・カルーセル　美容師の声 -->
@@ -457,141 +586,39 @@
             </div>
         </div>
 
+
+        <!-- section-mid-title 選ばれる理由の画像 -->
+        <div class="section-mid-title mt-5 mb-3">
+            <h4 class="text-center">TOKIO インカラミ<br>Media</h4>
+          </div>
+
+        <!-- youTube Video 平野歩夢・高木美帆選手 -->
+        
+
         <!-- section-007 OCEAN TOKYO 髙木琢也氏 動画 -->
         <div class="section-007 py-5">
-            <h3 class="text-center">OCEAN TOKYO 髙木琢也 様</h3>
-            <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0" data-aos="fade-right">
+            <h3 class="text-center">テレビCMでも話題！</h3>
+            <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0">
                 <div class="ratio ratio-16x9 text-center mt-4 mb-4">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4h5qqfwca3g"
+                  <!-- 動画を変える時、srcにyoutube動画のembedのリンクを入れる -->
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FNlY3esFvuQ"
                         style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
                 </div>
             </div>
-        </div>
+            <div class="col-md-8 offset-md-2 col-lg-8 offset-lg-2 px-0" data-aos="fade-right">
 
-        <div class="section-20">
-          <div class="container">
-            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-              <img src="assets/images/img-reason005.png" alt="TOKIO インカラミ 選ばれる理由" class="img-fluid">
-              <h4 class="text-center mt-5">成分へのこだわり</h4>
-              <h5 class="text-center">
-                シャンプー・トリートメントともに厳選した<br>補修・保湿成分をたっぷり配合しています
-              </h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- section-008 -->
-        <div class="container section-008">
-            <div class="about">
-                <h3 class="text-center">美容室のシャンプー/トリートメントはどこが優れているの?</h3>
-                <div class="img-06">
-                    <img src="assets/images/img-tokio002.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
-                </div>
-            </div>
-            <div class="about">
-                <h3 class="text-center">TOKIO インカラミのケア成分の特徴は？</h3>
-                <div class="img-06">
-                    <img src="assets/images/img-tokio001.jpg" alt="TOKIO IE インカラミ" class="img-fluid">
+                <div class="ratio ratio-16x9 text-center mt-4 mb-4">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4h5qqfwca3g"
+                        style="max-width: 100%;height: 100%;" allowfullscreen></iframe>
                 </div>
             </div>
             
         </div>
 
         <!-- section-mid-title 選ばれる理由の画像 -->
-        <div class="section-mid-title">
-          <h4 class="text-center">人気ライン<br><span>TOKIO IE インカラミシリーズをご紹介</span></h4>
-        </div>
-
-        <!-- プラチナム　シャンプー／トリートメント／オイルトリートメント　タブ式切り替え assetsのフォルダー内のjsのフォルダーのtab.jsに情報あり -->
-        <div class="container-fluid" id="app5">
-            <!-- section-009 -->
-            <section class="section-009">
-              <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2">
-                <div class="tabs is-centered" v-cloak>
-                  <ul>
-                    <li v-for="(tab, index) in tabs" :class="{'is-active': show == index}">
-                      <a @click.prevent="show = index">{{tab.title}}</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="texts" v-cloak>
-                  <transition-group target="div" appear @click.native="navigate($event); alerts($event);">
-                    <div v-for="(tab, index) in tabs" v-if="show == index" :key="index">
-                      <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-10 offset-1">
-                        <img :src="tab.img" :alt="tab.title" class="img-fluid">
-                      </div>
-
-                      <div v-html="tab.content"></div>
-                      <p class="size"><strong>サイズ：</strong>{{tab.size}}</p>
-                      <ul>
-                        <li v-if="tab.list1 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list1}}</li>
-                        <li v-if="tab.list2 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list2}}</li>
-                        <li v-if="tab.list3 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list3}}</li>
-                        <li v-if="tab.list4 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list4}}</li>
-                        <li v-if="tab.list5 === null" style="display:none;"></li>
-                        <li v-else>{{tab.list5}}</li>
-                        <!-- 増やすのであるなら下のを複製 listの右にある"◎"を数字に変えて、tab.jsにも加える -->
-                        <!-- <li v-if="tab.list◎ === null" style="display:none;"></li>
-                        <li v-else>{{tab.list◎}}</li> -->
-                      </ul>
-                      <h4>{{tab.ingredientTitle}}</h4>
-                      <div class="ingredient-description box mx-2 mb-4" v-html="tab.ingredientDesc"></div>
-                    </div>
-                  </transition-group>
-                </div>
-              </div>
-            </section>
-        </div>
-
-        <!-- 開閉テキストボックス -->
-        <div class="container">
-            <div class="intro">
-                <div class="article"  id="top-intro">
-                    <div class="maintext">
-                      <!-- getTopTitle()は世界が認めた「TOKIO」(assets/js/top-intro.js)に文面有り -->
-                        <h4>{{getTopTitle()}}</h4>
-                        <div class="contents">
-                            <!-- 表示テキスト　(assets/js/top-intro.js)に文面有り -->
-                            <p v-html="getTopText()"></p>
-                            <div class="read-more d-flex justify-content-center">
-                                <a class="moreless-button">もっと読む</a>
-                            </div>
-                            <!-- 隠しテキスト；クリックして表示　(assets/js/top-intro.js)に文面有り  -->
-                            <div class="moretext">
-                                <h4>{{getHiddenTitle()}}</h4>
-                                <p v-html="getHiddenText()"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- section-013 インカラミ　リミテッド＆ハイパーインカラミ 紹介 -->
-        <div class="container-fluid" id="product-list">
-            <section class="section-013">
-              <h3><span>特別なTOKIOブランド</span></h3>
-              <p>TOKIOインカラミのメカニズムを引き継ぎ、
-                <br>さらにグレードアップした特別な<br class="br_on576">2ブランドをご紹介します。
-              </p>
-              <div class="row col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
-                <div class="col-sm-6 mb-3" v-for="product in tokioProducts">
-                  <div class="tokio-brands">
-                    <!-- <a v-bind:href="product.url"> -->
-                      <img :src="product.img" :alt="product.name" class="img-fluid addoverlay" >
-                    <!-- </a> -->
-                    <div class="overlay">
-                        <div class="text"><a v-bind:href="product.url">近日販売予定</a></a></div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-        </div>
+        <div class="section-mid-title mb-5">
+            <h4 class="text-center">TOKIO インカラミの取り組み</h4>
+          </div>
 
         <!-- section-02 プロモーション画像３つ-->
         <div class="container-fluid px-0" id="promotions">

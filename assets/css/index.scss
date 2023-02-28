@@ -3,7 +3,11 @@ $JPMincho: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
 $jpText: "Noto Sans JP", sans-serif;
 $enText: "Roboto", sans-serif;
 
-
+.tabs {
+    a {
+        margin-bottom: 0px !important;
+    }
+}
 
 .btn-success {
     background: rgb(70,183,88) !important;
@@ -441,6 +445,8 @@ $enText: "Roboto", sans-serif;
                 min-width: 350px;
                 max-width: 450px;
                 margin:0 auto;
+                font-family: $JPMincho;
+                line-height: 1.5em;
             }
         }
     }
