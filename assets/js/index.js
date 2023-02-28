@@ -84,17 +84,17 @@ var vm = new Vue({
       {
         text: "TOKIO STARS - カミカリスマ美容師の支持率No.1",
         image: "assets/images/promotions-tokiostars.png",
-        linkUrl: 'https://tokio.tokyo/tokio-stars/'
+        linkUrl: 'https://tokio.tokyo/ja/tokio-stars/'
       },
       {
         text: "TOKIO インカラミが誇る所属・サポートアスリート",
         image: "assets/images/promotions-athletes.jpg",
-        linkUrl: 'https://www.ifing.com/promotion/'
+        linkUrl: 'https://www.ifing.com/ja/promotion/'
       },
       {
         text: "東京・ 銀座 / GINZA SIXから世界へ発信・展開",
         image: "assets/images/promotions-ginzasix.jpg",
-        linkUrl: 'https://www.ifing.com/company/'
+        linkUrl: 'https://www.ifing.com/ja/company/'
       },
     ],
   },
@@ -184,7 +184,7 @@ var vm = new Vue({
       {
         nav: "商品解説はこちら",
         img: "assets/images/img-top003.png",
-        url: "http://www.tokio.tokyo",
+        url: "http://www.tokio.tokyo/ja",
       },
     ],
   },
@@ -298,12 +298,12 @@ var vm = new Vue({
       {
         name: "TOKIO INKARAMI LIMITED",
         img: "assets/images/tokio-limited.jpg",
-        url: "https://ifing-beauty.com"
+        url: "https://ifing-beauty.com/limited/products/list?category_id=60"
       },
       {
         name: "TOKIO HYPER INKARAMI",
         img: "assets/images/hyper-limited.jpg",
-        url: "https://ifing-beauty.com"
+        url: "https://ifing-beauty.com/limited/products/list?category_id=59"
       },
     ],
   },
