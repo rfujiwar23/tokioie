@@ -2,7 +2,7 @@
   new Vue({
 	el: '#top-intro',
 	data: {
-        mainTitle: '世界が認めた「TOKIO」について',
+        mainTitle: '世界が認めた「TOKIO」',
         mainBody: `
         <em>日本を代表する、トリートメントの代名詞となった「TOKIO インカラミ」。</em><br>
         美容室で行う毛髪内部補修型の4ステップトリートメントのブランドです。 <br>
