@@ -432,11 +432,14 @@ $enText: "Roboto", sans-serif;
                 }
             }
             h5 {
-                background:linear-gradient(135deg, rgba(255,255,255,0.5) 0%, rgba(200,200,200,0.4) 100%);
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,55,6,0.6) 100%);
+                color: #fff;
                 span {
                     font-family: $JPMincho;
                     font-size: 1.5em;
                     line-height: 1.5em;
+                    
                 }
                 width:90%;
                 min-width: 350px;
@@ -444,6 +447,12 @@ $enText: "Roboto", sans-serif;
                 margin:0 auto;
                 font-family: $JPMincho;
                 line-height: 1.5em;
+            }
+            .text {
+                background: rgb(0,0,0);
+                background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,55,6,0.6) 100%);
+                color:#fff;
+                font-size: 1.25em;
             }
         }
     }
@@ -557,6 +566,8 @@ $enText: "Roboto", sans-serif;
 
 .section-mid-title {
   font-family: $JPMincho;
+  padding:2vh 0;
+  color:#fff;
   h4 {
     line-height: 1.5em;
     span {
@@ -564,6 +575,8 @@ $enText: "Roboto", sans-serif;
       font-size: 0.8em;
     }
   }
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(88,55,6,0.6) 100%);
 }
 
 .section-008 {
@@ -1408,12 +1421,13 @@ footer {
         .bottom {
             .list-and-image {
                 padding: 6vh 0;
-                .img {
-                    margin: 0 auto;
-                    img {
-                        width: 100%;
-                    }
-                }
+                // .img {
+                //     margin: 0 auto;
+                //     img {
+                //         width: 100%;
+                //     }
+                // }
+                
                 .list {
                     ul {
                         width: 90%;

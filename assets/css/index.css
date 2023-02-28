@@ -400,7 +400,9 @@
   width: 100%;
 }
 .section-01 .bottom .list-and-image h5 {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(200, 200, 200, 0.4) 100%);
+  background: black;
+  background: linear-gradient(180deg, black 0%, rgba(88, 55, 6, 0.6) 100%);
+  color: #fff;
   width: 90%;
   min-width: 350px;
   max-width: 450px;
@@ -412,6 +414,12 @@
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   font-size: 1.5em;
   line-height: 1.5em;
+}
+.section-01 .bottom .list-and-image .text {
+  background: black;
+  background: linear-gradient(180deg, black 0%, rgba(88, 55, 6, 0.6) 100%);
+  color: #fff;
+  font-size: 1.25em;
 }
 
 .section03 {
@@ -506,6 +514,10 @@
 
 .section-mid-title {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+  padding: 2vh 0;
+  color: #fff;
+  background: black;
+  background: linear-gradient(180deg, black 0%, rgba(88, 55, 6, 0.6) 100%);
 }
 .section-mid-title h4 {
   line-height: 1.5em;
@@ -1238,12 +1250,6 @@ footer .bottom li a {
 
   .section-01 .bottom .list-and-image {
     padding: 6vh 0;
-  }
-  .section-01 .bottom .list-and-image .img {
-    margin: 0 auto;
-  }
-  .section-01 .bottom .list-and-image .img img {
-    width: 100%;
   }
   .section-01 .bottom .list-and-image .list ul {
     width: 90%;
