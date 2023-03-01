@@ -41,8 +41,8 @@
 }
 
 .top-image {
-  padding-top: 64.6875%;
-  background: url("../images/tokio-image-1.jpg") no-repeat;
+  padding-top: 78.75%;
+  background: url("../images/2nd-banner.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -1133,6 +1133,10 @@ footer .bottom li a {
     display: block;
   }
 
+  .top-image {
+    padding-top: 118.75%;
+  }
+
   .banner {
     aspect-ratio: 0.8;
   }
@@ -1171,7 +1175,7 @@ footer .bottom li a {
   }
 
   .top-image {
-    padding-top: 99.6875%;
+    padding-top: 135.6875%;
   }
 
   .section-01 .top .list {
