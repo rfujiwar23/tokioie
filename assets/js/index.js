@@ -298,12 +298,12 @@ var vm = new Vue({
       {
         name: "TOKIO INKARAMI LIMITED",
         img: "assets/images/tokio-limited.jpg",
-        url: "https://tokio.tokyo/tokio-hyper/"
+        url: "https://tokio.tokyo/tokio-ie-inkarami-limited/"
       },
       {
         name: "TOKIO HYPER INKARAMI",
         img: "assets/images/hyper-limited.jpg",
-        url: "https://tokio.tokyo/tokio-limited/"
+        url: "https://tokio.tokyo/tokio-ie-hyper-inkarami/"
       },
     ],
   },
