@@ -184,7 +184,7 @@ var vm = new Vue({
       {
         nav: "商品解説はこちら",
         img: "assets/images/img-top003.png",
-        url: "http://www.tokio.tokyo/ja",
+        url: "http://www.tokio.tokyo/",
       },
     ],
   },
@@ -298,12 +298,12 @@ var vm = new Vue({
       {
         name: "TOKIO INKARAMI LIMITED",
         img: "assets/images/tokio-limited.jpg",
-        url: "https://ifing-beauty.com/limited/products/list?category_id=60"
+        url: "https://tokio.tokyo/tokio-hyper/"
       },
       {
         name: "TOKIO HYPER INKARAMI",
         img: "assets/images/hyper-limited.jpg",
-        url: "https://ifing-beauty.com/limited/products/list?category_id=59"
+        url: "https://tokio.tokyo/tokio-limited/"
       },
     ],
   },

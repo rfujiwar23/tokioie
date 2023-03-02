@@ -362,6 +362,20 @@ $enText: "Roboto", sans-serif;
             }
         }
     }
+    .top-list {
+        font-family: $JPMincho;
+        padding:0;
+        li {
+            line-height: 2em;
+            margin-bottom: 2vh;
+            text-align: center;
+            span {
+                background: #BAA887;
+                padding:10px 20px;
+                font-size: 1.25em;
+            }
+        }
+    }
     .item {
         .item-details {
             text-align: center;
@@ -408,7 +422,7 @@ $enText: "Roboto", sans-serif;
             text-align: center;
         }
         .list-and-image {
-            padding: 6vh 0;
+            padding:0 0 6vh;
 
             .list {
                 margin-top: 3vh;
