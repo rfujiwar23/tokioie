@@ -337,20 +337,6 @@
   background: #940505;
   color: #fff;
 }
-.section-01 .top-list {
-  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
-  padding: 0;
-}
-.section-01 .top-list li {
-  line-height: 2em;
-  margin-bottom: 2vh;
-  text-align: center;
-}
-.section-01 .top-list li span {
-  background: #BAA887;
-  padding: 10px 20px;
-  font-size: 1.25em;
-}
 .section-01 .item .item-details {
   text-align: center;
 }
@@ -391,6 +377,20 @@
 .section-01 .bottom h4 {
   font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
   text-align: center;
+}
+.section-01 .bottom .top-list {
+  font-family: "游明朝", "Yu Mincho", YuMincho, "Hiragino Mincho Pro", serif;
+}
+.section-01 .bottom .top-list p {
+  line-height: 2em;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+.section-01 .bottom .top-list p strong {
+  background: #BAA887;
+  padding: 5px 20px;
+  font-size: 1.25em;
+  font-weight: normal;
 }
 .section-01 .bottom .list-and-image {
   padding: 0 0 6vh;

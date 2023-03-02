@@ -362,20 +362,7 @@ $enText: "Roboto", sans-serif;
             }
         }
     }
-    .top-list {
-        font-family: $JPMincho;
-        padding:0;
-        li {
-            line-height: 2em;
-            margin-bottom: 2vh;
-            text-align: center;
-            span {
-                background: #BAA887;
-                padding:10px 20px;
-                font-size: 1.25em;
-            }
-        }
-    }
+    
     .item {
         .item-details {
             text-align: center;
@@ -420,6 +407,22 @@ $enText: "Roboto", sans-serif;
         h4 {
             font-family: $JPMincho;
             text-align: center;
+        }
+        .top-list {
+            font-family: $JPMincho;
+            
+            p {
+                line-height: 2em;
+                margin-bottom: 2vh;
+                text-align: center;
+                
+                strong {
+                    background: #BAA887;
+                    padding:5px 20px;
+                    font-size: 1.25em;
+                    font-weight: normal;
+                }
+            }
         }
         .list-and-image {
             padding:0 0 6vh;
